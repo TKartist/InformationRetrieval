@@ -10,12 +10,9 @@ class linkSpider(scrapy.Spider):
 
 
     def parse(self, response):    # Funcion called every crawled web page. The response parameter will contain the web site response.
-        for car in response.xpath("//div[@class='listing-desc']"):    # For each quote element in the current page...
-
-            # text = quote.xpath(".//span[@class='text']/text()").get()                    # Extract the quote text as a string.
-                # author = quote.xpath(".//small[@class='author']/text()").get()	     # Extract the author name as a string.
-                # tags = quote.xpath(".//div[@class='tags']/a[@class='tag']/text()").getall()  # Extract the quote tags as a list of strings.
-            link = response.urljoin(car.xpath("//div[@class='listing-desc-make-model']/a/@href").get())
+        cars = response.xpath('.//*[@class="listing-desc"]')
+        for car in cars:
+            link = response.urljoin(car.xpath('.//div[@class="listing-desc-make-model"]/a/@href').extract_first())
             yield {"pageLink" : link}
         # print(carLinks)
         next_page = response.xpath("//a[@class='btn nxt-link']/@href").get()

@@ -15,7 +15,6 @@ class contentSpider(scrapy.Spider):
 
             start_urls.append(line["pageLink"])
     
-
     def parse(self, response):    # Funcion called every crawled web page. The response parameter will contain the web site response.
         target = response.xpath(".//div[@class='main-content']")    # For each quote element in the current page...
 
@@ -26,8 +25,9 @@ class contentSpider(scrapy.Spider):
         transmission = target.xpath(".//li[@class='listing-bullet-transmission']/text()").get()
         mileage = target.xpath(".//li[@class='detail-bullet-mileage']/text()").get()
         drive = target.xpath(".//li[@class='listing-bullet-drive']/text()").get()
+        desc = target.xpath(".//div[@class='detail-desc']/div/p/text()").get()
 
-        yield {"name" : name, "transmission" : transmission, "mileage" : mileage, "driver-position": drive}
+        yield {"name" : name, "transmission" : transmission, "mileage" : mileage, "driver-position": drive, "desc":desc}
 
 
 
