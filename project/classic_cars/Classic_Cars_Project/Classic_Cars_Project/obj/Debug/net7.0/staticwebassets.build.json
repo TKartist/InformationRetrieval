@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "UpI8Nff/UF9ca79Y9AsSiO9dnKLQ6fbBnGKp4xj/Yzs=",
+  "Hash": "GMmW7BJNXKN0XclWG9qzabe0r9Jb97J/wjUxZrbtlv4=",
   "Source": "Classic_Cars_Project",
   "BasePath": "/",
   "Mode": "Root",
@@ -6902,6 +6902,40 @@
       "OriginalItemSpec": "/Users/batyrgeo/Documents/GitHub/InformationRetrieval/project/classic_cars/Classic_Cars_Project/Classic_Cars_Project/obj/Debug/net7.0/scopedcss/projectbundle/Classic_Cars_Project.bundle.scp.css"
     },
     {
+      "Identity": "/Users/batyrgeo/Documents/GitHub/InformationRetrieval/project/classic_cars/Classic_Cars_Project/Classic_Cars_Project/wwwroot/.DS_Store",
+      "SourceId": "Classic_Cars_Project",
+      "SourceType": "Discovered",
+      "ContentRoot": "/Users/batyrgeo/Documents/GitHub/InformationRetrieval/project/classic_cars/Classic_Cars_Project/Classic_Cars_Project/wwwroot/",
+      "BasePath": "/",
+      "RelativePath": ".DS_Store",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot/.DS_Store"
+    },
+    {
+      "Identity": "/Users/batyrgeo/Documents/GitHub/InformationRetrieval/project/classic_cars/Classic_Cars_Project/Classic_Cars_Project/wwwroot/css/.DS_Store",
+      "SourceId": "Classic_Cars_Project",
+      "SourceType": "Discovered",
+      "ContentRoot": "/Users/batyrgeo/Documents/GitHub/InformationRetrieval/project/classic_cars/Classic_Cars_Project/Classic_Cars_Project/wwwroot/",
+      "BasePath": "/",
+      "RelativePath": "css/.DS_Store",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot/css/.DS_Store"
+    },
+    {
       "Identity": "/Users/batyrgeo/Documents/GitHub/InformationRetrieval/project/classic_cars/Classic_Cars_Project/Classic_Cars_Project/wwwroot/css/app.css",
       "SourceId": "Classic_Cars_Project",
       "SourceType": "Discovered",
@@ -6917,6 +6951,23 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot/css/app.css"
+    },
+    {
+      "Identity": "/Users/batyrgeo/Documents/GitHub/InformationRetrieval/project/classic_cars/Classic_Cars_Project/Classic_Cars_Project/wwwroot/css/background.webp",
+      "SourceId": "Classic_Cars_Project",
+      "SourceType": "Discovered",
+      "ContentRoot": "/Users/batyrgeo/Documents/GitHub/InformationRetrieval/project/classic_cars/Classic_Cars_Project/Classic_Cars_Project/wwwroot/",
+      "BasePath": "/",
+      "RelativePath": "css/background.webp",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot/css/background.webp"
     },
     {
       "Identity": "/Users/batyrgeo/Documents/GitHub/InformationRetrieval/project/classic_cars/Classic_Cars_Project/Classic_Cars_Project/wwwroot/css/bootstrap/bootstrap.min.css",
@@ -6951,6 +7002,23 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot/css/bootstrap/bootstrap.min.css.map"
+    },
+    {
+      "Identity": "/Users/batyrgeo/Documents/GitHub/InformationRetrieval/project/classic_cars/Classic_Cars_Project/Classic_Cars_Project/wwwroot/css/logo.png",
+      "SourceId": "Classic_Cars_Project",
+      "SourceType": "Discovered",
+      "ContentRoot": "/Users/batyrgeo/Documents/GitHub/InformationRetrieval/project/classic_cars/Classic_Cars_Project/Classic_Cars_Project/wwwroot/",
+      "BasePath": "/",
+      "RelativePath": "css/logo.png",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot/css/logo.png"
     },
     {
       "Identity": "/Users/batyrgeo/Documents/GitHub/InformationRetrieval/project/classic_cars/Classic_Cars_Project/Classic_Cars_Project/wwwroot/css/open-iconic/FONT-LICENSE",

@@ -13,8 +13,20 @@
       "PackagePath": "staticwebassets/Classic_Cars_Project.styles.css"
     },
     {
+      "Id": "/Users/batyrgeo/Documents/GitHub/InformationRetrieval/project/classic_cars/Classic_Cars_Project/Classic_Cars_Project/wwwroot/.DS_Store",
+      "PackagePath": "staticwebassets/.DS_Store"
+    },
+    {
+      "Id": "/Users/batyrgeo/Documents/GitHub/InformationRetrieval/project/classic_cars/Classic_Cars_Project/Classic_Cars_Project/wwwroot/css/.DS_Store",
+      "PackagePath": "staticwebassets/css/.DS_Store"
+    },
+    {
       "Id": "/Users/batyrgeo/Documents/GitHub/InformationRetrieval/project/classic_cars/Classic_Cars_Project/Classic_Cars_Project/wwwroot/css/app.css",
       "PackagePath": "staticwebassets/css/app.css"
+    },
+    {
+      "Id": "/Users/batyrgeo/Documents/GitHub/InformationRetrieval/project/classic_cars/Classic_Cars_Project/Classic_Cars_Project/wwwroot/css/background.webp",
+      "PackagePath": "staticwebassets/css/background.webp"
     },
     {
       "Id": "/Users/batyrgeo/Documents/GitHub/InformationRetrieval/project/classic_cars/Classic_Cars_Project/Classic_Cars_Project/wwwroot/css/bootstrap/bootstrap.min.css",
@@ -23,6 +35,10 @@
     {
       "Id": "/Users/batyrgeo/Documents/GitHub/InformationRetrieval/project/classic_cars/Classic_Cars_Project/Classic_Cars_Project/wwwroot/css/bootstrap/bootstrap.min.css.map",
       "PackagePath": "staticwebassets/css/bootstrap/bootstrap.min.css.map"
+    },
+    {
+      "Id": "/Users/batyrgeo/Documents/GitHub/InformationRetrieval/project/classic_cars/Classic_Cars_Project/Classic_Cars_Project/wwwroot/css/logo.png",
+      "PackagePath": "staticwebassets/css/logo.png"
     },
     {
       "Id": "/Users/batyrgeo/Documents/GitHub/InformationRetrieval/project/classic_cars/Classic_Cars_Project/Classic_Cars_Project/wwwroot/css/open-iconic/FONT-LICENSE",

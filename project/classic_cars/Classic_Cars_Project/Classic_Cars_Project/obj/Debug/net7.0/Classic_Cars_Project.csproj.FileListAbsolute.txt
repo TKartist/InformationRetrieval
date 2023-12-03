@@ -818,7 +818,6 @@
 /Users/batyrgeo/Documents/GitHub/InformationRetrieval/project/classic_cars/Classic_Cars_Project/Classic_Cars_Project/obj/Debug/net7.0/staticwebassets.build.json
 /Users/batyrgeo/Documents/GitHub/InformationRetrieval/project/classic_cars/Classic_Cars_Project/Classic_Cars_Project/obj/Debug/net7.0/staticwebassets.development.json
 /Users/batyrgeo/Documents/GitHub/InformationRetrieval/project/classic_cars/Classic_Cars_Project/Classic_Cars_Project/obj/Debug/net7.0/scopedcss/Shared/MainLayout.razor.rz.scp.css
-/Users/batyrgeo/Documents/GitHub/InformationRetrieval/project/classic_cars/Classic_Cars_Project/Classic_Cars_Project/obj/Debug/net7.0/scopedcss/Shared/NavMenu.razor.rz.scp.css
 /Users/batyrgeo/Documents/GitHub/InformationRetrieval/project/classic_cars/Classic_Cars_Project/Classic_Cars_Project/obj/Debug/net7.0/scopedcss/bundle/Classic_Cars_Project.styles.css
 /Users/batyrgeo/Documents/GitHub/InformationRetrieval/project/classic_cars/Classic_Cars_Project/Classic_Cars_Project/obj/Debug/net7.0/scopedcss/projectbundle/Classic_Cars_Project.bundle.scp.css
 /Users/batyrgeo/Documents/GitHub/InformationRetrieval/project/classic_cars/Classic_Cars_Project/Classic_Cars_Project/obj/Debug/net7.0/Classic_Cars_Project.csproj.CopyComplete

@@ -17,4 +17,14 @@
     <PackageReference Include="Microsoft.AspNetCore.Components.WebAssembly.DevServer" Version="7.0.11" PrivateAssets="all" />
   </ItemGroup>
 
+  <ItemGroup>
+    <Content Remove="wwwroot\css\Images \" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="wwwroot\css\Images \" />
+    <Folder Include="Services\" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Remove="Services\" />
+  </ItemGroup>
 </Project>
