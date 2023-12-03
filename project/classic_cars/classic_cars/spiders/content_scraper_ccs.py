@@ -25,8 +25,9 @@ class contentSpiderCCS(scrapy.Spider):
         mileage = target.xpath(".//li[@class='detail-bullet-mileage']/text()").get()
         drive = target.xpath(".//li[@class='listing-bullet-drive']/text()").get()
         desc = target.xpath(".//div[@class='detail-desc']/div/p/text()").get()
+        imageLinks = response.xpath('.//img/@src').extract_first()
 
-        yield {"name" : name, "transmission" : transmission, "mileage" : mileage, "driver-position": drive, "desc":desc}
+        yield {"name" : name, "image": imageLinks, "transmission" : transmission, "mileage" : mileage, "driver-position": drive, "desc":desc}
 
 
 

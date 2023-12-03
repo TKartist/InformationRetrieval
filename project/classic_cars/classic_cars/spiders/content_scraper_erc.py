@@ -36,9 +36,9 @@ class contentSpiderERC(scrapy.Spider):
                     break
             counter += 1
             
+        imageLink = response.xpath('.//img[@class="product-img-top"]/@src').extract_first()
 
-
-        yield {"name":name, "make":make, "model": model, "year": year, "price":price, "desc" : summary}
+        yield {"name":name, "image":imageLink, "make":make, "model": model, "year": year, "price":price, "desc" : summary}
 
 
 
