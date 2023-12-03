@@ -18,7 +18,27 @@ class contentSpiderERC(scrapy.Spider):
             summary = summary + (p.xpath('.//text()').get()) + '\n'
         name = response.xpath('.//div[@class="product-name"]/h1/text()').get()
         price = response.xpath('.//span[@class="price"]/text()').get()
-        yield {"name":name, "price":price, "desc" : summary}
+
+        product_detail = response.xpath('.//div[@class="product-attributes"]/ul/li')
+        counter = 0
+        for det in product_detail:
+            val = det.xpath('.//span[@class="data"]/text()').get()
+            match counter:
+                case 0:
+                    referenceNumber = val
+                case 1:
+                    make = val
+                case 2:
+                    model = val
+                case 3:
+                    year = val
+                case _:
+                    break
+            counter += 1
+            
+
+
+        yield {"name":name, "make":make, "model": model, "year": year, "price":price, "desc" : summary}
 
 
 
