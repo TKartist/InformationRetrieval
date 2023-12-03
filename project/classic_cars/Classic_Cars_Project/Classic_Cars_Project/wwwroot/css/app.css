@@ -163,6 +163,7 @@ a, .btn-link {
 }
 
     .filter-chip-main button {
+        padding: 7px 10px;
         background-color: transparent;
         border: none;
         margin-left: 5px;
@@ -185,7 +186,7 @@ a, .btn-link {
         font-size: 1rem;
     }
 
-.search-bar-main button {
+.search_button {
     padding: 10px 20px;
     background-color: #043927;
     color: white;
@@ -194,7 +195,6 @@ a, .btn-link {
     cursor: pointer;
     transition: background-color 0.3s;
     opacity: 0.9;
-
 }
 
     .search-bar-main button:hover {
@@ -274,6 +274,8 @@ a, .btn-link {
 
 .remove_btn{
     background:#043927;
+
+
 
 }
 
