@@ -1,9 +1,9 @@
 import scrapy
 
 
-class linkSpider(scrapy.Spider):
+class linkSpiderCCS(scrapy.Spider):
 
-    name = "pagelinks"    # Your spider name. Each instance of a QuoteSpider will share the same name.
+    name = "pagelinks_ccs"    # Your spider name. Each instance of a QuoteSpider will share the same name.
 
 
     start_urls = ["https://www.classiccarsforsale.co.uk/year-1885-2017"]
@@ -11,6 +11,7 @@ class linkSpider(scrapy.Spider):
 
     def parse(self, response):    # Funcion called every crawled web page. The response parameter will contain the web site response.
         cars = response.xpath('.//*[@class="listing-desc"]')
+        print(response)
         for car in cars:
             link = response.urljoin(car.xpath('.//div[@class="listing-desc-make-model"]/a/@href').extract_first())
             yield {"pageLink" : link}

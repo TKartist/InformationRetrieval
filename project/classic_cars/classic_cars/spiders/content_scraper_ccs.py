@@ -4,11 +4,10 @@ from pathlib import Path
 
 
 
-class contentSpider(scrapy.Spider):
+class contentSpiderCCS(scrapy.Spider):
 
-    name = "contents"    # Your spider name. Each instance of a QuoteSpider will share the same name.
+    name = "contents_ccs"    # Your spider name. Each instance of a QuoteSpider will share the same name.
     start_urls = []
-    print(Path.cwd())
     with jsonlines.open('./results.jsonl') as f:
 
         for line in f.iter():
