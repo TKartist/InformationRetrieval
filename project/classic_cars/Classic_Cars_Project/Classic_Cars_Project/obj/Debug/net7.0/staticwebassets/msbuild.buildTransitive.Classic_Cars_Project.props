@@ -1,0 +1,3 @@
+﻿<Project>
+  <Import Project="../buildMultiTargeting/Classic_Cars_Project.props" />
+</Project>

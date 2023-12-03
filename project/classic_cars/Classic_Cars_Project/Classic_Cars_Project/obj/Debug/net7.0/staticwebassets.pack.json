@@ -1,0 +1,97 @@
+{
+  "Files": [
+    {
+      "Id": "/Users/batyrgeo/Documents/GitHub/InformationRetrieval/project/classic_cars/Classic_Cars_Project/Classic_Cars_Project/bin/Debug/net7.0/wwwroot/_framework/blazor.webassembly.js",
+      "PackagePath": "staticwebassets/_framework/blazor.webassembly.js"
+    },
+    {
+      "Id": "/Users/batyrgeo/Documents/GitHub/InformationRetrieval/project/classic_cars/Classic_Cars_Project/Classic_Cars_Project/obj/Debug/net7.0/build-gz/Ud6F+YXW.gz",
+      "PackagePath": "staticwebassets/_framework/blazor.webassembly.js.gz"
+    },
+    {
+      "Id": "/Users/batyrgeo/Documents/GitHub/InformationRetrieval/project/classic_cars/Classic_Cars_Project/Classic_Cars_Project/obj/Debug/net7.0/scopedcss/bundle/Classic_Cars_Project.styles.css",
+      "PackagePath": "staticwebassets/Classic_Cars_Project.styles.css"
+    },
+    {
+      "Id": "/Users/batyrgeo/Documents/GitHub/InformationRetrieval/project/classic_cars/Classic_Cars_Project/Classic_Cars_Project/wwwroot/css/app.css",
+      "PackagePath": "staticwebassets/css/app.css"
+    },
+    {
+      "Id": "/Users/batyrgeo/Documents/GitHub/InformationRetrieval/project/classic_cars/Classic_Cars_Project/Classic_Cars_Project/wwwroot/css/bootstrap/bootstrap.min.css",
+      "PackagePath": "staticwebassets/css/bootstrap/bootstrap.min.css"
+    },
+    {
+      "Id": "/Users/batyrgeo/Documents/GitHub/InformationRetrieval/project/classic_cars/Classic_Cars_Project/Classic_Cars_Project/wwwroot/css/bootstrap/bootstrap.min.css.map",
+      "PackagePath": "staticwebassets/css/bootstrap/bootstrap.min.css.map"
+    },
+    {
+      "Id": "/Users/batyrgeo/Documents/GitHub/InformationRetrieval/project/classic_cars/Classic_Cars_Project/Classic_Cars_Project/wwwroot/css/open-iconic/FONT-LICENSE",
+      "PackagePath": "staticwebassets/css/open-iconic"
+    },
+    {
+      "Id": "/Users/batyrgeo/Documents/GitHub/InformationRetrieval/project/classic_cars/Classic_Cars_Project/Classic_Cars_Project/wwwroot/css/open-iconic/ICON-LICENSE",
+      "PackagePath": "staticwebassets/css/open-iconic"
+    },
+    {
+      "Id": "/Users/batyrgeo/Documents/GitHub/InformationRetrieval/project/classic_cars/Classic_Cars_Project/Classic_Cars_Project/wwwroot/css/open-iconic/README.md",
+      "PackagePath": "staticwebassets/css/open-iconic/README.md"
+    },
+    {
+      "Id": "/Users/batyrgeo/Documents/GitHub/InformationRetrieval/project/classic_cars/Classic_Cars_Project/Classic_Cars_Project/wwwroot/css/open-iconic/font/css/open-iconic-bootstrap.min.css",
+      "PackagePath": "staticwebassets/css/open-iconic/font/css/open-iconic-bootstrap.min.css"
+    },
+    {
+      "Id": "/Users/batyrgeo/Documents/GitHub/InformationRetrieval/project/classic_cars/Classic_Cars_Project/Classic_Cars_Project/wwwroot/css/open-iconic/font/fonts/open-iconic.eot",
+      "PackagePath": "staticwebassets/css/open-iconic/font/fonts/open-iconic.eot"
+    },
+    {
+      "Id": "/Users/batyrgeo/Documents/GitHub/InformationRetrieval/project/classic_cars/Classic_Cars_Project/Classic_Cars_Project/wwwroot/css/open-iconic/font/fonts/open-iconic.otf",
+      "PackagePath": "staticwebassets/css/open-iconic/font/fonts/open-iconic.otf"
+    },
+    {
+      "Id": "/Users/batyrgeo/Documents/GitHub/InformationRetrieval/project/classic_cars/Classic_Cars_Project/Classic_Cars_Project/wwwroot/css/open-iconic/font/fonts/open-iconic.svg",
+      "PackagePath": "staticwebassets/css/open-iconic/font/fonts/open-iconic.svg"
+    },
+    {
+      "Id": "/Users/batyrgeo/Documents/GitHub/InformationRetrieval/project/classic_cars/Classic_Cars_Project/Classic_Cars_Project/wwwroot/css/open-iconic/font/fonts/open-iconic.ttf",
+      "PackagePath": "staticwebassets/css/open-iconic/font/fonts/open-iconic.ttf"
+    },
+    {
+      "Id": "/Users/batyrgeo/Documents/GitHub/InformationRetrieval/project/classic_cars/Classic_Cars_Project/Classic_Cars_Project/wwwroot/css/open-iconic/font/fonts/open-iconic.woff",
+      "PackagePath": "staticwebassets/css/open-iconic/font/fonts/open-iconic.woff"
+    },
+    {
+      "Id": "/Users/batyrgeo/Documents/GitHub/InformationRetrieval/project/classic_cars/Classic_Cars_Project/Classic_Cars_Project/wwwroot/favicon.png",
+      "PackagePath": "staticwebassets/favicon.png"
+    },
+    {
+      "Id": "/Users/batyrgeo/Documents/GitHub/InformationRetrieval/project/classic_cars/Classic_Cars_Project/Classic_Cars_Project/wwwroot/icon-192.png",
+      "PackagePath": "staticwebassets/icon-192.png"
+    },
+    {
+      "Id": "/Users/batyrgeo/Documents/GitHub/InformationRetrieval/project/classic_cars/Classic_Cars_Project/Classic_Cars_Project/wwwroot/index.html",
+      "PackagePath": "staticwebassets/index.html"
+    },
+    {
+      "Id": "/Users/batyrgeo/Documents/GitHub/InformationRetrieval/project/classic_cars/Classic_Cars_Project/Classic_Cars_Project/wwwroot/sample-data/weather.json",
+      "PackagePath": "staticwebassets/sample-data/weather.json"
+    },
+    {
+      "Id": "obj/Debug/net7.0/staticwebassets/msbuild.Classic_Cars_Project.Microsoft.AspNetCore.StaticWebAssets.props",
+      "PackagePath": "build\\Microsoft.AspNetCore.StaticWebAssets.props"
+    },
+    {
+      "Id": "obj/Debug/net7.0/staticwebassets/msbuild.build.Classic_Cars_Project.props",
+      "PackagePath": "build\\Classic_Cars_Project.props"
+    },
+    {
+      "Id": "obj/Debug/net7.0/staticwebassets/msbuild.buildMultiTargeting.Classic_Cars_Project.props",
+      "PackagePath": "buildMultiTargeting\\Classic_Cars_Project.props"
+    },
+    {
+      "Id": "obj/Debug/net7.0/staticwebassets/msbuild.buildTransitive.Classic_Cars_Project.props",
+      "PackagePath": "buildTransitive\\Classic_Cars_Project.props"
+    }
+  ],
+  "ElementsToRemove": []
+}
