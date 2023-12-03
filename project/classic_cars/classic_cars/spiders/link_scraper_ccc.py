@@ -6,7 +6,7 @@ class linkSpiderCCC(scrapy.Spider):
     name = "pagelinks_ccc"    # Your spider name. Each instance of a QuoteSpider will share the same name.
 
 
-    start_urls = ["https://classiccars.com/listings/find"]
+    start_urls = ["https://classiccars.com/listings/find?ps=60"]
 
 
     def parse(self, response):    # Funcion called every crawled web page. The response parameter will contain the web site response.
