@@ -29,6 +29,10 @@
       "PackagePath": "staticwebassets/css/background.webp"
     },
     {
+      "Id": "/Users/batyrgeo/Documents/GitHub/InformationRetrieval/project/classic_cars/Classic_Cars_Project/Classic_Cars_Project/wwwroot/css/background_minor.jpeg",
+      "PackagePath": "staticwebassets/css/background_minor.jpeg"
+    },
+    {
       "Id": "/Users/batyrgeo/Documents/GitHub/InformationRetrieval/project/classic_cars/Classic_Cars_Project/Classic_Cars_Project/wwwroot/css/bootstrap/bootstrap.min.css",
       "PackagePath": "staticwebassets/css/bootstrap/bootstrap.min.css"
     },

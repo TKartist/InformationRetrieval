@@ -1,54 +1,31 @@
 ﻿@page "/"
+@inject HttpClient Http
+@inject NavigationManager NavManager
 @using Classic_Cars_Project.Services
-<PageTitle>Index</PageTitle>
-@using System.Collections.Generic
 @inject VehicleSelectionService VehicleSelection
 
+<PageTitle>Index</PageTitle>
 
 <div class="search-container-main">
     <div class="search-header-main">
         <h2>Search in <span class="vehicle-count-main">167,331</span> vehicles</h2>
     </div>
     <div class="search-bar-main">
-        <input type="text" placeholder="Search..." @bind="searchQuery" />
-        <div class="filter-chips-main">
-            @if (!string.IsNullOrWhiteSpace(selectedBrand))
-            {
-                <span class="filter-chip-main">
-                    @selectedBrand <button class="remove_btn" @onclick="@(() => RemoveFilter("brand"))">&times;</button>
-                </span>
-            }
-            @if (!string.IsNullOrWhiteSpace(selectedModel))
-            {
-                <span class="filter-chip-main">
-                    @selectedModel <button class="remove_btn" @onclick="@(() => RemoveFilter("model"))">&times;</button>
-                </span>
-            }
-            @if (!string.IsNullOrWhiteSpace(selectedYear))
-            {
-                <span class="filter-chip-main">
-                    @selectedYear <button class="remove_btn" @onclick="@(() => RemoveFilter("year"))">&times;</button>
-                </span>
-            }
-        </div>
-        <button class="search_button"@onclick="ApplyFilters">Search</button>
+        <input type="text" placeholder="Search..." @bind="searchQuery" @oninput="ApplyFilters" />
+        <button class="search_button" @onclick="ApplyFilters">Search</button>
     </div>
     <div class="filter-dropdown-main">
-        <select @bind="selectedBrand">
+        <select value="@selectedBrand" @onchange="BrandChanged">
             <option value="">Select Brand</option>
             @foreach (var brand in brands)
             {
                 <option value="@brand">@brand</option>
             }
         </select>
-        <select @bind="selectedModel">
-            <option value="">Select Model</option>
-            @foreach (var model in models)
-            {
-                <option value="@model">@model</option>
-            }
-        </select>
-        <select @bind="selectedYear">
+
+  
+
+        <select value="@selectedYear" @onchange="YearChanged">
             <option value="">Select Year</option>
             @foreach (var year in years)
             {
@@ -60,113 +37,180 @@
     <div class="price-range-container">
         <div>
             <label for="minPrice">Minimum Price:</label>
-            <input type="number" id="minPrice" @bind="minPrice" @bind:event="oninput" @onchange="OnMinPriceChanged" />
+            <input type="number" id="minPrice" @bind="minPrice" @oninput="ApplyFilters" />
         </div>
         <div>
             <label for="maxPrice">Maximum Price:</label>
-            <input type="number" id="maxPrice" @bind="maxPrice" @bind:event="oninput" @onchange="OnMaxPriceChanged" />
+            <input type="number" id="maxPrice" @bind="maxPrice" @oninput="ApplyFilters" />
         </div>
     </div>
-
-
 </div>
-
-
 
 @if (searchResults.Any())
 {
     <div class="search-results-grid">
         @foreach (var vehicle in searchResults)
         {
-<div class="card">
-    <div class="Watch" @onclick="() => SelectCard(vehicle)">Compare</div>
-    <img src="@vehicle.ImageUrl" alt="Vehicle Image" />
-    <div class="card-info">
-        <p><strong>Model:</strong> @vehicle.Model</p>
-        <p><strong>Price:</strong> @vehicle.Price</p>
-        <p><strong>Year:</strong> @vehicle.Year</p>
-    </div>
-    <a href="@vehicle.DetailUrl" class="explore-more-btn">Explore More</a>
-</div>
+            <div class="card">
+                <div class="Watch" @onclick="() => SelectCard(vehicle)">Compare</div>
+                <img src="@vehicle.ImageUrl" alt="Vehicle Image" />
+                <div class="card-info">
+                    <p><strong>Model:</strong> @vehicle.Model</p>
+                    <p><strong>Price:</strong> @vehicle.Price</p>
+                    <p><strong>Year:</strong> @vehicle.Year</p>
+                </div>
+                <a href="@vehicle.DetailUrl" class="explore-more-btn">Explore More</a>
+            </div>
         }
     </div>
 }
 
-
 @code {
+    private string searchQuery = "";
+    private string selectedBrand = "";
+
+    private string selectedYear = "";
+    private int minPrice = 0;
+    private int maxPrice = 1000000;
+    private List<Vehicle> searchResults = new List<Vehicle>();
+
+    private List<string> brands = new List<string> {
+  "Abarth",
+  "Alfa Romeo",
+  "Aston Martin",
+  "Audi",
+  "Bentley",
+  "BMW",
+  "Bugatti",
+  "Cadillac",
+  "Chevrolet",
+  "Chrysler",
+  "Citroën",
+  "Dacia",
+  "Daewoo",
+  "Daihatsu",
+  "Dodge",
+  "Donkervoort",
+  "DS",
+  "Ferrari",
+  "Fiat",
+  "Fisker",
+  "Ford",
+  "Honda",
+  "Hummer",
+  "Hyundai",
+  "Infiniti",
+  "Iveco",
+  "Jaguar",
+  "Jeep",
+  "Kia",
+  "KTM",
+  "Lada",
+  "Lamborghini",
+  "Lancia",
+  "Land Rover",
+  "Landwind",
+  "Lexus",
+  "Lotus",
+  "Maserati",
+  "Maybach",
+  "Mazda",
+  "McLaren",
+  "Mercedes-Benz",
+  "MG",
+  "Mini",
+  "Mitsubishi",
+  "Morgan",
+  "Nissan",
+  "Opel",
+  "Peugeot",
+  "Porsche",
+  "Renault",
+  "Rolls-Royce",
+  "Rover",
+  "Saab",
+  "Seat",
+  "Skoda",
+  "Smart",
+  "SsangYong",
+  "Subaru",
+  "Suzuki",
+  "Tesla",
+  "Toyota",
+  "Volkswagen",
+  "Volvo" };
+
+
+    private List<string> years = new List<string>();
+
+    protected override void OnInitialized()
+    {
+        base.OnInitialized();
+
+        for (int year = 2021; year >= 1887; year--)
+        {
+            years.Add(year.ToString());
+        }
+    }
+
+
+    private async Task BrandChanged(ChangeEventArgs e)
+    {
+        selectedBrand = e.Value.ToString();
+        await ApplyFilters();
+    }
+
+
+
+    private async Task YearChanged(ChangeEventArgs e)
+    {
+        selectedYear = e.Value.ToString();
+        await ApplyFilters();
+    }
+
+    private async Task ApplyFilters()
+    {
+        var queryParameters = new List<string>();
+
+        if (!string.IsNullOrWhiteSpace(searchQuery))
+        {
+            queryParameters.Add($"search={Uri.EscapeDataString(searchQuery)}");
+        }
+        if (!string.IsNullOrWhiteSpace(selectedBrand))
+        {
+            queryParameters.Add($"brand={Uri.EscapeDataString(selectedBrand)}");
+        }
+        if (!string.IsNullOrWhiteSpace(selectedYear))
+        {
+            queryParameters.Add($"year={Uri.EscapeDataString(selectedYear)}");
+        }
+        if (minPrice > 0)
+        {
+            queryParameters.Add($"minPrice={minPrice}");
+        }
+        if (maxPrice < 1000000)
+        {
+            queryParameters.Add($"maxPrice={maxPrice}");
+        }
+
+        string query = string.Join("&", queryParameters);
+        string newUrl = NavManager.BaseUri + "search?" + query;
+
+        NavManager.NavigateTo(newUrl, forceLoad: false);
+
+        try
+        {
+            searchResults = await Http.GetFromJsonAsync<List<Vehicle>>(newUrl);
+        }
+        catch (HttpRequestException e)
+        {
+            Console.WriteLine($"Request exception: {e.Message}");
+        }
+    }
+
+
     private void SelectCard(Vehicle vehicle)
     {
         VehicleSelection.SelectVehicle(vehicle);
     }
-
-    private int minPrice = 0;
-    private int maxPrice = 100000;
-
-    private void OnMinPriceChanged(ChangeEventArgs e)
-    {
-        if (int.TryParse(e.Value?.ToString(), out var newMin))
-        {
-            minPrice = Math.Max(newMin, 0); // Ensuring minPrice is not negative
-            if (minPrice > maxPrice)
-            {
-                maxPrice = minPrice; // Ensuring maxPrice is always >= minPrice
-            }
-        }
-    }
-
-    private void OnMaxPriceChanged(ChangeEventArgs e)
-    {
-        if (int.TryParse(e.Value?.ToString(), out var newMax))
-        {
-            maxPrice = Math.Max(newMax, minPrice); // Ensuring maxPrice is always >= minPrice
-        }
-    }
-
-    private string searchQuery = "";
-    private string selectedBrand = "";
-    private string selectedModel = "";
-    private string selectedYear = "";
-
-    private List<string> brands = new List<string> { "Audi", "BMW", "Porsche", "Mercedes" };
-    private List<string> models = new List<string> { "Model A", "Model B", "Model C", "Model D" };
-    private List<string> years = new List<string> { "2021", "2020", "2019", "2018" };
-
-    private void RemoveFilter(string filterType)
-    {
-        switch (filterType)
-        {
-            case "brand":
-                selectedBrand = "";
-                break;
-            case "model":
-                selectedModel = "";
-                break;
-            case "year":
-                selectedYear = "";
-                break;
-        }
-        // Trigger the search or filtering logic here
-    }
-
-
-
-    private List<Vehicle> searchResults = new List<Vehicle>();
-
-    private void ApplyFilters()
-    {
-        // Implement the search logic using the selected filters
-        // For demonstration, I'm adding dummy data here
-        searchResults = new List<Vehicle>
-{
-              new Vehicle { ImageUrl = "./css/logo.png", Model = "Model M", Price = 60000, Year = "2019", DetailUrl = "https://bbc.com" },
-  new Vehicle { ImageUrl = "./css/logo.png", Model = "Model M", Price = 60000, Year = "2019", DetailUrl = "https://bbc.com" },
-    new Vehicle { ImageUrl = "./css/logo.png", Model = "Model M", Price = 60000, Year = "2019", DetailUrl = "https://bbc.com" },
-      new Vehicle { ImageUrl = "./css/logo.png", Model = "Model M", Price = 60000, Year = "2019", DetailUrl = "https://bbc.com" },
-        new Vehicle { ImageUrl = "./css/logo.png", Model = "Model M", Price = 60000, Year = "2019", DetailUrl = "https://bbc.com" },
-
-
-            // Add more items as needed
-        };
-    }
-
 }

@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "GMmW7BJNXKN0XclWG9qzabe0r9Jb97J/wjUxZrbtlv4=",
+  "Hash": "MzrkNGgrVELVEKgw+iGK6WGvecKerfvt7wbWU2jQ5kk=",
   "Source": "Classic_Cars_Project",
   "BasePath": "/",
   "Mode": "Root",
@@ -6951,6 +6951,23 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot/css/app.css"
+    },
+    {
+      "Identity": "/Users/batyrgeo/Documents/GitHub/InformationRetrieval/project/classic_cars/Classic_Cars_Project/Classic_Cars_Project/wwwroot/css/background_minor.jpeg",
+      "SourceId": "Classic_Cars_Project",
+      "SourceType": "Discovered",
+      "ContentRoot": "/Users/batyrgeo/Documents/GitHub/InformationRetrieval/project/classic_cars/Classic_Cars_Project/Classic_Cars_Project/wwwroot/",
+      "BasePath": "/",
+      "RelativePath": "css/background_minor.jpeg",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot/css/background_minor.jpeg"
     },
     {
       "Identity": "/Users/batyrgeo/Documents/GitHub/InformationRetrieval/project/classic_cars/Classic_Cars_Project/Classic_Cars_Project/wwwroot/css/background.webp",
