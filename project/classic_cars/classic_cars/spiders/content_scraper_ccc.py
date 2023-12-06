@@ -12,6 +12,7 @@ class contentSpiderCCC(scrapy.Spider):
             start_urls.append(line["pageLink"])
     
     def parse(self, response):    # Funcion called every crawled web page. The response parameter will contain the web site response.
+        pageLink = response.url
         content = response.xpath('.//div[@class="p-description font-hostile-takeover"]/p')    # For each quote element in the current page...
         summary = ""
         for p in content:
@@ -47,7 +48,7 @@ class contentSpiderCCC(scrapy.Spider):
                 model = span.xpath('.//text()').get()
             counter += 1
         imageLink = response.xpath('.//img[@class="u-photo img-fluid"]/@src').extract_first()
-        yield {"make": make, "image":imageLink, "model": model, "year": year, "price": price, "listId": listId, "desc": summary}
+        yield {"make": make, "image":imageLink, "model": model, "year": year, "price": price, "desc": summary, "link" : pageLink}
 
 
 

@@ -10,11 +10,17 @@ class linkSpiderCCS(scrapy.Spider):
 
 
     def parse(self, response):    # Funcion called every crawled web page. The response parameter will contain the web site response.
-        cars = response.xpath('.//*[@class="listing-desc"]')
-        print(response)
+        cars = response.xpath('.//*[@class="listing"]')
         for car in cars:
-            link = response.urljoin(car.xpath('.//div[@class="listing-desc-make-model"]/a/@href').extract_first())
-            yield {"pageLink" : link}
+            year = car.xpath('.//div[@class="listing-desc"]/div[@class="listing-desc-year"]/text()').get()
+            price = car.xpath('.//div[@class="listing-desc"]/div[@class="listing-desc-price"]/text()').get()
+            image = car.xpath('.//div[@class="listing-img"]/a/img/@src').get()
+            pageLink = response.urljoin(car.xpath('.//div[@class="listing-img"]/a/@href').extract_first())
+            link = car.xpath('.//div[@class="listing-desc"]/div[@class="listing-desc-make-model"]/a/@href').extract_first()
+            link_vals = link.split("/")
+            make = link_vals[1]
+            model = link_vals[2]
+            yield {"make" : make, "image" : image, "model" : model, "year" : year, "price" : price, "desc" : "", "link" : pageLink}
         # print(carLinks)
         next_page = response.xpath("//a[@class='btn nxt-link']/@href").get()
         if next_page:
