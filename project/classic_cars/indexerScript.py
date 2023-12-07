@@ -41,8 +41,7 @@ def generateTargetFile():
             json.dump(index_objects, fi, indent=4)
 
 
-if os.path.isfile(DBPATH) == False or os.path.isfile(INDEXPATH) == False:
-    generateTargetFile()
+generateTargetFile()
 
 # Moving the JSON to Dataframe
 preIndexTable = pd.read_json(INDEXPATH)
@@ -73,10 +72,17 @@ index = pt.IndexFactory.of(index_ref)
 
 def retrieve_car_info(cdf):
     car_make = []
-    car_brand = []
+    car_model = []
     for i in range(cdf.shape[0]):
-        db_objects
+        docId = cdf.loc[i, "docno"]
+        docNo = int(docId[1:]) - 1
+        car_make.append(db_objects[docNo]["make"])
+        car_model.append(db_objects[docNo]["model"])
+    cdf["make"] = car_make
+    cdf["model"] = car_model
 
+
+# print(index)
 
 bm25 = pt.BatchRetrieve(index, num_results=10, wmodel="BM25")
 queries = pd.DataFrame(
@@ -84,5 +90,6 @@ queries = pd.DataFrame(
     columns=["qid", "query"],
 )
 results = bm25.transform(queries)
+retrieve_car_info(results)
 
-pt.io.write_results(results, "res_bm25.txt", format="trec")
+pt.io.write_results(results, "res_bm25.txt")
