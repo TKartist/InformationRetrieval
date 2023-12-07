@@ -168,6 +168,45 @@
         await ApplyFilters();
     }
 
+    //private async Task ApplyFilters()
+    //{
+    //    var queryParameters = new List<string>();
+
+    //    if (!string.IsNullOrWhiteSpace(searchQuery))
+    //    {
+    //        queryParameters.Add($"search={Uri.EscapeDataString(searchQuery)}");
+    //    }
+    //    if (!string.IsNullOrWhiteSpace(selectedBrand))
+    //    {
+    //        queryParameters.Add($"brand={Uri.EscapeDataString(selectedBrand)}");
+    //    }
+    //    if (!string.IsNullOrWhiteSpace(selectedYear))
+    //    {
+    //        queryParameters.Add($"year={Uri.EscapeDataString(selectedYear)}");
+    //    }
+    //    if (minPrice > 0)
+    //    {
+    //        queryParameters.Add($"minPrice={minPrice}");
+    //    }
+    //    if (maxPrice < 1000000)
+    //    {
+    //        queryParameters.Add($"maxPrice={maxPrice}");
+    //    }
+
+    //    string query = string.Join("&", queryParameters);
+    //    string newUrl = NavManager.BaseUri + "search?" + query;
+
+    //    NavManager.NavigateTo(newUrl, forceLoad: false);
+
+    //    try
+    //    {
+    //        searchResults = await Http.GetFromJsonAsync<List<Vehicle>>(newUrl);
+    //    }
+    //    catch (HttpRequestException e)
+    //    {
+    //        Console.WriteLine($"Request exception: {e.Message}");
+    //    }
+    //}
     private async Task ApplyFilters()
     {
         var queryParameters = new List<string>();
@@ -194,19 +233,19 @@
         }
 
         string query = string.Join("&", queryParameters);
-        string newUrl = NavManager.BaseUri + "search?" + query;
-
-        NavManager.NavigateTo(newUrl, forceLoad: false);
+        string apiUrl = "http://localhost:8000/api/vehicles/";
+        string fullUrl = $"{apiUrl}?{query}";
 
         try
         {
-            searchResults = await Http.GetFromJsonAsync<List<Vehicle>>(newUrl);
+            searchResults = await Http.GetFromJsonAsync<List<Vehicle>>(fullUrl);
         }
         catch (HttpRequestException e)
         {
             Console.WriteLine($"Request exception: {e.Message}");
         }
     }
+
 
 
     private void SelectCard(Vehicle vehicle)

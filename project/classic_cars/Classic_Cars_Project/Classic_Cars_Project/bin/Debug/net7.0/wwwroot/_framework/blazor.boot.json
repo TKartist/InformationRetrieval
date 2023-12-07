@@ -198,13 +198,13 @@
       "mscorlib.dll": "sha256-X+o60j6cZnlI2vFFjdH81yYTAxx13\/wqnNSWTKbDsyw=",
       "netstandard.dll": "sha256-Cr6slBs\/R2v2t\/vecFDHbQHakbEhar0adYu0YemwiXI=",
       "System.Private.CoreLib.dll": "sha256-dDw5nzGJhW1jOjGfSJcs\/Mi4KQ+DZygXnoK+vJ+jHyk=",
-      "Classic_Cars_Project.dll": "sha256-BoYT8cJgmEwUF3lptcnJpgjHOdO2os39XSECff7cjD8="
+      "Classic_Cars_Project.dll": "sha256-16UH7pmXymTk4pxlQSy4Ma21OdBz9bZ59NcswGo+Vjw="
     },
     "extensions": null,
     "lazyAssembly": null,
     "libraryInitializers": null,
     "pdb": {
-      "Classic_Cars_Project.pdb": "sha256-NTUf1nf+PQ1Bt+9p9Eu6oIewJE6z17bSmyXmm9RsRk0="
+      "Classic_Cars_Project.pdb": "sha256-I4HLH8g+1GUXkM9+eQdVx6vuzDnlLYqEgCkehClDOWw="
     },
     "runtime": {
       "dotnet.7.0.11.a23ms51r0l.js": "sha256-RtIVigdAD1mUvR4pxoKyD8kcQgw4INP81v+PVSqkeQY=",
