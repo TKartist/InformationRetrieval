@@ -8,8 +8,6 @@ DBPATH = "./jsonDB.json"
 INDEXPATH = "./indexJson.json"
 
 # Create an empty list to store the Python objects.
-db_objects = []
-index_objects = []
 
 
 def convJSON2Str(jsonObj, docNo):
@@ -26,6 +24,8 @@ def convJSON2Str(jsonObj, docNo):
 
 
 def generateTargetFile():
+    db_objects = []
+    index_objects = []
     docno = 1
     for json_file in json_files:
         with open(json_file, "r") as f:
@@ -41,21 +41,22 @@ def generateTargetFile():
             json.dump(index_objects, fi, indent=4)
 
 
-generateTargetFile()
+def generateIndex(preIndexTable):
+    # generateTargetFile()
+    # Moving the JSON to Dataframe
+    # preIndexTable = pd.read_json(INDEXPATH)
 
-# Moving the JSON to Dataframe
-preIndexTable = pd.read_json(INDEXPATH)
+    # Initializing pyterrier
+    if not pt.started():
+        pt.init()
 
-# Initializing pyterrier
-if not pt.started():
-    pt.init()
+    indexer = pt.DFIndexer("./index_classic_cars", overwrite=True)
 
-indexer = pt.DFIndexer("./index_classic_cars", overwrite=True)
+    index_ref = indexer.index(preIndexTable["text"], preIndexTable["docno"])
+    index_ref.toString()
+    index = pt.IndexFactory.of(index_ref)
+    return index
 
-index_ref = indexer.index(preIndexTable["text"], preIndexTable["docno"])
-index_ref.toString()
-
-index = pt.IndexFactory.of(index_ref)
 
 # print(index.getCollectionStatistics().toString())
 
@@ -70,7 +71,7 @@ index = pt.IndexFactory.of(index_ref)
 #     print(posting.toString() + "doclen=%d" % posting.getDocumentLength())
 
 
-def retrieve_car_info(cdf):
+def retrieve_car_info(cdf, db_objects):
     car_make = []
     car_model = []
     for i in range(cdf.shape[0]):
@@ -80,16 +81,19 @@ def retrieve_car_info(cdf):
         car_model.append(db_objects[docNo]["model"])
     cdf["make"] = car_make
     cdf["model"] = car_model
+    return cdf
 
 
 # print(index)
 
-bm25 = pt.BatchRetrieve(index, num_results=10, wmodel="BM25")
-queries = pd.DataFrame(
-    [["q1", "mercedes x1"], ["q2", "bmw luxury car auction"]],
-    columns=["qid", "query"],
-)
-results = bm25.transform(queries)
-retrieve_car_info(results)
 
-pt.io.write_results(results, "res_bm25.txt")
+def getQueryResult(index, query, db_objs):
+    bm25 = pt.BatchRetrieve(index, num_results=10, wmodel="BM25")
+
+    queries = pd.DataFrame(
+        query,
+        columns=["qid", "query"],
+    )
+    results = bm25.transform(queries)
+    formatedResult = retrieve_car_info(results, db_objs)
+    print(formatedResult)
