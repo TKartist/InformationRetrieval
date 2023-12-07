@@ -377,3 +377,27 @@
     .Watch:hover {
         opacity: 1;
     }
+
+
+.pagination-container {
+    text-align: center; /* Center the pagination buttons */
+    margin-top: 20px; /* Add some space above the container */
+    margin-bottom: 20px; /* Add some space below the container */
+}
+
+.page-button {
+    margin: 0 5px; /* Space out the buttons */
+    padding: 5px 10px; /* Padding inside the buttons */
+    background-color: #f0f0f0; /* Light grey background */
+    border: 1px solid #dcdcdc; /* Light grey border */
+    border-radius: 4px; /* Rounded corners */
+    cursor: pointer; /* Change cursor to pointer on hover */
+}
+
+    .page-button:hover {
+        background-color: #e0e0e0; /* Slightly darker grey on hover */
+    }
+
+    .page-button:active {
+        background-color: #c0c0c0; /* Even darker grey when active/clicked */
+    }
