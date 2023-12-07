@@ -23,7 +23,7 @@
             }
         </select>
 
-  
+
 
         <select value="@selectedYear" @onchange="YearChanged">
             <option value="">Select Year</option>
@@ -55,7 +55,7 @@
                 <div class="Watch" @onclick="() => SelectCard(vehicle)">Compare</div>
                 <img src="@vehicle.ImageUrl" alt="Vehicle Image" />
                 <div class="card-info">
-                    <p><strong>Model:</strong> @vehicle.Model</p>
+                    <p><strong>Brand:</strong> @vehicle.Brand</p>
                     <p><strong>Price:</strong> @vehicle.Price</p>
                     <p><strong>Year:</strong> @vehicle.Year</p>
                 </div>
@@ -64,6 +64,14 @@
         }
     </div>
 }
+<div class="pagination-container">
+    @for (int pageNum = 1; pageNum <= totalPages; pageNum++)
+    {
+        <button class="page-button" @onclick="() => ChangePage(pageNum)">
+            @pageNum
+        </button>
+    }
+</div>
 
 @code {
     private string searchQuery = "";
@@ -72,6 +80,11 @@
     private string selectedYear = "";
     private int minPrice = 0;
     private int maxPrice = 1000000;
+
+    private int currentPage = 1;
+    private int totalPages = 0;
+    private const int itemsPerPage = 10;
+
     private List<Vehicle> searchResults = new List<Vehicle>();
 
     private List<string> brands = new List<string> {
@@ -151,6 +164,17 @@
         {
             years.Add(year.ToString());
         }
+
+        // Read the page number from the URL
+        var uri = new Uri(NavManager.Uri);
+        var query = System.Web.HttpUtility.ParseQueryString(uri.Query);
+        var pageValue = query["page"];
+        if (int.TryParse(pageValue, out var page))
+        {
+            currentPage = Math.Max(page, 1); // Ensure page is at least 1
+        }
+
+        ApplyFilters();
     }
 
 
@@ -168,45 +192,7 @@
         await ApplyFilters();
     }
 
-    //private async Task ApplyFilters()
-    //{
-    //    var queryParameters = new List<string>();
 
-    //    if (!string.IsNullOrWhiteSpace(searchQuery))
-    //    {
-    //        queryParameters.Add($"search={Uri.EscapeDataString(searchQuery)}");
-    //    }
-    //    if (!string.IsNullOrWhiteSpace(selectedBrand))
-    //    {
-    //        queryParameters.Add($"brand={Uri.EscapeDataString(selectedBrand)}");
-    //    }
-    //    if (!string.IsNullOrWhiteSpace(selectedYear))
-    //    {
-    //        queryParameters.Add($"year={Uri.EscapeDataString(selectedYear)}");
-    //    }
-    //    if (minPrice > 0)
-    //    {
-    //        queryParameters.Add($"minPrice={minPrice}");
-    //    }
-    //    if (maxPrice < 1000000)
-    //    {
-    //        queryParameters.Add($"maxPrice={maxPrice}");
-    //    }
-
-    //    string query = string.Join("&", queryParameters);
-    //    string newUrl = NavManager.BaseUri + "search?" + query;
-
-    //    NavManager.NavigateTo(newUrl, forceLoad: false);
-
-    //    try
-    //    {
-    //        searchResults = await Http.GetFromJsonAsync<List<Vehicle>>(newUrl);
-    //    }
-    //    catch (HttpRequestException e)
-    //    {
-    //        Console.WriteLine($"Request exception: {e.Message}");
-    //    }
-    //}
     private async Task ApplyFilters()
     {
         var queryParameters = new List<string>();
@@ -232,9 +218,16 @@
             queryParameters.Add($"maxPrice={maxPrice}");
         }
 
+        if (currentPage > 1)
+        {
+            queryParameters.Add($"page={currentPage}");
+        }
+        queryParameters.Add($"itemsPerPage={itemsPerPage}");
+
         string query = string.Join("&", queryParameters);
         string apiUrl = "http://localhost:8000/api/vehicles/";
         string fullUrl = $"{apiUrl}?{query}";
+
 
         try
         {
@@ -245,8 +238,15 @@
             Console.WriteLine($"Request exception: {e.Message}");
         }
     }
+    private void ChangePage(int page)
+    {
+        currentPage = page;
+        var baseUri = NavManager.BaseUri.EndsWith("/") ? NavManager.BaseUri : $"{NavManager.BaseUri}/";
+        var newUri = $"{baseUri}?page={currentPage}";
+        NavManager.NavigateTo(newUri);
 
-
+        ApplyFilters();
+    }
 
     private void SelectCard(Vehicle vehicle)
     {
