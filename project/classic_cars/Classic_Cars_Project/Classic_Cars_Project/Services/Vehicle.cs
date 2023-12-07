@@ -8,8 +8,8 @@ namespace Classic_Cars_Project.Services
      
         public int Price { get; set; }
         public string Year { get; set; }
-
-        public string DetailUrl { get; set; }
+        public string Desription { get; set; }
+        public string DetailUrl{ get; set; }
 
     }
 
