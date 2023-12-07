@@ -18,7 +18,7 @@ def convJSON2Str(jsonObj, docNo):
     text += " year : " + jsonObj["year"]
     description = jsonObj["desc"]
     encoded = description.encode("ascii", "ignore")
-    cleanDesc = encoded.decode()
+    cleanDesc = (encoded.decode()).replace("\n", " ")
     text += " description : " + cleanDesc
     text += " price : " + str(jsonObj["price"])
     return {"docno" : "d" + str(docNo), "text" : text}
@@ -37,7 +37,17 @@ def generateTargetFile():
         with open(INDEXPATH, "w") as fi:
             json.dump(index_objects, fi, indent=4)
 
-generateTargetFile()
+if os.path.isfile(DBPATH) == False or os.path.isfile(INDEXPATH) == False:
+    generateTargetFile()
+
+preIndexTable = pd.read_json(INDEXPATH)
+
+if not pt.started():
+    pt.init()
+
+
+
+
 
 
 
