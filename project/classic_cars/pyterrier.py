@@ -1,21 +1,44 @@
-
+import json
+import os
 import pyterrier as pt
 import pandas as pd
 
-json_files = ["content_scrapper_ccc.json", "file2.json", "file3.json"]
+json_files = ["contents_ccc.json", "contents_erc.json", "contents_ccs.json"]
+DBPATH = "./jsonDB.json"
+INDEXPATH = "./indexJson.json"
 
 # Create an empty list to store the Python objects.
-python_objects = []
+db_objects = []
+index_objects = []
 
-# Load each JSON file into a Python object.
-for json_file in json_files:
-    with open(json_file, "r") as f:
-        python_objects.append(json.load(f))
+def convJSON2Str(jsonObj, docNo):
+    make = jsonObj["make"].replace("+", " ")
+    text = "make : " + make
+    text += " model : " + jsonObj["model"]
+    text += " year : " + jsonObj["year"]
+    description = jsonObj["desc"]
+    encoded = description.encode("ascii", "ignore")
+    cleanDesc = encoded.decode()
+    text += " description : " + cleanDesc
+    text += " price : " + str(jsonObj["price"])
+    return {"docno" : "d" + str(docNo), "text" : text}
 
-# Dump all the Python objects into a single JSON file.
-with open("combined.json", "w") as f:
-    json.dump(python_objects, f, indent=4)
-x = pd.read_json('./contents_ccc.json')
+def generateTargetFile():
+    docno = 1
+    for json_file in json_files:
+        with open(json_file, "r") as f:
+            objects = json.load(f)
+            for obj in objects:
+                db_objects.append(obj)
+                index_objects.append(convJSON2Str(obj, docno))
+                docno += 1
+        with open(DBPATH, "w") as f:
+            json.dump(db_objects, f, indent=4)
+        with open(INDEXPATH, "w") as fi:
+            json.dump(index_objects, fi, indent=4)
 
-print("hello")
+generateTargetFile()
 
+
+
+    

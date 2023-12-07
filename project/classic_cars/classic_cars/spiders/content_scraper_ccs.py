@@ -21,13 +21,19 @@ class contentSpiderCCS(scrapy.Spider):
                 # author = quote.xpath(".//small[@class='author']/text()").get()	     # Extract the author name as a string.
                 # tags = quote.xpath(".//div[@class='tags']/a[@class='tag']/text()").getall()  # Extract the quote tags as a list of strings.
         name = target.xpath(".//h1[@class='detail-desc-make-model']/text()").get()
-        transmission = target.xpath(".//li[@class='listing-bullet-transmission']/text()").get()
-        mileage = target.xpath(".//li[@class='detail-bullet-mileage']/text()").get()
-        drive = target.xpath(".//li[@class='listing-bullet-drive']/text()").get()
-        desc = target.xpath(".//div[@class='detail-desc']/div/p/text()").get()
+        url = response.url
+        url_read = url.split("/")
+        make = url_read[3]
+        model = url_read[4]
+
+        name_read = name.split(" ")
+        year = name_read[0]
+        price = name_read[len(name_read) - 1]
+        desc = name + " \n "
+        desc += target.xpath(".//div[@class='detail-desc']/div/p/text()").get()
         imageLinks = response.xpath('.//img/@src').extract_first()
 
-        yield {"name" : name, "image": imageLinks, "transmission" : transmission, "mileage" : mileage, "driver-position": drive, "desc":desc}
+        yield {"make" : make, "image": imageLinks, "model" : model, "year" : year, "price" : price, "desc":desc, "link" : url}
 
 
 
