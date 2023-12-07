@@ -1,11 +1,7 @@
-from indexerScript import generateIndex
-from indexerScript import generateTargetFile
-from indexerScript import getQueryResult
+from indexerScript import generateIndex, getQueryResult
 import json
 import pandas as pd
-
-DBPATH = "./jsonDB.json"
-INDEXPATH = "./indexJson.json"
+from file_paths import DBPATH, INDEXPATH
 
 db_objs = []
 

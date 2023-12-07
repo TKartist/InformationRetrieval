@@ -2,10 +2,7 @@ import json
 import os
 import pandas as pd
 import pyterrier as pt
-
-json_files = ["contents_ccc.json", "contents_erc.json", "contents_ccs.json"]
-DBPATH = "./jsonDB.json"
-INDEXPATH = "./indexJson.json"
+from file_paths import DBPATH, INDEXPATH, json_files
 
 # Create an empty list to store the Python objects.
 
@@ -42,11 +39,6 @@ def generateTargetFile():
 
 
 def generateIndex(preIndexTable):
-    # generateTargetFile()
-    # Moving the JSON to Dataframe
-    # preIndexTable = pd.read_json(INDEXPATH)
-
-    # Initializing pyterrier
     if not pt.started():
         pt.init()
 
@@ -84,9 +76,6 @@ def retrieve_car_info(cdf, db_objects):
     return cdf
 
 
-# print(index)
-
-
 def getQueryResult(index, query, db_objs):
     bm25 = pt.BatchRetrieve(index, num_results=10, wmodel="BM25")
 
@@ -96,4 +85,4 @@ def getQueryResult(index, query, db_objs):
     )
     results = bm25.transform(queries)
     formatedResult = retrieve_car_info(results, db_objs)
-    print(formatedResult)
+    print(formatedResult)  # For now just printing the query result
