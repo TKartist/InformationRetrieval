@@ -18,7 +18,7 @@ class VehicleListView(ListAPIView):
         min_price = self.request.query_params.get('minPrice', None)
         max_price = self.request.query_params.get('maxPrice', None)
         page = self.request.query_params.get('page', 1)
-        items_per_page = self.request.query_params.get('itemsPerPage', 9)
+        items_per_page = self.request.query_params.get('itemsPerPage', 10)
 
         # Apply filters if parameters are present
         if search_query:
@@ -35,4 +35,3 @@ class VehicleListView(ListAPIView):
         # Pagination
         paginator = Paginator(queryset, items_per_page)
         return paginator.get_page(page).object_list
-
