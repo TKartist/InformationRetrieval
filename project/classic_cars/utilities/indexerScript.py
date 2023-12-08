@@ -2,6 +2,7 @@ import json
 import os
 import pandas as pd
 import pyterrier as pt
+import re
 from file_paths import DBPATH, INDEXPATH, json_files
 
 # Create an empty list to store the Python objects.
@@ -30,6 +31,10 @@ def generateTargetFile():
             for obj in objects:
                 index_objects.append(convJSON2Str(obj, docno))
                 obj["docno"] = "d" + str(docno)
+                if obj["price"][1].isdigit():
+                    cleanPrice = obj["price"][1:].split(" ")[1]
+                    price = int(cleanPrice.replace(",", ""))
+                    obj["price"] = price
                 db_objects.append(obj)
                 docno += 1
         with open(DBPATH, "w") as f:

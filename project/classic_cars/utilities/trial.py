@@ -4,6 +4,7 @@ import pandas as pd
 from file_paths import DBPATH, INDEXPATH
 
 db_objs = []
+print(DBPATH)
 
 with open(DBPATH, "r") as f:
     objects = json.load(f)
