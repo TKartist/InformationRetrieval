@@ -401,3 +401,16 @@
     .page-button:active {
         background-color: #c0c0c0; /* Even darker grey when active/clicked */
     }
+
+.authors {
+    position:absolute;
+    bottom:0;
+}
+
+.website_authors {
+    font-family: '911 Porscha', sans-serif;
+    font-size: 15px;
+    color: white;
+    align-self: center;
+
+}
