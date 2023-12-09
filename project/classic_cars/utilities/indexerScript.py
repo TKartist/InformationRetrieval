@@ -21,6 +21,29 @@ def convJSON2Str(jsonObj, docNo):
     return {"docno": "d" + str(docNo), "text": text}
 
 
+def alterObject(obj, docno):
+    newObj = {}
+    newObj["docno"] = "d" + str(docno)
+    if obj["price"]:
+        copyPrice = obj["price"]
+        valPrice = (copyPrice.split(" ")[0])[1:]
+        numPrice = valPrice.replace(",", "")
+        if numPrice.isdigit():
+            newObj["price"] = int(numPrice)
+        else:
+            newObj["price"] = 0
+    else:
+        newObj["price"] = 0
+    brand = obj["make"].replace("+", " ")
+    newObj["brand"] = brand
+    newObj["model"] = obj["model"]
+    newObj["year"] = obj["year"]
+    newObj["description"] = obj["desc"]
+    newObj["image_url"] = obj["image"]
+    newObj["detail_url"] = obj["link"]
+    return newObj
+
+
 def generateTargetFile():
     db_objects = []
     index_objects = []
@@ -29,25 +52,8 @@ def generateTargetFile():
         with open(json_file, "r") as f:
             objects = json.load(f)
             for obj in objects:
-                newObj = {}
                 index_objects.append(convJSON2Str(obj, docno))
-                newObj["docno"] = "d" + str(docno)
-                if obj["price"]:
-                    copyPrice = obj["price"]
-                    valPrice = (copyPrice.split(" ")[0])[1:]
-                    numPrice = valPrice.replace(",", "")
-                    if numPrice.isdigit():
-                        newObj["price"] = int(numPrice)
-                    else:
-                        newObj["price"] = 0
-                else:
-                    newObj["price"] = 0
-                newObj["brand"] = obj["make"]
-                newObj["model"] = obj["model"]
-                newObj["year"] = obj["year"]
-                newObj["description"] = obj["desc"]
-                newObj["image_url"] = obj["image"]
-                newObj["detail_url"] = obj["link"]
+                newObj = alterObject(obj, docno)
                 db_objects.append(newObj)
                 docno += 1
         with open(DBPATH, "w") as f:
