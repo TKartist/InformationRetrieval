@@ -31,10 +31,14 @@ def generateTargetFile():
             for obj in objects:
                 index_objects.append(convJSON2Str(obj, docno))
                 obj["docno"] = "d" + str(docno)
-                if obj["price"][1].isdigit():
-                    cleanPrice = obj["price"][1:].split(" ")[1]
-                    price = int(cleanPrice.replace(",", ""))
-                    obj["price"] = price
+                if obj["price"]:
+                    copyPrice = obj["price"]
+                    valPrice = (copyPrice.split(" ")[0])[1:]
+                    numPrice = valPrice.replace(",", "")
+                    if numPrice.isdigit():
+                        obj["price"] = int(numPrice)
+                else:
+                    obj["price"] = 0
                 db_objects.append(obj)
                 docno += 1
         with open(DBPATH, "w") as f:
