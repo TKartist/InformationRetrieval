@@ -29,17 +29,23 @@ def generateTargetFile():
         with open(json_file, "r") as f:
             objects = json.load(f)
             for obj in objects:
+                newObj = {}
                 index_objects.append(convJSON2Str(obj, docno))
-                obj["docno"] = "d" + str(docno)
+                newObj["docno"] = "d" + str(docno)
                 if obj["price"]:
                     copyPrice = obj["price"]
                     valPrice = (copyPrice.split(" ")[0])[1:]
                     numPrice = valPrice.replace(",", "")
                     if numPrice.isdigit():
-                        obj["price"] = int(numPrice)
+                        newObj["price"] = int(numPrice)
                 else:
-                    obj["price"] = 0
-                db_objects.append(obj)
+                    newObj["price"] = 0
+                newObj["brand"] = obj["make"]
+                newObj["year"] = obj["year"]
+                newObj["description"] = obj["desc"]
+                newObj["image_url"] = obj["image"]
+                newObj["detail_url"] = obj["link"]
+                db_objects.append(newObj)
                 docno += 1
         with open(DBPATH, "w") as f:
             json.dump(db_objects, f, indent=4)
