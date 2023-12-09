@@ -41,6 +41,7 @@ def generateTargetFile():
                 else:
                     newObj["price"] = 0
                 newObj["brand"] = obj["make"]
+                newObj["model"] = obj["model"]
                 newObj["year"] = obj["year"]
                 newObj["description"] = obj["desc"]
                 newObj["image_url"] = obj["image"]
