@@ -15,11 +15,14 @@ with open(DBPATH, "r") as f:
 preIndexTable = pd.read_json(DBPATH)
 index = generateIndex(preIndexTable)
 
+# Example Query through indexing
 query1 = [["q1", "mercedes bmw x1"]]
 x = getQueryResult(index, query1, db_objs)
 # print(x)
+
+# Cluster the results and save the query in 'clustered.csv' file in the current folder
 z = perform_clustering(x)
 z.to_csv("clustered.csv")
 
-
+# Uncomment the line below and comment the lines above in case want to regenerate jsonDB
 # generateTargetFile()
