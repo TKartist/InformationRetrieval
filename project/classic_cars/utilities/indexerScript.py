@@ -1,9 +1,8 @@
 import json
-import os
+import re
 import pandas as pd
 import pyterrier as pt
-import re
-from file_paths import DBPATH, INDEXPATH, json_files
+from file_paths import DBPATH, json_files
 
 # Create an empty list to store the Python objects.
 
@@ -17,7 +16,7 @@ def jsonReader(path):
     return db_objs
 
 
-def convJSON2Str(jsonObj, docNo):
+def convJSON2Str(jsonObj):
     make = jsonObj["make"].replace("+", " ")
     text = make
     text += " " + jsonObj["model"]
@@ -31,7 +30,13 @@ def convJSON2Str(jsonObj, docNo):
     cleanDesc = (encoded.decode()).replace("\n", " ")
     text += " " + cleanDesc
     text += " " + str(jsonObj["price"])
-    return {"docno": "d" + str(docNo), "text": text}
+    text = re.sub(r"\(.*?\)", "", text)
+    text = re.sub(r"\[.*?\]", "", text)
+    text = re.sub(r"\\", "", text)
+    text = re.sub(r"-", "", text)
+    text = re.sub(r"\n", "", text)
+    text = re.sub(r"\s+", " ", text).strip()
+    return text
 
 
 def alterObject(obj, docno):
@@ -51,7 +56,7 @@ def alterObject(obj, docno):
     newObj["brand"] = brand
     newObj["model"] = obj["model"]
     newObj["year"] = obj["year"]
-    newObj["description"] = obj["desc"]
+    newObj["text"] = convJSON2Str(obj)
     newObj["image_url"] = obj["image"]
     newObj["detail_url"] = obj["link"]
     return newObj
@@ -59,20 +64,16 @@ def alterObject(obj, docno):
 
 def generateTargetFile():
     db_objects = []
-    index_objects = []
     docno = 1
     for json_file in json_files:
         with open(json_file, "r") as f:
             objects = json.load(f)
             for obj in objects:
-                index_objects.append(convJSON2Str(obj, docno))
                 newObj = alterObject(obj, docno)
                 db_objects.append(newObj)
                 docno += 1
-        with open(DBPATH, "w") as f:
-            json.dump(db_objects, f, indent=4)
-        with open(INDEXPATH, "w") as fi:
-            json.dump(index_objects, fi, indent=4)
+    with open(DBPATH, "w") as f:
+        json.dump(db_objects, f, indent=4)
 
 
 def generateIndex(preIndexTable):
@@ -106,15 +107,15 @@ def retrieve_car_info(cdf, db_objects):
     for i in range(cdf.shape[0]):
         docId = cdf.loc[i, "docno"]
         docNo = int(docId[1:]) - 1
-        car_make.append(db_objects[docNo]["make"])
+        car_make.append(db_objects[docNo]["brand"])
         car_model.append(db_objects[docNo]["model"])
-    cdf["make"] = car_make
+    cdf["brand"] = car_make
     cdf["model"] = car_model
     return cdf
 
 
 def getQueryResult(index, query, db_objs):
-    bm25 = pt.BatchRetrieve(index, num_results=10, wmodel="BM25")
+    bm25 = pt.BatchRetrieve(index, num_results=len(db_objs), wmodel="BM25")
 
     queries = pd.DataFrame(
         query,
@@ -122,4 +123,5 @@ def getQueryResult(index, query, db_objs):
     )
     results = bm25.transform(queries)
     formatedResult = retrieve_car_info(results, db_objs)
-    print(formatedResult)  # For now just printing the query result
+    # print(formatedResult)  # For now just printing the query result
+    return formatedResult
