@@ -86,4 +86,4 @@ def clustering_visualization(X, clustering_labels):
     plt.show()
 
 
-# clustering_visualization(X, clustering_labels)
+clustering_visualization(X, clustering_labels)
