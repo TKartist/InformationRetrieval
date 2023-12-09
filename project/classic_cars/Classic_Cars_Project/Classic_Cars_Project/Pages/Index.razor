@@ -63,7 +63,12 @@
                 <div class="card-info">
                     <p><strong>Brand:</strong> @vehicle.Brand</p>
                     <p><strong>Model:</strong> @vehicle.model</p>
-                    <p><strong>Price:</strong> @vehicle.Price</p>
+
+                    @if (vehicle.Price != 0)
+                    {
+                        <p><strong>Price:</strong> @FormatPrice(vehicle.Price)</p>
+                    }
+
                     <p><strong>Year:</strong> @vehicle.Year</p>
                 </div>
                 <a href="@vehicle.detail_url" class="explore-more-btn">Explore More</a>
@@ -98,7 +103,7 @@
     private const int itemsPerPage = 20;
 
     private List<Vehicle> searchResults = new List<Vehicle>();
-   
+
     private List<string> brands = new List<string> {
   "Abarth",
   "Alfa Romeo",
@@ -186,7 +191,10 @@
         selectedBrand = e.Value.ToString();
         await ApplyFilters();
     }
-
+    private string FormatPrice(decimal price)
+    {
+        return price == 0 ? "N/A" : $"${price:N0}";
+    }
     private async Task YearChanged(ChangeEventArgs e)
     {
         selectedYear = e.Value.ToString();
@@ -214,7 +222,7 @@
             queryParameters.Add($"minPrice={minPrice}");
         if (maxPrice < 1000000)
             queryParameters.Add($"maxPrice={maxPrice}");
-        
+
         // Pagination parameters
         queryParameters.Add($"currentPage={currentPage}");
         queryParameters.Add($"itemsPerPage={itemsPerPage}");
