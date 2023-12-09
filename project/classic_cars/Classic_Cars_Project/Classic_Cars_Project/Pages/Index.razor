@@ -98,7 +98,7 @@
     private const int itemsPerPage = 20;
 
     private List<Vehicle> searchResults = new List<Vehicle>();
-
+   
     private List<string> brands = new List<string> {
   "Abarth",
   "Alfa Romeo",
@@ -152,6 +152,7 @@
   "Porsche",
   "Renault",
   "Rolls-Royce",
+  "Rolls",
   "Rover",
   "Saab",
   "Seat",
@@ -213,7 +214,7 @@
             queryParameters.Add($"minPrice={minPrice}");
         if (maxPrice < 1000000)
             queryParameters.Add($"maxPrice={maxPrice}");
-
+        
         // Pagination parameters
         queryParameters.Add($"currentPage={currentPage}");
         queryParameters.Add($"itemsPerPage={itemsPerPage}");

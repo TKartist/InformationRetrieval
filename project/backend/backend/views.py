@@ -26,9 +26,10 @@ class VehicleListView(ListAPIView):
             queryset = queryset.filter(description__icontains=search_query )
         
         if model:
-            queryset = queryset.filter(description__icontains=model)
+            queryset = queryset.filter(model__icontains=model)
+        
         if brand:
-            queryset = queryset.filter(brand=brand)
+            queryset = queryset.filter(brand__iexact=brand) 
         if year:
             queryset = queryset.filter(year=year)
         if min_price is not None:

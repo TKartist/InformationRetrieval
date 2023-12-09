@@ -20,7 +20,7 @@
 
     .btn-primary {
         color: #fff;
-        background-color: #1b6ec2;
+        background-color: #043927;
         border-color: #1861ac;
     }
 
@@ -90,7 +90,7 @@
         }
 
             .loading-progress circle:last-child {
-                stroke: #1b6ec2;
+                stroke: #043927;
                 stroke-dasharray: calc(3.141 * var(--blazor-load-percentage, 0%) * 0.8), 500%;
                 transition: stroke-dasharray 0.05s ease-in-out;
             }
