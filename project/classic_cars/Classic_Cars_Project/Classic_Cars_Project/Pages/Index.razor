@@ -52,38 +52,50 @@
         @foreach (var vehicle in searchResults)
         {
             <div class="card">
+                @if (vehicle.Price == 0)
+                {
+                    <div class="auction-overlay">
+                        Auction Car
+                    </div>
+                }
                 <div class="Watch" @onclick="() => SelectCard(vehicle)">Compare</div>
-                <img src="@vehicle.ImageUrl" alt="Vehicle Image" />
+                <img src="@vehicle.image_url" alt="Vehicle Image" />
                 <div class="card-info">
                     <p><strong>Brand:</strong> @vehicle.Brand</p>
+                    <p><strong>Model:</strong> @vehicle.model</p>
                     <p><strong>Price:</strong> @vehicle.Price</p>
                     <p><strong>Year:</strong> @vehicle.Year</p>
                 </div>
-                <a href="@vehicle.DetailUrl" class="explore-more-btn">Explore More</a>
+                <a href="@vehicle.detail_url" class="explore-more-btn">Explore More</a>
             </div>
         }
     </div>
 }
+
 <div class="pagination-container">
-    @for (int pageNum = 1; pageNum <= totalPages; pageNum++)
+    @if (currentPage > 1)
     {
-        <button class="page-button" @onclick="() => ChangePage(pageNum)">
-            @pageNum
-        </button>
+        <button class="page-button" @onclick="() => ChangePage(currentPage - 1)">Previous</button>
+    }
+    <span>Page @currentPage</span>
+    @if (searchResults.Count == itemsPerPage) // Assuming full page of results means there could be a next page
+    {
+        <button class="page-button" @onclick="() => ChangePage(currentPage + 1)">Next</button>
     }
 </div>
+
+
 
 @code {
     private string searchQuery = "";
     private string selectedBrand = "";
-
     private string selectedYear = "";
     private int minPrice = 0;
     private int maxPrice = 1000000;
 
     private int currentPage = 1;
     private int totalPages = 0;
-    private const int itemsPerPage = 18;
+    private const int itemsPerPage = 20;
 
     private List<Vehicle> searchResults = new List<Vehicle>();
 
@@ -152,31 +164,21 @@
   "Toyota",
   "Volkswagen",
   "Volvo" };
-
-
     private List<string> years = new List<string>();
 
-    protected override void OnInitialized()
+    protected override async Task OnInitializedAsync()
     {
         base.OnInitialized();
 
-        for (int year = 2021; year >= 1887; year--)
+        // Populate years dynamically
+        for (int year = DateTime.Now.Year; year >= 1887; year--)
         {
             years.Add(year.ToString());
         }
 
-        // Read the page number from the URL
-        var uri = new Uri(NavManager.Uri);
-        var query = System.Web.HttpUtility.ParseQueryString(uri.Query);
-        var pageValue = query["page"];
-        if (int.TryParse(pageValue, out var page))
-        {
-            currentPage = Math.Max(page, 1); // Ensure page is at least 1
-        }
-
-        ApplyFilters();
+        // Load initial data
+        await ApplyFilters();
     }
-
 
     private async Task BrandChanged(ChangeEventArgs e)
     {
@@ -184,68 +186,54 @@
         await ApplyFilters();
     }
 
-
-
     private async Task YearChanged(ChangeEventArgs e)
     {
         selectedYear = e.Value.ToString();
         await ApplyFilters();
     }
 
+    private async Task ChangePage(int page)
+    {
+        currentPage = page;
+        await ApplyFilters();
+    }
 
     private async Task ApplyFilters()
     {
         var queryParameters = new List<string>();
 
+        // Add query parameters based on user input
         if (!string.IsNullOrWhiteSpace(searchQuery))
-        {
             queryParameters.Add($"search={Uri.EscapeDataString(searchQuery)}");
-        }
         if (!string.IsNullOrWhiteSpace(selectedBrand))
-        {
             queryParameters.Add($"brand={Uri.EscapeDataString(selectedBrand)}");
-        }
         if (!string.IsNullOrWhiteSpace(selectedYear))
-        {
             queryParameters.Add($"year={Uri.EscapeDataString(selectedYear)}");
-        }
         if (minPrice > 0)
-        {
             queryParameters.Add($"minPrice={minPrice}");
-        }
         if (maxPrice < 1000000)
-        {
             queryParameters.Add($"maxPrice={maxPrice}");
-        }
 
-        if (currentPage > 1)
-        {
-            queryParameters.Add($"page={currentPage}");
-        }
+        // Pagination parameters
+        queryParameters.Add($"currentPage={currentPage}");
         queryParameters.Add($"itemsPerPage={itemsPerPage}");
 
+        // Construct the full URL for the API call
         string query = string.Join("&", queryParameters);
         string apiUrl = "http://localhost:8000/api/vehicles/";
         string fullUrl = $"{apiUrl}?{query}";
 
-
+        // Make the API call and update the search results
         try
         {
             searchResults = await Http.GetFromJsonAsync<List<Vehicle>>(fullUrl);
+            // TODO: Update totalPages based on the response if needed
         }
         catch (HttpRequestException e)
         {
             Console.WriteLine($"Request exception: {e.Message}");
+            // TODO: Add error handling logic
         }
-    }
-    private void ChangePage(int page)
-    {
-        currentPage = page;
-        var baseUri = NavManager.BaseUri.EndsWith("/") ? NavManager.BaseUri : $"{NavManager.BaseUri}/";
-        var newUri = $"{baseUri}?page={currentPage}";
-        NavManager.NavigateTo(newUri);
-
-        ApplyFilters();
     }
 
     private void SelectCard(Vehicle vehicle)

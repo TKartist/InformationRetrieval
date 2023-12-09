@@ -388,15 +388,20 @@
 .page-button {
     margin: 0 5px; /* Space out the buttons */
     padding: 5px 10px; /* Padding inside the buttons */
-    background-color: #f0f0f0; /* Light grey background */
+    background-color: #043927; /* Light grey background */
     border: 1px solid #dcdcdc; /* Light grey border */
     border-radius: 4px; /* Rounded corners */
     cursor: pointer; /* Change cursor to pointer on hover */
+    color:white;
+    cursor:pointer;
 }
+.pagination-container span {
 
+    color: white;
+}
     .page-button:hover {
-        background-color: #e0e0e0; /* Slightly darker grey on hover */
-    }
+    background-color: #043927; /* Slightly darker grey on hover */
+}
 
     .page-button:active {
         background-color: #c0c0c0; /* Even darker grey when active/clicked */
@@ -414,4 +419,23 @@
     color: white;
     align-self: center;
 
+}
+
+
+.auction-overlay {
+    position: absolute;
+    top: 50px;
+    left: 0;
+    width: 100%;
+    background-color: #043927;
+    color: white;
+    text-align: center;
+    padding: 10px;
+    font-weight: bold;
+    box-sizing: border-box;
+    border-radius:5px;
+}
+
+button{
+    cursor:pointer;
 }
