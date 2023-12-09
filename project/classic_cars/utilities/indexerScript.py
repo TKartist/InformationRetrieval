@@ -8,16 +8,29 @@ from file_paths import DBPATH, INDEXPATH, json_files
 # Create an empty list to store the Python objects.
 
 
+def jsonReader(path):
+    db_objs = []
+    with open(path, "r") as f:
+        objects = json.load(f)
+    for obj in objects:
+        db_objs.append(obj)
+    return db_objs
+
+
 def convJSON2Str(jsonObj, docNo):
     make = jsonObj["make"].replace("+", " ")
-    text = "make : " + make
-    text += " model : " + jsonObj["model"]
-    text += " year : " + jsonObj["year"]
-    description = jsonObj["desc"]
+    text = make
+    text += " " + jsonObj["model"]
+    text += " " + jsonObj["year"]
+    if jsonObj["price"]:
+        text += " " + jsonObj["price"]
+    else:
+        text += " sold vehicle"
+    description = " " + jsonObj["desc"]
     encoded = description.encode("ascii", "ignore")
     cleanDesc = (encoded.decode()).replace("\n", " ")
-    text += " description : " + cleanDesc
-    text += " price : " + str(jsonObj["price"])
+    text += " " + cleanDesc
+    text += " " + str(jsonObj["price"])
     return {"docno": "d" + str(docNo), "text": text}
 
 
