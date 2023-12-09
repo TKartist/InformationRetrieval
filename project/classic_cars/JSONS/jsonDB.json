@@ -1,6 +1,7 @@
 [
     {
         "docno": "d1",
+        "price": 0,
         "brand": "Lola",
         "model": "T-70",
         "year": "1967",
@@ -2880,6 +2881,7 @@
     },
     {
         "docno": "d289",
+        "price": 0,
         "brand": "Chevrolet",
         "model": "Camaro",
         "year": "1969",
@@ -4749,6 +4751,7 @@
     },
     {
         "docno": "d476",
+        "price": 0,
         "brand": "Plymouth",
         "model": "Barracuda",
         "year": "1967",
@@ -4798,6 +4801,7 @@
     },
     {
         "docno": "d481",
+        "price": 0,
         "brand": "Porsche",
         "model": "911",
         "year": "1971",
@@ -4827,6 +4831,7 @@
     },
     {
         "docno": "d484",
+        "price": 0,
         "brand": "Jaguar",
         "model": "XK",
         "year": "1973",
@@ -4926,6 +4931,7 @@
     },
     {
         "docno": "d494",
+        "price": 0,
         "brand": "Chevrolet",
         "model": "Corvette",
         "year": "1967",
@@ -5385,6 +5391,7 @@
     },
     {
         "docno": "d540",
+        "price": 0,
         "brand": "Mercury",
         "model": "Monterey",
         "year": "1964",
@@ -5414,6 +5421,7 @@
     },
     {
         "docno": "d543",
+        "price": 0,
         "brand": "Chevrolet",
         "model": "Corvette",
         "year": "1973",
@@ -5683,6 +5691,7 @@
     },
     {
         "docno": "d570",
+        "price": 0,
         "brand": "Ford",
         "model": "Mustang",
         "year": "1966",
@@ -5692,6 +5701,7 @@
     },
     {
         "docno": "d571",
+        "price": 0,
         "brand": "Chevrolet",
         "model": "Scottsdale",
         "year": "1979",
@@ -5701,6 +5711,7 @@
     },
     {
         "docno": "d572",
+        "price": 0,
         "brand": "Chevrolet",
         "model": "Caprice",
         "year": "1967",
@@ -5710,6 +5721,7 @@
     },
     {
         "docno": "d573",
+        "price": 0,
         "brand": "Chevrolet",
         "model": "Malibu",
         "year": "1967",
@@ -5719,6 +5731,7 @@
     },
     {
         "docno": "d574",
+        "price": 0,
         "brand": "Rolls-Royce",
         "model": "Silver Cloud II",
         "year": "1960",
@@ -5738,6 +5751,7 @@
     },
     {
         "docno": "d576",
+        "price": 0,
         "brand": "Ford",
         "model": "Mustang GT",
         "year": "1966",
@@ -5847,6 +5861,7 @@
     },
     {
         "docno": "d587",
+        "price": 0,
         "brand": "Ferrari",
         "model": "330 GTC",
         "year": "1967",
@@ -5886,6 +5901,7 @@
     },
     {
         "docno": "d591",
+        "price": 0,
         "brand": "Dodge",
         "model": "Challenger",
         "year": "1971",
@@ -5965,6 +5981,7 @@
     },
     {
         "docno": "d599",
+        "price": 0,
         "brand": "Chevrolet",
         "model": "Impala",
         "year": "1963",
@@ -6184,6 +6201,7 @@
     },
     {
         "docno": "d621",
+        "price": 0,
         "brand": "Mercury",
         "model": "Cyclone GT",
         "year": "1970",
@@ -6223,6 +6241,7 @@
     },
     {
         "docno": "d625",
+        "price": 0,
         "brand": "Chevrolet",
         "model": "Camaro",
         "year": "1969",
@@ -6252,6 +6271,7 @@
     },
     {
         "docno": "d628",
+        "price": 0,
         "brand": "Porsche",
         "model": "911 Turbo",
         "year": "1987",
@@ -6261,6 +6281,7 @@
     },
     {
         "docno": "d629",
+        "price": 0,
         "brand": "Chevrolet",
         "model": "Camaro",
         "year": "1969",
@@ -6370,6 +6391,7 @@
     },
     {
         "docno": "d640",
+        "price": 0,
         "brand": "Chevrolet",
         "model": "Corvette",
         "year": "1960",
@@ -6479,6 +6501,7 @@
     },
     {
         "docno": "d651",
+        "price": 0,
         "brand": "Shelby",
         "model": "Cobra",
         "year": "1965",
@@ -6638,6 +6661,7 @@
     },
     {
         "docno": "d667",
+        "price": 0,
         "brand": "Chevrolet",
         "model": "Corvette",
         "year": "1970",
@@ -6757,6 +6781,7 @@
     },
     {
         "docno": "d679",
+        "price": 0,
         "brand": "Chevrolet",
         "model": "Camaro RS/SS",
         "year": "1968",
@@ -7396,6 +7421,7 @@
     },
     {
         "docno": "d743",
+        "price": 0,
         "brand": "Ford",
         "model": "Thunderbird",
         "year": "1962",
@@ -7635,6 +7661,7 @@
     },
     {
         "docno": "d767",
+        "price": 0,
         "brand": "Chevrolet",
         "model": "Impala",
         "year": "1964",
@@ -7694,6 +7721,7 @@
     },
     {
         "docno": "d773",
+        "price": 0,
         "brand": "Ford",
         "model": "F100",
         "year": "1968",
@@ -8033,6 +8061,7 @@
     },
     {
         "docno": "d807",
+        "price": 0,
         "brand": "Ferrari",
         "model": "246 GT",
         "year": "1972",
@@ -8152,6 +8181,7 @@
     },
     {
         "docno": "d819",
+        "price": 0,
         "brand": "Chevrolet",
         "model": "Corvair",
         "year": "1965",
@@ -8171,6 +8201,7 @@
     },
     {
         "docno": "d821",
+        "price": 0,
         "brand": "Chevrolet",
         "model": "Corvair",
         "year": "1965",
@@ -8180,6 +8211,7 @@
     },
     {
         "docno": "d822",
+        "price": 0,
         "brand": "Jeep",
         "model": "Wrangler",
         "year": "2011",
@@ -8229,6 +8261,7 @@
     },
     {
         "docno": "d827",
+        "price": 0,
         "brand": "Chevrolet",
         "model": "C10",
         "year": "1973",
@@ -8238,6 +8271,7 @@
     },
     {
         "docno": "d828",
+        "price": 0,
         "brand": "Pontiac",
         "model": "Firebird",
         "year": "1979",
@@ -8327,6 +8361,7 @@
     },
     {
         "docno": "d837",
+        "price": 0,
         "brand": "Ferrari",
         "model": "250 GTO",
         "year": "1962",
@@ -8976,6 +9011,7 @@
     },
     {
         "docno": "d902",
+        "price": 0,
         "brand": "Shelby",
         "model": "GT350",
         "year": "1966",
@@ -8985,6 +9021,7 @@
     },
     {
         "docno": "d903",
+        "price": 0,
         "brand": "Ford",
         "model": "Mustang",
         "year": "1966",
@@ -8994,6 +9031,7 @@
     },
     {
         "docno": "d904",
+        "price": 0,
         "brand": "Ford",
         "model": "F100",
         "year": "1974",
@@ -9003,6 +9041,7 @@
     },
     {
         "docno": "d905",
+        "price": 0,
         "brand": "Ford",
         "model": "Mustang Mach 1",
         "year": "1973",
@@ -9022,6 +9061,7 @@
     },
     {
         "docno": "d907",
+        "price": 0,
         "brand": "Chevrolet",
         "model": "Corvair Monza",
         "year": "1965",
@@ -9361,6 +9401,7 @@
     },
     {
         "docno": "d941",
+        "price": 0,
         "brand": "Mercedes-Benz",
         "model": "560SL",
         "year": "1988",
@@ -9700,6 +9741,7 @@
     },
     {
         "docno": "d975",
+        "price": 0,
         "brand": "Chevrolet",
         "model": "Corvette",
         "year": "1957",
@@ -10009,6 +10051,7 @@
     },
     {
         "docno": "d1006",
+        "price": 0,
         "brand": "Chevrolet",
         "model": "Corvette",
         "year": "1967",
@@ -10078,6 +10121,7 @@
     },
     {
         "docno": "d1013",
+        "price": 0,
         "brand": "Chevrolet",
         "model": "Corvette",
         "year": "1968",
@@ -10437,6 +10481,7 @@
     },
     {
         "docno": "d1049",
+        "price": 0,
         "brand": "Pontiac",
         "model": "Grand Prix Model J",
         "year": "1969",
@@ -10446,6 +10491,7 @@
     },
     {
         "docno": "d1050",
+        "price": 0,
         "brand": "Pontiac",
         "model": "Bonneville",
         "year": "1963",
@@ -10525,6 +10571,7 @@
     },
     {
         "docno": "d1058",
+        "price": 0,
         "brand": "Bentley",
         "model": "S1",
         "year": "1957",
@@ -10604,6 +10651,7 @@
     },
     {
         "docno": "d1066",
+        "price": 0,
         "brand": "Campagna",
         "model": "T-Rex",
         "year": "2023",
@@ -11013,6 +11061,7 @@
     },
     {
         "docno": "d1107",
+        "price": 0,
         "brand": "Rolls-Royce",
         "model": "Silver Cloud II",
         "year": "1962",
@@ -11222,6 +11271,7 @@
     },
     {
         "docno": "d1128",
+        "price": 0,
         "brand": "Ford",
         "model": "Convertible",
         "year": "1950",
@@ -11311,6 +11361,7 @@
     },
     {
         "docno": "d1137",
+        "price": 0,
         "brand": "Chevrolet",
         "model": "Corvette Stingray",
         "year": "1966",
@@ -11320,6 +11371,7 @@
     },
     {
         "docno": "d1138",
+        "price": 0,
         "brand": "Chevrolet",
         "model": "Corvette",
         "year": "1965",
@@ -11619,6 +11671,7 @@
     },
     {
         "docno": "d1168",
+        "price": 0,
         "brand": "Chevrolet",
         "model": "Blazer",
         "year": "1976",
@@ -11788,6 +11841,7 @@
     },
     {
         "docno": "d1185",
+        "price": 0,
         "brand": "Triumph",
         "model": "TR6",
         "year": "1976",
@@ -11907,6 +11961,7 @@
     },
     {
         "docno": "d1197",
+        "price": 0,
         "brand": "Austin-Healey",
         "model": "100-6",
         "year": "1957",
@@ -11946,6 +12001,7 @@
     },
     {
         "docno": "d1201",
+        "price": 0,
         "brand": "Chevrolet",
         "model": "Corvette",
         "year": "1972",
@@ -12055,6 +12111,7 @@
     },
     {
         "docno": "d1212",
+        "price": 0,
         "brand": "Campagna",
         "model": "T-Rex",
         "year": "2023",
@@ -12154,6 +12211,7 @@
     },
     {
         "docno": "d1222",
+        "price": 0,
         "brand": "Chevrolet",
         "model": "Corvair Monza",
         "year": "1967",
@@ -12213,6 +12271,7 @@
     },
     {
         "docno": "d1228",
+        "price": 0,
         "brand": "Porsche",
         "model": "911",
         "year": "1974",
@@ -12222,6 +12281,7 @@
     },
     {
         "docno": "d1229",
+        "price": 0,
         "brand": "Chevrolet",
         "model": "Corvette",
         "year": "1962",
@@ -12371,6 +12431,7 @@
     },
     {
         "docno": "d1244",
+        "price": 0,
         "brand": "Chevrolet",
         "model": "Camaro",
         "year": "1969",
@@ -12560,6 +12621,7 @@
     },
     {
         "docno": "d1263",
+        "price": 0,
         "brand": "Lamborghini",
         "model": "Huracan",
         "year": "2018",
@@ -12589,6 +12651,7 @@
     },
     {
         "docno": "d1266",
+        "price": 0,
         "brand": "Moto Guzzi",
         "model": "Motorcycle",
         "year": "2013",
@@ -12768,6 +12831,7 @@
     },
     {
         "docno": "d1284",
+        "price": 0,
         "brand": "Chevrolet",
         "model": "Chevelle",
         "year": "1970",
@@ -12777,6 +12841,7 @@
     },
     {
         "docno": "d1285",
+        "price": 0,
         "brand": "Pontiac",
         "model": "Firebird Trans Am",
         "year": "1979",
@@ -13376,6 +13441,7 @@
     },
     {
         "docno": "d1345",
+        "price": 0,
         "brand": "Porsche",
         "model": "356SC",
         "year": "1965",
@@ -13785,6 +13851,7 @@
     },
     {
         "docno": "d1386",
+        "price": 0,
         "brand": "Chevrolet",
         "model": "Corvette",
         "year": "1967",
@@ -13814,6 +13881,7 @@
     },
     {
         "docno": "d1389",
+        "price": 0,
         "brand": "Chevrolet",
         "model": "Corvette",
         "year": "1977",
@@ -13833,6 +13901,7 @@
     },
     {
         "docno": "d1391",
+        "price": 0,
         "brand": "Volkswagen",
         "model": "Samba",
         "year": "1973",
@@ -14002,6 +14071,7 @@
     },
     {
         "docno": "d1408",
+        "price": 0,
         "brand": "Oldsmobile",
         "model": "Toronado",
         "year": "1966",
@@ -14121,6 +14191,7 @@
     },
     {
         "docno": "d1420",
+        "price": 0,
         "brand": "Ferrari",
         "model": "275 GTB",
         "year": "1967",
@@ -14240,6 +14311,7 @@
     },
     {
         "docno": "d1432",
+        "price": 0,
         "brand": "Ford",
         "model": "GT",
         "year": "2018",
@@ -14249,6 +14321,7 @@
     },
     {
         "docno": "d1433",
+        "price": 0,
         "brand": "Ford",
         "model": "GT",
         "year": "2005",
@@ -14298,6 +14371,7 @@
     },
     {
         "docno": "d1438",
+        "price": 0,
         "brand": "Ford",
         "model": "Mustang",
         "year": "1965",
@@ -14387,6 +14461,7 @@
     },
     {
         "docno": "d1447",
+        "price": 0,
         "brand": "Dodge",
         "model": "Charger",
         "year": "1970",
@@ -14506,6 +14581,7 @@
     },
     {
         "docno": "d1459",
+        "price": 0,
         "brand": "Mercury",
         "model": "Park Lane",
         "year": "1964",
@@ -14595,6 +14671,7 @@
     },
     {
         "docno": "d1468",
+        "price": 0,
         "brand": "Pontiac",
         "model": "GTO",
         "year": "1964",
@@ -14664,6 +14741,7 @@
     },
     {
         "docno": "d1475",
+        "price": 0,
         "brand": "Chevrolet",
         "model": "Corvette",
         "year": "1958",
@@ -14783,6 +14861,7 @@
     },
     {
         "docno": "d1487",
+        "price": 0,
         "brand": "Pontiac",
         "model": "Catalina",
         "year": "1960",
@@ -15582,6 +15661,7 @@
     },
     {
         "docno": "d1567",
+        "price": 0,
         "brand": "Mercedes-Benz",
         "model": "560SEL",
         "year": "1989",
@@ -15821,6 +15901,7 @@
     },
     {
         "docno": "d1591",
+        "price": 0,
         "brand": "Ford",
         "model": "Thunderbird",
         "year": "1957",
@@ -15850,6 +15931,7 @@
     },
     {
         "docno": "d1594",
+        "price": 0,
         "brand": "Ford",
         "model": "Thunderbird",
         "year": "1957",
@@ -16259,6 +16341,7 @@
     },
     {
         "docno": "d1635",
+        "price": 0,
         "brand": "Ford",
         "model": "Mustang",
         "year": "1965",
@@ -16348,6 +16431,7 @@
     },
     {
         "docno": "d1644",
+        "price": 0,
         "brand": "Mercedes-Benz",
         "model": "SLS AMG Black Series",
         "year": "2014",
@@ -16447,6 +16531,7 @@
     },
     {
         "docno": "d1654",
+        "price": 0,
         "brand": "Alfa Romeo",
         "model": "GTA",
         "year": "1965",
@@ -16556,6 +16641,7 @@
     },
     {
         "docno": "d1665",
+        "price": 0,
         "brand": "Chevrolet",
         "model": "Cheyenne",
         "year": "1971",
@@ -16565,6 +16651,7 @@
     },
     {
         "docno": "d1666",
+        "price": 0,
         "brand": "Lincoln",
         "model": "Continental Mark IV",
         "year": "1976",
@@ -16574,6 +16661,7 @@
     },
     {
         "docno": "d1667",
+        "price": 0,
         "brand": "Lincoln",
         "model": "Continental",
         "year": "1967",
@@ -16583,6 +16671,7 @@
     },
     {
         "docno": "d1668",
+        "price": 0,
         "brand": "Ford",
         "model": "Mustang",
         "year": "1965",
@@ -16592,6 +16681,7 @@
     },
     {
         "docno": "d1669",
+        "price": 0,
         "brand": "Ford",
         "model": "Torino",
         "year": "1970",
@@ -16601,6 +16691,7 @@
     },
     {
         "docno": "d1670",
+        "price": 0,
         "brand": "Chevrolet",
         "model": "Corvette",
         "year": "1962",
@@ -16910,6 +17001,7 @@
     },
     {
         "docno": "d1701",
+        "price": 0,
         "brand": "Fiat",
         "model": "Sport 850",
         "year": "1974",
@@ -17759,6 +17851,7 @@
     },
     {
         "docno": "d1786",
+        "price": 0,
         "brand": "BMW",
         "model": "3.0CSL",
         "year": "1973",
@@ -17818,6 +17911,7 @@
     },
     {
         "docno": "d1792",
+        "price": 0,
         "brand": "Bentley",
         "model": "T1",
         "year": "1974",
@@ -17837,6 +17931,7 @@
     },
     {
         "docno": "d1794",
+        "price": 0,
         "brand": "Ford",
         "model": "Mustang",
         "year": "1967",
@@ -17856,6 +17951,7 @@
     },
     {
         "docno": "d1796",
+        "price": 0,
         "brand": "Alfa Romeo",
         "model": "1750 GTV",
         "year": "1970",
@@ -17875,6 +17971,7 @@
     },
     {
         "docno": "d1798",
+        "price": 0,
         "brand": "Fiat",
         "model": "500D",
         "year": "1964",
@@ -17884,6 +17981,7 @@
     },
     {
         "docno": "d1799",
+        "price": 0,
         "brand": "Austin-Healey",
         "model": "3000",
         "year": "1960",
@@ -17893,6 +17991,7 @@
     },
     {
         "docno": "d1800",
+        "price": 0,
         "brand": "MINI",
         "model": "Cooper",
         "year": "1964",
@@ -17902,6 +18001,7 @@
     },
     {
         "docno": "d1801",
+        "price": 0,
         "brand": "Ford",
         "model": "Escort",
         "year": "1971",
@@ -17911,6 +18011,7 @@
     },
     {
         "docno": "d1802",
+        "price": 0,
         "brand": "Jaguar",
         "model": "E-Type",
         "year": "1968",
@@ -17990,6 +18091,7 @@
     },
     {
         "docno": "d1810",
+        "price": 0,
         "brand": "Buick",
         "model": "Electra",
         "year": "1964",
@@ -18029,6 +18131,7 @@
     },
     {
         "docno": "d1814",
+        "price": 0,
         "brand": "Citroen",
         "model": "DS19",
         "year": "1963",
@@ -18108,6 +18211,7 @@
     },
     {
         "docno": "d1822",
+        "price": 0,
         "brand": "Porsche",
         "model": "993 Carrera 4S",
         "year": "1997",
@@ -18687,6 +18791,7 @@
     },
     {
         "docno": "d1880",
+        "price": 0,
         "brand": "Chevrolet",
         "model": "Chevelle",
         "year": "1967",
@@ -18716,6 +18821,7 @@
     },
     {
         "docno": "d1883",
+        "price": 0,
         "brand": "Ford",
         "model": "Thunderbird",
         "year": "1957",
@@ -18725,6 +18831,7 @@
     },
     {
         "docno": "d1884",
+        "price": 0,
         "brand": "Chevrolet",
         "model": "Chevelle SS",
         "year": "1970",
@@ -18734,6 +18841,7 @@
     },
     {
         "docno": "d1885",
+        "price": 0,
         "brand": "Ford",
         "model": "Mustang",
         "year": "1965",
@@ -18983,6 +19091,7 @@
     },
     {
         "docno": "d1910",
+        "price": 0,
         "brand": "Chevrolet",
         "model": "Corvette",
         "year": "1979",
@@ -19122,6 +19231,7 @@
     },
     {
         "docno": "d1924",
+        "price": 0,
         "brand": "Chevrolet",
         "model": "Corvette",
         "year": "1959",
@@ -19501,6 +19611,7 @@
     },
     {
         "docno": "d1962",
+        "price": 0,
         "brand": "Porsche",
         "model": "911T",
         "year": "1971",
@@ -19530,6 +19641,7 @@
     },
     {
         "docno": "d1965",
+        "price": 0,
         "brand": "Coachmen",
         "model": "Freedom Express",
         "year": "2022",
@@ -19589,6 +19701,7 @@
     },
     {
         "docno": "d1971",
+        "price": 0,
         "brand": "Chevrolet",
         "model": "Camaro",
         "year": "1989",
@@ -19828,6 +19941,7 @@
     },
     {
         "docno": "d1995",
+        "price": 0,
         "brand": "Porsche",
         "model": "911",
         "year": "1968",
@@ -20137,6 +20251,7 @@
     },
     {
         "docno": "d2026",
+        "price": 0,
         "brand": "BMW",
         "model": "3.0CSL",
         "year": "1972",
@@ -20256,6 +20371,7 @@
     },
     {
         "docno": "d2038",
+        "price": 0,
         "brand": "Porsche",
         "model": "356",
         "year": "1959",
@@ -20345,6 +20461,7 @@
     },
     {
         "docno": "d2047",
+        "price": 0,
         "brand": "Rolls-Royce",
         "model": "Phantom",
         "year": "1961",
@@ -20404,6 +20521,7 @@
     },
     {
         "docno": "d2053",
+        "price": 0,
         "brand": "Lamborghini",
         "model": "400",
         "year": "1967",
@@ -20473,6 +20591,7 @@
     },
     {
         "docno": "d2060",
+        "price": 0,
         "brand": "Porsche",
         "model": "356",
         "year": "1958",
@@ -20502,6 +20621,7 @@
     },
     {
         "docno": "d2063",
+        "price": 0,
         "brand": "Porsche",
         "model": "911S",
         "year": "1967",
@@ -20801,6 +20921,7 @@
     },
     {
         "docno": "d2093",
+        "price": 0,
         "brand": "Chevrolet",
         "model": "Corvette",
         "year": "1967",
@@ -20980,6 +21101,7 @@
     },
     {
         "docno": "d2111",
+        "price": 0,
         "brand": "Rolls-Royce",
         "model": "Silver Cloud III",
         "year": "1966",
@@ -21519,6 +21641,7 @@
     },
     {
         "docno": "d2165",
+        "price": 0,
         "brand": "Alfa Romeo",
         "model": "1600 Zagato",
         "year": "1955",
@@ -21858,6 +21981,7 @@
     },
     {
         "docno": "d2199",
+        "price": 0,
         "brand": "Cadillac",
         "model": "Eldorado",
         "year": "1972",
@@ -22207,6 +22331,7 @@
     },
     {
         "docno": "d2234",
+        "price": 0,
         "brand": "Chevrolet",
         "model": "Corvette",
         "year": "1967",
@@ -22246,6 +22371,7 @@
     },
     {
         "docno": "d2238",
+        "price": 0,
         "brand": "GMC",
         "model": "Truck",
         "year": "1979",
@@ -22435,6 +22561,7 @@
     },
     {
         "docno": "d2257",
+        "price": 0,
         "brand": "Aston Martin",
         "model": "DB4",
         "year": "1959",
@@ -22464,6 +22591,7 @@
     },
     {
         "docno": "d2260",
+        "price": 0,
         "brand": "Chevrolet",
         "model": "Corvette",
         "year": "1977",
@@ -22543,6 +22671,7 @@
     },
     {
         "docno": "d2268",
+        "price": 0,
         "brand": "Chevrolet",
         "model": "Corvette",
         "year": "1963",
@@ -22552,6 +22681,7 @@
     },
     {
         "docno": "d2269",
+        "price": 0,
         "brand": "Chevrolet",
         "model": "Camaro",
         "year": "1967",
@@ -22611,6 +22741,7 @@
     },
     {
         "docno": "d2275",
+        "price": 0,
         "brand": "Porsche",
         "model": "917",
         "year": "1969",
@@ -22630,6 +22761,7 @@
     },
     {
         "docno": "d2277",
+        "price": 0,
         "brand": "Rolls-Royce",
         "model": "Silver Cloud",
         "year": "1958",
@@ -22649,6 +22781,7 @@
     },
     {
         "docno": "d2279",
+        "price": 0,
         "brand": "Amphicar",
         "model": "770",
         "year": "1967",
@@ -22668,6 +22801,7 @@
     },
     {
         "docno": "d2281",
+        "price": 0,
         "brand": "Volkswagen",
         "model": "Transporter",
         "year": "1958",
@@ -22677,6 +22811,7 @@
     },
     {
         "docno": "d2282",
+        "price": 0,
         "brand": "Land Rover",
         "model": "Defender",
         "year": "1979",
@@ -22826,6 +22961,7 @@
     },
     {
         "docno": "d2297",
+        "price": 0,
         "brand": "Campagna",
         "model": "T-Rex",
         "year": "2023",
@@ -23145,6 +23281,7 @@
     },
     {
         "docno": "d2329",
+        "price": 0,
         "brand": "Aston Martin",
         "model": "DB4",
         "year": "1962",
@@ -23214,6 +23351,7 @@
     },
     {
         "docno": "d2336",
+        "price": 0,
         "brand": "Ford",
         "model": "Mustang",
         "year": "1969",
@@ -23243,6 +23381,7 @@
     },
     {
         "docno": "d2339",
+        "price": 0,
         "brand": "Shelby",
         "model": "Cobra",
         "year": "1965",
@@ -23502,6 +23641,7 @@
     },
     {
         "docno": "d2365",
+        "price": 0,
         "brand": "Harley-Davidson",
         "model": "Sportster",
         "year": "1968",
@@ -23631,6 +23771,7 @@
     },
     {
         "docno": "d2378",
+        "price": 0,
         "brand": "Shelby",
         "model": "Cobra Replica",
         "year": "1966",
@@ -24060,6 +24201,7 @@
     },
     {
         "docno": "d2421",
+        "price": 0,
         "brand": "Plymouth",
         "model": "Road Runner",
         "year": "1968",
@@ -24189,6 +24331,7 @@
     },
     {
         "docno": "d2434",
+        "price": 0,
         "brand": "Plymouth",
         "model": "Road Runner",
         "year": "1969",
@@ -24308,6 +24451,7 @@
     },
     {
         "docno": "d2446",
+        "price": 0,
         "brand": "Austin-Healey",
         "model": "Sprite",
         "year": "1959",
@@ -25267,6 +25411,7 @@
     },
     {
         "docno": "d2542",
+        "price": 0,
         "brand": "Rolls-Royce",
         "model": "Silver Cloud III",
         "year": "1965",
@@ -25346,6 +25491,7 @@
     },
     {
         "docno": "d2550",
+        "price": 0,
         "brand": "Mercedes-Benz",
         "model": "AMG GT63 S",
         "year": "2019",
@@ -25525,6 +25671,7 @@
     },
     {
         "docno": "d2568",
+        "price": 0,
         "brand": "Bentley",
         "model": "Continental Flying Spur",
         "year": "1965",
@@ -25544,6 +25691,7 @@
     },
     {
         "docno": "d2570",
+        "price": 0,
         "brand": "Ford",
         "model": "Mustang GT",
         "year": "1969",
@@ -25733,6 +25881,7 @@
     },
     {
         "docno": "d2589",
+        "price": 0,
         "brand": "Chevrolet",
         "model": "Chevelle",
         "year": "1966",
@@ -25752,6 +25901,7 @@
     },
     {
         "docno": "d2591",
+        "price": 0,
         "brand": "Chevrolet",
         "model": "Camaro",
         "year": "1967",
@@ -25911,6 +26061,7 @@
     },
     {
         "docno": "d2607",
+        "price": 0,
         "brand": "Pontiac",
         "model": "GTO",
         "year": "1964",
@@ -25920,6 +26071,7 @@
     },
     {
         "docno": "d2608",
+        "price": 0,
         "brand": "Chevrolet",
         "model": "Bel Air",
         "year": "1961",
@@ -26159,6 +26311,7 @@
     },
     {
         "docno": "d2632",
+        "price": 0,
         "brand": "Porsche",
         "model": "959",
         "year": "1988",
@@ -26328,6 +26481,7 @@
     },
     {
         "docno": "d2649",
+        "price": 0,
         "brand": "Porsche",
         "model": "356SC",
         "year": "1964",
@@ -26467,6 +26621,7 @@
     },
     {
         "docno": "d2663",
+        "price": 0,
         "brand": "Chevrolet",
         "model": "Camaro",
         "year": "1988",
@@ -26526,6 +26681,7 @@
     },
     {
         "docno": "d2669",
+        "price": 0,
         "brand": "Dodge",
         "model": "Challenger R/T",
         "year": "1970",
@@ -26675,6 +26831,7 @@
     },
     {
         "docno": "d2684",
+        "price": 0,
         "brand": "Cadillac",
         "model": "Show Car",
         "year": "1948",
@@ -26834,6 +26991,7 @@
     },
     {
         "docno": "d2700",
+        "price": 0,
         "brand": "Chevrolet",
         "model": "Bel Air",
         "year": "1960",
@@ -26903,6 +27061,7 @@
     },
     {
         "docno": "d2707",
+        "price": 0,
         "brand": "Lincoln",
         "model": "Continental",
         "year": "1948",
@@ -26922,6 +27081,7 @@
     },
     {
         "docno": "d2709",
+        "price": 0,
         "brand": "Porsche",
         "model": "911",
         "year": "1979",
@@ -27111,6 +27271,7 @@
     },
     {
         "docno": "d2728",
+        "price": 0,
         "brand": "Volkswagen",
         "model": "T3",
         "year": "1988",
@@ -27220,6 +27381,7 @@
     },
     {
         "docno": "d2739",
+        "price": 0,
         "brand": "Plymouth",
         "model": "Fury",
         "year": "1969",
@@ -27599,6 +27761,7 @@
     },
     {
         "docno": "d2777",
+        "price": 0,
         "brand": "Mercedes Benz",
         "model": "300",
         "year": "1992",
@@ -28028,6 +28191,7 @@
     },
     {
         "docno": "d2820",
+        "price": 0,
         "brand": "Ford",
         "model": "GPW Jeep",
         "year": "1944",
@@ -28257,6 +28421,7 @@
     },
     {
         "docno": "d2843",
+        "price": 0,
         "brand": "Subaru",
         "model": "Impreza",
         "year": "2003",
@@ -28986,6 +29151,7 @@
     },
     {
         "docno": "d2916",
+        "price": 0,
         "brand": "Porsche",
         "model": "Boxster",
         "year": "2009",
@@ -29395,6 +29561,7 @@
     },
     {
         "docno": "d2957",
+        "price": 0,
         "brand": "land+rover",
         "model": "series+iia",
         "year": "1997 ",
@@ -29404,6 +29571,7 @@
     },
     {
         "docno": "d2958",
+        "price": 0,
         "brand": "land+rover",
         "model": "defender+90+2.2+xs+tdci",
         "year": "2016 ",
@@ -29413,6 +29581,7 @@
     },
     {
         "docno": "d2959",
+        "price": 0,
         "brand": "aston+martin",
         "model": "db7+automatic",
         "year": "1997 ",
@@ -29422,6 +29591,7 @@
     },
     {
         "docno": "d2960",
+        "price": 0,
         "brand": "austin",
         "model": "mini",
         "year": "1979 ",
@@ -29431,6 +29601,7 @@
     },
     {
         "docno": "d2961",
+        "price": 0,
         "brand": "ford",
         "model": "escort",
         "year": "1985 ",
@@ -29440,6 +29611,7 @@
     },
     {
         "docno": "d2962",
+        "price": 0,
         "brand": "triumph",
         "model": "tr6",
         "year": "1973 ",
@@ -29449,6 +29621,7 @@
     },
     {
         "docno": "d2963",
+        "price": 0,
         "brand": "ford",
         "model": "escort+rs+turbo",
         "year": "1987 ",
@@ -29458,6 +29631,7 @@
     },
     {
         "docno": "d2964",
+        "price": 0,
         "brand": "mini",
         "model": "cooper",
         "year": "2013 ",
@@ -29467,6 +29641,7 @@
     },
     {
         "docno": "d2965",
+        "price": 0,
         "brand": "lanchester",
         "model": "ld10",
         "year": "1947 ",
@@ -29476,6 +29651,7 @@
     },
     {
         "docno": "d2966",
+        "price": 0,
         "brand": "ford",
         "model": "consul+capri",
         "year": "2012 ",
@@ -29485,6 +29661,7 @@
     },
     {
         "docno": "d2967",
+        "price": 0,
         "brand": "fiat",
         "model": "1600s",
         "year": "1970 ",
@@ -29494,6 +29671,7 @@
     },
     {
         "docno": "d2968",
+        "price": 0,
         "brand": "fiat",
         "model": "500f",
         "year": "2008 ",
@@ -29503,6 +29681,7 @@
     },
     {
         "docno": "d2969",
+        "price": 0,
         "brand": "mg",
         "model": "b",
         "year": "1971 ",
@@ -29512,6 +29691,7 @@
     },
     {
         "docno": "d2970",
+        "price": 0,
         "brand": "hudson",
         "model": "series+o",
         "year": "1998 ",
@@ -29521,6 +29701,7 @@
     },
     {
         "docno": "d2971",
+        "price": 0,
         "brand": "porsche",
         "model": "911+996+carrera+4",
         "year": "2001 ",
@@ -29530,6 +29711,7 @@
     },
     {
         "docno": "d2972",
+        "price": 0,
         "brand": "mitsubishi",
         "model": "lancer+5th+gen",
         "year": "2003 ",
@@ -29539,6 +29721,7 @@
     },
     {
         "docno": "d2973",
+        "price": 0,
         "brand": "triumph",
         "model": "stag",
         "year": "1974 ",
@@ -29548,6 +29731,7 @@
     },
     {
         "docno": "d2974",
+        "price": 0,
         "brand": "lotus",
         "model": "elan+s4",
         "year": "1968 ",
@@ -29557,6 +29741,7 @@
     },
     {
         "docno": "d2975",
+        "price": 0,
         "brand": "rover",
         "model": "mini+cooper+'spi'+supercharged",
         "year": "1994 ",
@@ -29566,6 +29751,7 @@
     },
     {
         "docno": "d2976",
+        "price": 0,
         "brand": "mercedes-benz",
         "model": "sl55+amg",
         "year": "2002 ",
@@ -29575,6 +29761,7 @@
     },
     {
         "docno": "d2977",
+        "price": 0,
         "brand": "mini",
         "model": "cooper",
         "year": "2013 ",
@@ -29584,6 +29771,7 @@
     },
     {
         "docno": "d2978",
+        "price": 0,
         "brand": "bentley",
         "model": "continental+gt",
         "year": "2006 ",
@@ -29593,6 +29781,7 @@
     },
     {
         "docno": "d2979",
+        "price": 0,
         "brand": "aston+martin",
         "model": "db7+vantage",
         "year": "2000 ",
@@ -29602,6 +29791,7 @@
     },
     {
         "docno": "d2980",
+        "price": 0,
         "brand": "bentley",
         "model": "arnage+red+label",
         "year": "2001 ",
@@ -29611,6 +29801,7 @@
     },
     {
         "docno": "d2981",
+        "price": 0,
         "brand": "jaguar",
         "model": "mark+2",
         "year": "1963 ",
@@ -29620,6 +29811,7 @@
     },
     {
         "docno": "d2982",
+        "price": 0,
         "brand": "ford+fiesta",
         "model": "xr2",
         "year": "1989 ",
@@ -29629,6 +29821,7 @@
     },
     {
         "docno": "d2983",
+        "price": 0,
         "brand": "maserati",
         "model": "4200+gt",
         "year": "2003 ",
@@ -29638,6 +29831,7 @@
     },
     {
         "docno": "d2984",
+        "price": 0,
         "brand": "austin",
         "model": "seven",
         "year": "1930 ",
@@ -29647,6 +29841,7 @@
     },
     {
         "docno": "d2985",
+        "price": 0,
         "brand": "reliant",
         "model": "scimitar+gte",
         "year": "1974 ",
@@ -29656,6 +29851,7 @@
     },
     {
         "docno": "d2986",
+        "price": 0,
         "brand": "bmw",
         "model": "320ci",
         "year": "2005 ",
@@ -29665,6 +29861,7 @@
     },
     {
         "docno": "d2987",
+        "price": 0,
         "brand": "ford",
         "model": "escort",
         "year": "1974 ",
@@ -29674,6 +29871,7 @@
     },
     {
         "docno": "d2988",
+        "price": 0,
         "brand": "jaguar",
         "model": "340",
         "year": "1968 ",
@@ -29683,6 +29881,7 @@
     },
     {
         "docno": "d2989",
+        "price": 0,
         "brand": "saab",
         "model": "96",
         "year": "1972 ",
@@ -29692,6 +29891,7 @@
     },
     {
         "docno": "d2990",
+        "price": 0,
         "brand": "morris",
         "model": "mini",
         "year": "1965 ",
@@ -29701,6 +29901,7 @@
     },
     {
         "docno": "d2991",
+        "price": 0,
         "brand": "porsche",
         "model": "turbo",
         "year": "1980 ",
@@ -29710,6 +29911,7 @@
     },
     {
         "docno": "d2992",
+        "price": 0,
         "brand": "fiat",
         "model": "124",
         "year": "2016 ",
@@ -29719,6 +29921,7 @@
     },
     {
         "docno": "d2993",
+        "price": 0,
         "brand": "bmw",
         "model": "m3",
         "year": "2003 ",
@@ -29728,6 +29931,7 @@
     },
     {
         "docno": "d2994",
+        "price": 0,
         "brand": "audi",
         "model": "80+cabriolet",
         "year": "1999 ",
@@ -29737,6 +29941,7 @@
     },
     {
         "docno": "d2995",
+        "price": 0,
         "brand": "honda",
         "model": "integra+dc2+type-r",
         "year": "1998 ",
@@ -29746,6 +29951,7 @@
     },
     {
         "docno": "d2996",
+        "price": 0,
         "brand": "bentley",
         "model": "t1",
         "year": "1973 ",
@@ -29755,6 +29961,7 @@
     },
     {
         "docno": "d2997",
+        "price": 0,
         "brand": "rover",
         "model": "mini+cooper",
         "year": "1997 ",
@@ -29764,6 +29971,7 @@
     },
     {
         "docno": "d2998",
+        "price": 0,
         "brand": "austin",
         "model": "a35+6cwt+light+van",
         "year": "1963 ",
@@ -29773,6 +29981,7 @@
     },
     {
         "docno": "d2999",
+        "price": 0,
         "brand": "porsche",
         "model": "911",
         "year": "1997 ",
@@ -29782,6 +29991,7 @@
     },
     {
         "docno": "d3000",
+        "price": 0,
         "brand": "volkswagen",
         "model": "golf+ii",
         "year": "1990 ",
@@ -29791,6 +30001,7 @@
     },
     {
         "docno": "d3001",
+        "price": 0,
         "brand": "mercedes-benz",
         "model": "380sl",
         "year": "1982 ",
@@ -29800,6 +30011,7 @@
     },
     {
         "docno": "d3002",
+        "price": 0,
         "brand": "porsche",
         "model": "911",
         "year": "2002 ",
@@ -29809,6 +30021,7 @@
     },
     {
         "docno": "d3003",
+        "price": 0,
         "brand": "ford",
         "model": "escort",
         "year": "1988 ",
@@ -29818,6 +30031,7 @@
     },
     {
         "docno": "d3004",
+        "price": 0,
         "brand": "smart",
         "model": "roadster",
         "year": "2004 ",
@@ -29827,6 +30041,7 @@
     },
     {
         "docno": "d3005",
+        "price": 0,
         "brand": "austin-healey",
         "model": "3000",
         "year": "1990 ",
@@ -29836,6 +30051,7 @@
     },
     {
         "docno": "d3006",
+        "price": 0,
         "brand": "smart",
         "model": "fortwo+cabrio",
         "year": "2006 ",
@@ -29845,6 +30061,7 @@
     },
     {
         "docno": "d3007",
+        "price": 0,
         "brand": "mercedes-benz",
         "model": "300+gd",
         "year": "1986 ",
@@ -29854,6 +30071,7 @@
     },
     {
         "docno": "d3008",
+        "price": 0,
         "brand": "audi",
         "model": "80+b4",
         "year": "1997 ",
@@ -29863,6 +30081,7 @@
     },
     {
         "docno": "d3009",
+        "price": 0,
         "brand": "mercedes-benz",
         "model": "380+sl",
         "year": "1979 ",
@@ -29872,6 +30091,7 @@
     },
     {
         "docno": "d3010",
+        "price": 0,
         "brand": "austin-healey",
         "model": "100-slash-4+bn1",
         "year": "1976 ",
@@ -29881,6 +30101,7 @@
     },
     {
         "docno": "d3011",
+        "price": 0,
         "brand": "peugeot",
         "model": "306+cabriolet",
         "year": "2000 ",
@@ -29890,6 +30111,7 @@
     },
     {
         "docno": "d3012",
+        "price": 0,
         "brand": "jaguar",
         "model": "xj-sc",
         "year": "1984 ",
@@ -29899,6 +30121,7 @@
     },
     {
         "docno": "d3013",
+        "price": 0,
         "brand": "rover",
         "model": "mini",
         "year": "1991 ",
@@ -29908,6 +30131,7 @@
     },
     {
         "docno": "d3014",
+        "price": 0,
         "brand": "ford",
         "model": "probe+2.5+24v",
         "year": "1997 ",
@@ -29987,6 +30211,7 @@
     },
     {
         "docno": "d3022",
+        "price": 0,
         "brand": "bentley",
         "model": "mulsanne+v8",
         "year": "1981 ",
@@ -30026,6 +30251,7 @@
     },
     {
         "docno": "d3026",
+        "price": 0,
         "brand": "ferrari",
         "model": "599",
         "year": "2007 ",
@@ -30035,6 +30261,7 @@
     },
     {
         "docno": "d3027",
+        "price": 0,
         "brand": "rolls-royce",
         "model": "corniche",
         "year": "1983 ",
@@ -30104,6 +30331,7 @@
     },
     {
         "docno": "d3034",
+        "price": 0,
         "brand": "bmw",
         "model": "alpina+b10+-+e0+-+3300cc",
         "year": "2001 ",
@@ -30233,6 +30461,7 @@
     },
     {
         "docno": "d3047",
+        "price": 0,
         "brand": "rolls",
         "model": "royce",
         "year": "1997 ",
@@ -30262,6 +30491,7 @@
     },
     {
         "docno": "d3050",
+        "price": 0,
         "brand": "mercedes-benz",
         "model": "sl560",
         "year": "1989 ",
@@ -30271,6 +30501,7 @@
     },
     {
         "docno": "d3051",
+        "price": 0,
         "brand": "bae",
         "model": "vantage",
         "year": "2005 ",
@@ -30390,6 +30621,7 @@
     },
     {
         "docno": "d3063",
+        "price": 0,
         "brand": "aston+martin",
         "model": "virage",
         "year": "1991 ",
@@ -30449,6 +30681,7 @@
     },
     {
         "docno": "d3069",
+        "price": 0,
         "brand": "porsche",
         "model": "911",
         "year": "2012 ",
@@ -30678,6 +30911,7 @@
     },
     {
         "docno": "d3092",
+        "price": 0,
         "brand": "porsche",
         "model": "993",
         "year": "1997 ",
@@ -30837,6 +31071,7 @@
     },
     {
         "docno": "d3108",
+        "price": 0,
         "brand": "mercedes",
         "model": "cls+63+amg+auto+-+e4+-+6208cc",
         "year": "2008 ",
@@ -31226,6 +31461,7 @@
     },
     {
         "docno": "d3147",
+        "price": 0,
         "brand": "aston+martin",
         "model": "db7",
         "year": "2000 ",
@@ -31245,6 +31481,7 @@
     },
     {
         "docno": "d3149",
+        "price": 0,
         "brand": "ford",
         "model": "fiesta+xr2+i+-+e0+-+1796cc",
         "year": "1992 ",
@@ -31254,6 +31491,7 @@
     },
     {
         "docno": "d3150",
+        "price": 0,
         "brand": "volkswagen",
         "model": "golf+anniversary+t+-+e0+-+1781cc",
         "year": "2002 ",
@@ -31263,6 +31501,7 @@
     },
     {
         "docno": "d3151",
+        "price": 0,
         "brand": "mercedes",
         "model": "350+sl+auto+-+3499cc",
         "year": "1976 ",
@@ -31272,6 +31511,7 @@
     },
     {
         "docno": "d3152",
+        "price": 0,
         "brand": "ford",
         "model": "fiesta+xr2+-+e0+-+1597cc",
         "year": "1989 ",
@@ -31811,6 +32051,7 @@
     },
     {
         "docno": "d3206",
+        "price": 0,
         "brand": "mercedes",
         "model": "sl55+amg+auto+-+e4+-+5439cc",
         "year": "2003 ",
@@ -31820,6 +32061,7 @@
     },
     {
         "docno": "d3207",
+        "price": 0,
         "brand": "ford",
         "model": "escort+rs+turbo+-+e0+-+1597cc",
         "year": "1987 ",
@@ -32049,6 +32291,7 @@
     },
     {
         "docno": "d3230",
+        "price": 0,
         "brand": "ford",
         "model": "focus+st-2+-+e4+-+2521cc",
         "year": "2008 ",
@@ -32228,6 +32471,7 @@
     },
     {
         "docno": "d3248",
+        "price": 0,
         "brand": "porsche",
         "model": "911",
         "year": "1992 ",
@@ -32237,6 +32481,7 @@
     },
     {
         "docno": "d3249",
+        "price": 0,
         "brand": "jaguar",
         "model": "ss100",
         "year": "1975 ",
@@ -32286,6 +32531,7 @@
     },
     {
         "docno": "d3254",
+        "price": 0,
         "brand": "subaru",
         "model": "impreza",
         "year": "2006 ",
@@ -32315,6 +32561,7 @@
     },
     {
         "docno": "d3257",
+        "price": 0,
         "brand": "jaguar",
         "model": "e-type",
         "year": "1974 ",
@@ -32354,6 +32601,7 @@
     },
     {
         "docno": "d3261",
+        "price": 0,
         "brand": "volkswagen",
         "model": "1300+beetle+-+1285cc",
         "year": "1974 ",
@@ -32373,6 +32621,7 @@
     },
     {
         "docno": "d3263",
+        "price": 0,
         "brand": "sunbeam",
         "model": "alpine+series+iii+gt+-+1592cc",
         "year": "1963 ",
@@ -32382,6 +32631,7 @@
     },
     {
         "docno": "d3264",
+        "price": 0,
         "brand": "mg",
         "model": "b+le+roadster+-+1798cc",
         "year": "1981 ",
@@ -32391,6 +32641,7 @@
     },
     {
         "docno": "d3265",
+        "price": 0,
         "brand": "triumph",
         "model": "tr7+convertible+-+1998cc",
         "year": "1982 ",
@@ -32400,6 +32651,7 @@
     },
     {
         "docno": "d3266",
+        "price": 0,
         "brand": "citroen",
         "model": "saxo+vtr+-+e0+-+1587cc+-+one+owner+from+new",
         "year": "2003 ",
@@ -32409,6 +32661,7 @@
     },
     {
         "docno": "d3267",
+        "price": 0,
         "brand": "bmw",
         "model": "z3+auto+-+e0+-+1895cc",
         "year": "1997 ",
@@ -32578,6 +32831,7 @@
     },
     {
         "docno": "d3284",
+        "price": 0,
         "brand": "porsche",
         "model": "993",
         "year": "1997 ",
@@ -32697,6 +32951,7 @@
     },
     {
         "docno": "d3296",
+        "price": 0,
         "brand": "ford",
         "model": "capri+rs3100",
         "year": "1974 ",
@@ -32706,6 +32961,7 @@
     },
     {
         "docno": "d3297",
+        "price": 0,
         "brand": "jaguar",
         "model": "mk2+4.2-litre+manual+overdrive+saloon",
         "year": "1963 ",
@@ -32715,6 +32971,7 @@
     },
     {
         "docno": "d3298",
+        "price": 0,
         "brand": "mercedes",
         "model": "300sl",
         "year": "1992 ",
@@ -32724,6 +32981,7 @@
     },
     {
         "docno": "d3299",
+        "price": 0,
         "brand": "benley",
         "model": "arnage",
         "year": "2001 ",
@@ -32733,6 +32991,7 @@
     },
     {
         "docno": "d3300",
+        "price": 0,
         "brand": "subaru",
         "model": "impreza",
         "year": "2006 ",
@@ -32742,6 +33001,7 @@
     },
     {
         "docno": "d3301",
+        "price": 0,
         "brand": "jaguar",
         "model": "xjs+coup\u00c9",
         "year": "1992 ",
@@ -32751,6 +33011,7 @@
     },
     {
         "docno": "d3302",
+        "price": 0,
         "brand": "mazda",
         "model": "rx-7+turbo+ii",
         "year": "1992 ",
@@ -32760,6 +33021,7 @@
     },
     {
         "docno": "d3303",
+        "price": 0,
         "brand": "jaguar",
         "model": "1\u00bd-litre+saloon",
         "year": "1938 ",
@@ -32769,6 +33031,7 @@
     },
     {
         "docno": "d3304",
+        "price": 0,
         "brand": "lotus",
         "model": "europa",
         "year": "1971 ",
@@ -32778,6 +33041,7 @@
     },
     {
         "docno": "d3305",
+        "price": 0,
         "brand": "jaguar",
         "model": "xjs+6.0+v12",
         "year": "1993 ",
@@ -32787,6 +33051,7 @@
     },
     {
         "docno": "d3306",
+        "price": 0,
         "brand": "bmw",
         "model": "alpina+b10",
         "year": "2000 ",
@@ -32796,6 +33061,7 @@
     },
     {
         "docno": "d3307",
+        "price": 0,
         "brand": "bmw",
         "model": "318i",
         "year": "1990 ",
@@ -32805,6 +33071,7 @@
     },
     {
         "docno": "d3308",
+        "price": 0,
         "brand": "rover+mini",
         "model": "cooper+monte+carlo",
         "year": "1995 ",
@@ -32814,6 +33081,7 @@
     },
     {
         "docno": "d3309",
+        "price": 0,
         "brand": "citro\u00cbn",
         "model": "ds20",
         "year": "2015 ",
@@ -32823,6 +33091,7 @@
     },
     {
         "docno": "d3310",
+        "price": 0,
         "brand": "honda",
         "model": "s800",
         "year": "1967 ",
@@ -32832,6 +33101,7 @@
     },
     {
         "docno": "d3311",
+        "price": 0,
         "brand": "land+rover",
         "model": "88''+station+wagon",
         "year": "1973 ",
@@ -32841,6 +33111,7 @@
     },
     {
         "docno": "d3312",
+        "price": 0,
         "brand": "bmw",
         "model": "735+se",
         "year": "1985 ",
@@ -32850,6 +33121,7 @@
     },
     {
         "docno": "d3313",
+        "price": 0,
         "brand": "land+rover",
         "model": "series+iii+swb",
         "year": "1972 ",
@@ -32859,6 +33131,7 @@
     },
     {
         "docno": "d3314",
+        "price": 0,
         "brand": "jaguar",
         "model": "xk",
         "year": "2006 ",
@@ -32868,6 +33141,7 @@
     },
     {
         "docno": "d3315",
+        "price": 0,
         "brand": "morris",
         "model": "minor+1000+series+5",
         "year": "1968 ",
@@ -32877,6 +33151,7 @@
     },
     {
         "docno": "d3316",
+        "price": 0,
         "brand": "bedford",
         "model": "ca",
         "year": "1989 ",
@@ -32886,6 +33161,7 @@
     },
     {
         "docno": "d3317",
+        "price": 0,
         "brand": "morris",
         "model": "mini+moke",
         "year": "1968 ",
@@ -32895,6 +33171,7 @@
     },
     {
         "docno": "d3318",
+        "price": 0,
         "brand": "daimler",
         "model": "sovereign+420",
         "year": "1967 ",
@@ -32904,6 +33181,7 @@
     },
     {
         "docno": "d3319",
+        "price": 0,
         "brand": "porsche",
         "model": "911+996+c4s",
         "year": "2003 ",
@@ -32913,6 +33191,7 @@
     },
     {
         "docno": "d3320",
+        "price": 0,
         "brand": "ford",
         "model": "focus",
         "year": "2009 ",
@@ -32922,6 +33201,7 @@
     },
     {
         "docno": "d3321",
+        "price": 0,
         "brand": "rolls+royce",
         "model": "silver+spirit",
         "year": "1985 ",
@@ -32931,6 +33211,7 @@
     },
     {
         "docno": "d3322",
+        "price": 0,
         "brand": "jaguar",
         "model": "xj6",
         "year": "1978 ",
@@ -32940,6 +33221,7 @@
     },
     {
         "docno": "d3323",
+        "price": 0,
         "brand": "bmw",
         "model": "320i+cabriolet",
         "year": "1999 ",
@@ -32949,6 +33231,7 @@
     },
     {
         "docno": "d3324",
+        "price": 0,
         "brand": "jaguar",
         "model": "xk8+coupe",
         "year": "1999 ",
@@ -32958,6 +33241,7 @@
     },
     {
         "docno": "d3325",
+        "price": 0,
         "brand": "vauxhall",
         "model": "vector",
         "year": "1963 ",
@@ -32967,6 +33251,7 @@
     },
     {
         "docno": "d3326",
+        "price": 0,
         "brand": "corvette",
         "model": "stingray",
         "year": "1991 ",
@@ -32976,6 +33261,7 @@
     },
     {
         "docno": "d3327",
+        "price": 0,
         "brand": "aston+martin",
         "model": "db7",
         "year": "1999 ",
@@ -32985,6 +33271,7 @@
     },
     {
         "docno": "d3328",
+        "price": 0,
         "brand": "rolls-royce",
         "model": "silver+shadow+2",
         "year": "1979 ",
@@ -32994,6 +33281,7 @@
     },
     {
         "docno": "d3329",
+        "price": 0,
         "brand": "volkswagen",
         "model": "polo+c",
         "year": "1989 ",
@@ -33003,6 +33291,7 @@
     },
     {
         "docno": "d3330",
+        "price": 0,
         "brand": "ford",
         "model": "escort+xr3i",
         "year": "1988 ",
@@ -33012,6 +33301,7 @@
     },
     {
         "docno": "d3331",
+        "price": 0,
         "brand": "bentley",
         "model": "t1",
         "year": "1971 ",
@@ -33021,6 +33311,7 @@
     },
     {
         "docno": "d3332",
+        "price": 0,
         "brand": "audi",
         "model": "quattro",
         "year": "1990 ",
@@ -33030,6 +33321,7 @@
     },
     {
         "docno": "d3333",
+        "price": 0,
         "brand": "jaguar",
         "model": "xj6",
         "year": "2016 ",
@@ -33039,6 +33331,7 @@
     },
     {
         "docno": "d3334",
+        "price": 0,
         "brand": "mg",
         "model": "bgt",
         "year": "1973 ",
@@ -33048,6 +33341,7 @@
     },
     {
         "docno": "d3335",
+        "price": 0,
         "brand": "swallow",
         "model": "ss2",
         "year": "1934 ",
@@ -33057,6 +33351,7 @@
     },
     {
         "docno": "d3336",
+        "price": 0,
         "brand": "triumph",
         "model": "tr6",
         "year": "1974 ",
@@ -33066,6 +33361,7 @@
     },
     {
         "docno": "d3337",
+        "price": 0,
         "brand": "bentley",
         "model": "turbo+r",
         "year": "1993 ",
@@ -33075,6 +33371,7 @@
     },
     {
         "docno": "d3338",
+        "price": 0,
         "brand": "austin",
         "model": "a35",
         "year": "1962 ",
@@ -33084,6 +33381,7 @@
     },
     {
         "docno": "d3339",
+        "price": 0,
         "brand": "rover",
         "model": "metro+1.4+cabriolet",
         "year": "2001 ",
@@ -33093,6 +33391,7 @@
     },
     {
         "docno": "d3340",
+        "price": 0,
         "brand": "chevrolet",
         "model": "corvette+c2+stingray",
         "year": "1998 ",
@@ -33102,6 +33401,7 @@
     },
     {
         "docno": "d3341",
+        "price": 0,
         "brand": "bmw",
         "model": "m3+e36",
         "year": "1999 ",
@@ -33111,6 +33411,7 @@
     },
     {
         "docno": "d3342",
+        "price": 0,
         "brand": "subaru",
         "model": "impreza+wrx+sti",
         "year": "2009 ",
@@ -33120,6 +33421,7 @@
     },
     {
         "docno": "d3343",
+        "price": 0,
         "brand": "ford",
         "model": "fiesta+xr2",
         "year": "1982 ",
@@ -33129,6 +33431,7 @@
     },
     {
         "docno": "d3344",
+        "price": 0,
         "brand": "honda",
         "model": "s800m",
         "year": "1968 ",
@@ -33138,6 +33441,7 @@
     },
     {
         "docno": "d3345",
+        "price": 0,
         "brand": "cadillac",
         "model": "coupe+de+ville",
         "year": "1992 ",
@@ -33147,6 +33451,7 @@
     },
     {
         "docno": "d3346",
+        "price": 0,
         "brand": "land+rover",
         "model": "lt+weight",
         "year": "2000 ",
@@ -33156,6 +33461,7 @@
     },
     {
         "docno": "d3347",
+        "price": 0,
         "brand": "toyota",
         "model": "mr2+turbo",
         "year": "1998 ",
@@ -33165,6 +33471,7 @@
     },
     {
         "docno": "d3348",
+        "price": 0,
         "brand": "mg",
         "model": "midget",
         "year": "1972 ",
@@ -33174,6 +33481,7 @@
     },
     {
         "docno": "d3349",
+        "price": 0,
         "brand": "austin",
         "model": "metropolitan",
         "year": "1957 ",
@@ -33183,6 +33491,7 @@
     },
     {
         "docno": "d3350",
+        "price": 0,
         "brand": "vw",
         "model": "t2+camper+van",
         "year": "1972 ",
@@ -33192,6 +33501,7 @@
     },
     {
         "docno": "d3351",
+        "price": 0,
         "brand": "maserati",
         "model": "3200+gt",
         "year": "2001 ",
@@ -33201,6 +33511,7 @@
     },
     {
         "docno": "d3352",
+        "price": 0,
         "brand": "ford",
         "model": "focus",
         "year": "2004 ",
@@ -33210,6 +33521,7 @@
     },
     {
         "docno": "d3353",
+        "price": 0,
         "brand": "riley",
         "model": "one-point-five",
         "year": "1964 ",
@@ -33219,6 +33531,7 @@
     },
     {
         "docno": "d3354",
+        "price": 0,
         "brand": "mercedes-benz",
         "model": "500sl",
         "year": "1989 ",
@@ -33228,6 +33541,7 @@
     },
     {
         "docno": "d3355",
+        "price": 0,
         "brand": "mercedes+benz",
         "model": "500sl",
         "year": "1993 ",
@@ -33237,6 +33551,7 @@
     },
     {
         "docno": "d3356",
+        "price": 0,
         "brand": "mercedes-benz",
         "model": "500sl",
         "year": "1992 ",
@@ -33246,6 +33561,7 @@
     },
     {
         "docno": "d3357",
+        "price": 0,
         "brand": "mercedes-benz",
         "model": "500sl-32",
         "year": "1991 ",
@@ -33255,6 +33571,7 @@
     },
     {
         "docno": "d3358",
+        "price": 0,
         "brand": "jaguar",
         "model": "xkr",
         "year": "2001 ",
@@ -33264,6 +33581,7 @@
     },
     {
         "docno": "d3359",
+        "price": 0,
         "brand": "mg",
         "model": "bgt",
         "year": "1974 ",
@@ -33273,6 +33591,7 @@
     },
     {
         "docno": "d3360",
+        "price": 0,
         "brand": "ford",
         "model": "escort",
         "year": "1985 ",
@@ -33282,6 +33601,7 @@
     },
     {
         "docno": "d3361",
+        "price": 0,
         "brand": "volkswagen",
         "model": "t2+bus+type+2",
         "year": "1971 ",
@@ -33291,6 +33611,7 @@
     },
     {
         "docno": "d3362",
+        "price": 0,
         "brand": "morris",
         "model": "ital",
         "year": "1981 ",
@@ -33300,6 +33621,7 @@
     },
     {
         "docno": "d3363",
+        "price": 0,
         "brand": "mg",
         "model": "b+roadster",
         "year": "1974 ",
@@ -33309,6 +33631,7 @@
     },
     {
         "docno": "d3364",
+        "price": 0,
         "brand": "austin",
         "model": "healey+sprite",
         "year": "1997 ",
@@ -33318,6 +33641,7 @@
     },
     {
         "docno": "d3365",
+        "price": 0,
         "brand": "austin",
         "model": "metropolitan",
         "year": "1958 ",
@@ -33327,6 +33651,7 @@
     },
     {
         "docno": "d3366",
+        "price": 0,
         "brand": "porsche",
         "model": "iconic+speedster+387",
         "year": "2006 ",
@@ -33336,6 +33661,7 @@
     },
     {
         "docno": "d3367",
+        "price": 0,
         "brand": "lotus",
         "model": "elan++2",
         "year": "1969 ",
@@ -33345,6 +33671,7 @@
     },
     {
         "docno": "d3368",
+        "price": 0,
         "brand": "aston+martin",
         "model": "db7",
         "year": "1996 ",
@@ -33354,6 +33681,7 @@
     },
     {
         "docno": "d3369",
+        "price": 0,
         "brand": "mercedes+benz",
         "model": "sl500",
         "year": "1981 ",
@@ -33363,6 +33691,7 @@
     },
     {
         "docno": "d3370",
+        "price": 0,
         "brand": "porsche",
         "model": "911",
         "year": "1986 ",
@@ -33372,6 +33701,7 @@
     },
     {
         "docno": "d3371",
+        "price": 0,
         "brand": "mazda",
         "model": "mx5+rocketeer",
         "year": "2004 ",
@@ -33381,6 +33711,7 @@
     },
     {
         "docno": "d3372",
+        "price": 0,
         "brand": "subaru",
         "model": "impreza",
         "year": "2000 ",
@@ -33390,6 +33721,7 @@
     },
     {
         "docno": "d3373",
+        "price": 0,
         "brand": "land+rover",
         "model": "series++iii+lightweight",
         "year": "1992 ",
@@ -33419,6 +33751,7 @@
     },
     {
         "docno": "d3376",
+        "price": 0,
         "brand": "mercedes-benz",
         "model": "slk-class",
         "year": "2004 ",
@@ -33458,6 +33791,7 @@
     },
     {
         "docno": "d3380",
+        "price": 0,
         "brand": "bentely",
         "model": "continental+flying+spur+6.0+w12",
         "year": "2005 ",
@@ -33497,6 +33831,7 @@
     },
     {
         "docno": "d3384",
+        "price": 0,
         "brand": "daewoo",
         "model": "leganza",
         "year": "1980 ",
@@ -33726,6 +34061,7 @@
     },
     {
         "docno": "d3407",
+        "price": 0,
         "brand": "mercedes",
         "model": "sl55+amg+auto+-+e4+-+5495cc",
         "year": "2003 ",
@@ -33735,6 +34071,7 @@
     },
     {
         "docno": "d3408",
+        "price": 0,
         "brand": "alfa+romeo",
         "model": "gtv+t.spark+lusso+-+e0+-+1970cc",
         "year": "2001 ",
@@ -33874,6 +34211,7 @@
     },
     {
         "docno": "d3422",
+        "price": 0,
         "brand": "bmw",
         "model": "735i+sport+auto",
         "year": "2001 ",
@@ -33883,6 +34221,7 @@
     },
     {
         "docno": "d3423",
+        "price": 0,
         "brand": "vespa+douglas",
         "model": "150",
         "year": "2011 ",
@@ -33892,6 +34231,7 @@
     },
     {
         "docno": "d3424",
+        "price": 0,
         "brand": "norton",
         "model": "model+50",
         "year": "1958 ",
@@ -34011,6 +34351,7 @@
     },
     {
         "docno": "d3436",
+        "price": 0,
         "brand": "triumph",
         "model": "stag",
         "year": "1971 ",
@@ -34210,6 +34551,7 @@
     },
     {
         "docno": "d3456",
+        "price": 0,
         "brand": "aston+martin",
         "model": "v8+volante",
         "year": "1983 ",
@@ -34229,6 +34571,7 @@
     },
     {
         "docno": "d3458",
+        "price": 0,
         "brand": "aston+martin",
         "model": "db2",
         "year": "1971 ",
@@ -34308,6 +34651,7 @@
     },
     {
         "docno": "d3466",
+        "price": 0,
         "brand": "rover",
         "model": "75+contemp-y+se+v6+tour+a+-+e0+-+2497cc",
         "year": "2004 ",
@@ -34317,6 +34661,7 @@
     },
     {
         "docno": "d3467",
+        "price": 0,
         "brand": "triumph",
         "model": "acclaim+hl+trio+auto+-+1335cc",
         "year": "1983 ",
@@ -34326,6 +34671,7 @@
     },
     {
         "docno": "d3468",
+        "price": 0,
         "brand": "ford",
         "model": "escort+finesse+-+e0+-+1597cc",
         "year": "2000 ",
@@ -34335,6 +34681,7 @@
     },
     {
         "docno": "d3469",
+        "price": 0,
         "brand": "ford",
         "model": "escort+si+-+e0+-+1796cc",
         "year": "1998 ",
@@ -34344,6 +34691,7 @@
     },
     {
         "docno": "d3470",
+        "price": 0,
         "brand": "triumph",
         "model": "herald+12-slash-50+-+1147cc",
         "year": "1966 ",
@@ -34353,6 +34701,7 @@
     },
     {
         "docno": "d3471",
+        "price": 0,
         "brand": "mercedes",
         "model": "cl55+amg+auto+-+e0+-+5439cc",
         "year": "2002 ",
@@ -34362,6 +34711,7 @@
     },
     {
         "docno": "d3472",
+        "price": 0,
         "brand": "austin-healey",
         "model": "sprite+-+1098cc",
         "year": "1965 ",
@@ -34371,6 +34721,7 @@
     },
     {
         "docno": "d3473",
+        "price": 0,
         "brand": "mercedes",
         "model": "300+ce+auto+-+e0+-+2962cc",
         "year": "1989 ",
@@ -34380,6 +34731,7 @@
     },
     {
         "docno": "d3474",
+        "price": 0,
         "brand": "francis+barnett",
         "model": "cruiser+-+249cc",
         "year": "2017 ",
@@ -34389,6 +34741,7 @@
     },
     {
         "docno": "d3475",
+        "price": 0,
         "brand": "porsche",
         "model": "911+carrera+4+s+-+e0+-+3596cc",
         "year": "2002 ",
@@ -34398,6 +34751,7 @@
     },
     {
         "docno": "d3476",
+        "price": 0,
         "brand": "mini+parts",
         "model": "mkii+mini+parts",
         "year": "1950 ",
@@ -34407,6 +34761,7 @@
     },
     {
         "docno": "d3477",
+        "price": 0,
         "brand": "alfa+romeo",
         "model": "brera+sv+jts+v6+q4+-+e4+-+3195cc",
         "year": "2006 ",
@@ -34416,6 +34771,7 @@
     },
     {
         "docno": "d3478",
+        "price": 0,
         "brand": "ford",
         "model": "fiesta+finesse+-+e0+-+1299cc",
         "year": "1999 ",
@@ -34425,6 +34781,7 @@
     },
     {
         "docno": "d3479",
+        "price": 0,
         "brand": "rover",
         "model": "mini+cooper+sport+-+e0+-+1275cc",
         "year": "2000 ",
@@ -34434,6 +34791,7 @@
     },
     {
         "docno": "d3480",
+        "price": 0,
         "brand": "ford",
         "model": "cortina+gl+-+1593cc",
         "year": "1980 ",
@@ -34443,6 +34801,7 @@
     },
     {
         "docno": "d3481",
+        "price": 0,
         "brand": "smiths",
         "model": "cabac+milk+float+-+0cc",
         "year": "1984 ",
@@ -34452,6 +34811,7 @@
     },
     {
         "docno": "d3482",
+        "price": 0,
         "brand": "ford",
         "model": "consul+-+1703cc",
         "year": "1959 ",
@@ -34461,6 +34821,7 @@
     },
     {
         "docno": "d3483",
+        "price": 0,
         "brand": "porsche",
         "model": "911+carrera+4+tiptronic+s+-+e0+-+3387cc",
         "year": "2001 ",
@@ -34470,6 +34831,7 @@
     },
     {
         "docno": "d3484",
+        "price": 0,
         "brand": "tvr",
         "model": "chimaera+-+3952cc",
         "year": "1995 ",
@@ -34479,6 +34841,7 @@
     },
     {
         "docno": "d3485",
+        "price": 0,
         "brand": "lexus",
         "model": "ls400+auto+-+e0+-+3969cc",
         "year": "1999 ",
@@ -34488,6 +34851,7 @@
     },
     {
         "docno": "d3486",
+        "price": 0,
         "brand": "land+rover",
         "model": "range+rover+hse+auto+-+e2+-+4556cc",
         "year": "2000 ",
@@ -34497,6 +34861,7 @@
     },
     {
         "docno": "d3487",
+        "price": 0,
         "brand": "bmw",
         "model": "540i+m+sport+-+e0+-+4000cc",
         "year": "2006 ",
@@ -34506,6 +34871,7 @@
     },
     {
         "docno": "d3488",
+        "price": 0,
         "brand": "renault",
         "model": "laguna+executive+v6+auto+-+e0+-+2946cc",
         "year": "1998 ",
@@ -34515,6 +34881,7 @@
     },
     {
         "docno": "d3489",
+        "price": 0,
         "brand": "mg",
         "model": "zs+180+-+e0+-+2497cc",
         "year": "2002 ",
@@ -34524,6 +34891,7 @@
     },
     {
         "docno": "d3490",
+        "price": 0,
         "brand": "hyundai",
         "model": "xg30+-+3000cc",
         "year": "2003 ",
@@ -34533,6 +34901,7 @@
     },
     {
         "docno": "d3491",
+        "price": 0,
         "brand": "vauxhall",
         "model": "cavalier+gls+sport+hatch+-+1584cc",
         "year": "1980 ",
@@ -34542,6 +34911,7 @@
     },
     {
         "docno": "d3492",
+        "price": 0,
         "brand": "jaguar",
         "model": "s-type+v8+se+auto+-+e0+-+4196cc",
         "year": "2002 ",
@@ -34551,6 +34921,7 @@
     },
     {
         "docno": "d3493",
+        "price": 0,
         "brand": "nissan",
         "model": "figaro+-+987cc",
         "year": "2004 ",
@@ -34560,6 +34931,7 @@
     },
     {
         "docno": "d3494",
+        "price": 0,
         "brand": "jaguar",
         "model": "xj8+auto+-+e2+-+3248cc",
         "year": "2000 ",
@@ -34569,6 +34941,7 @@
     },
     {
         "docno": "d3495",
+        "price": 0,
         "brand": "chevrolet+gmc",
         "model": "corvette+c4+convertible+lhd+-+5700cc",
         "year": "1991 ",
@@ -34578,6 +34951,7 @@
     },
     {
         "docno": "d3496",
+        "price": 0,
         "brand": "volkswagen",
         "model": "transporter+camper++-+2000cc",
         "year": "1982 ",
@@ -34587,6 +34961,7 @@
     },
     {
         "docno": "d3497",
+        "price": 0,
         "brand": "daimler",
         "model": "ds420+vanden+plas+limousine+-+4235cc",
         "year": "1969 ",
@@ -34596,6 +34971,7 @@
     },
     {
         "docno": "d3498",
+        "price": 0,
         "brand": "nissan",
         "model": "figaro+-+980cc",
         "year": "1991 ",
@@ -34605,6 +34981,7 @@
     },
     {
         "docno": "d3499",
+        "price": 0,
         "brand": "renault",
         "model": "clio+williams+2+-+e0+-+1998cc",
         "year": "1995 ",
@@ -34614,6 +34991,7 @@
     },
     {
         "docno": "d3500",
+        "price": 0,
         "brand": "triumph",
         "model": "stag+-+2498cc",
         "year": "1971 ",
@@ -34623,6 +35001,7 @@
     },
     {
         "docno": "d3501",
+        "price": 0,
         "brand": "alfa+romeo",
         "model": "166+v6+-+e0+-+2492cc",
         "year": "2002 ",
@@ -34632,6 +35011,7 @@
     },
     {
         "docno": "d3502",
+        "price": 0,
         "brand": "mg",
         "model": "tf+-+e0+-+1796cc",
         "year": "2002 ",
@@ -34751,6 +35131,7 @@
     },
     {
         "docno": "d3514",
+        "price": 0,
         "brand": "bentley",
         "model": "r+type",
         "year": "1952 ",
@@ -34760,6 +35141,7 @@
     },
     {
         "docno": "d3515",
+        "price": 0,
         "brand": "jaguar",
         "model": "xk140",
         "year": "1955 ",
@@ -34779,6 +35161,7 @@
     },
     {
         "docno": "d3517",
+        "price": 0,
         "brand": "volvo",
         "model": "240",
         "year": "1982 ",
@@ -34788,6 +35171,7 @@
     },
     {
         "docno": "d3518",
+        "price": 0,
         "brand": "lancia",
         "model": "delta",
         "year": "1988 ",
@@ -34827,6 +35211,7 @@
     },
     {
         "docno": "d3522",
+        "price": 0,
         "brand": "maserati",
         "model": "3500+gt",
         "year": "1964 ",
@@ -34936,6 +35321,7 @@
     },
     {
         "docno": "d3533",
+        "price": 0,
         "brand": "porsche",
         "model": "944",
         "year": "1990 ",
@@ -34945,6 +35331,7 @@
     },
     {
         "docno": "d3534",
+        "price": 0,
         "brand": "bentley",
         "model": "continental",
         "year": "1989 ",
@@ -34964,6 +35351,7 @@
     },
     {
         "docno": "d3536",
+        "price": 0,
         "brand": "jaguar",
         "model": "xjs",
         "year": "1981 ",
@@ -35143,6 +35531,7 @@
     },
     {
         "docno": "d3554",
+        "price": 0,
         "brand": "ford",
         "model": "mustang",
         "year": "1976 ",
@@ -35152,6 +35541,7 @@
     },
     {
         "docno": "d3555",
+        "price": 0,
         "brand": "mg",
         "model": "rv8",
         "year": "1995 ",
@@ -35241,6 +35631,7 @@
     },
     {
         "docno": "d3564",
+        "price": 0,
         "brand": "porsche",
         "model": "991",
         "year": "2014 ",
@@ -35280,6 +35671,7 @@
     },
     {
         "docno": "d3568",
+        "price": 0,
         "brand": "porsche",
         "model": "991.2",
         "year": "2016 ",
@@ -35359,6 +35751,7 @@
     },
     {
         "docno": "d3576",
+        "price": 0,
         "brand": "volkswagen",
         "model": "danbury+diamond",
         "year": "2006 ",
@@ -35878,6 +36271,7 @@
     },
     {
         "docno": "d3628",
+        "price": 0,
         "brand": "jaguar",
         "model": "xj8",
         "year": "2000 ",
@@ -36257,6 +36651,7 @@
     },
     {
         "docno": "d3666",
+        "price": 0,
         "brand": "rolls+royce",
         "model": "silver+spirit",
         "year": "1996 ",
@@ -36326,6 +36721,7 @@
     },
     {
         "docno": "d3673",
+        "price": 0,
         "brand": "mg",
         "model": "a",
         "year": "1957 ",
@@ -36395,6 +36791,7 @@
     },
     {
         "docno": "d3680",
+        "price": 0,
         "brand": "volkswagen",
         "model": "beach+buggy",
         "year": "1972 ",
@@ -36414,6 +36811,7 @@
     },
     {
         "docno": "d3682",
+        "price": 0,
         "brand": "mg",
         "model": "midget",
         "year": "1976 ",
@@ -36423,6 +36821,7 @@
     },
     {
         "docno": "d3683",
+        "price": 0,
         "brand": "mini",
         "model": "cooper",
         "year": "1995 ",
@@ -36432,6 +36831,7 @@
     },
     {
         "docno": "d3684",
+        "price": 0,
         "brand": "lamborghini",
         "model": "diablo",
         "year": "1991 ",
@@ -36441,6 +36841,7 @@
     },
     {
         "docno": "d3685",
+        "price": 0,
         "brand": "aston+martin",
         "model": "db7+vantage",
         "year": "2001 ",
@@ -36460,6 +36861,7 @@
     },
     {
         "docno": "d3687",
+        "price": 0,
         "brand": "bmw",
         "model": "3+series",
         "year": "2003 ",
@@ -36469,6 +36871,7 @@
     },
     {
         "docno": "d3688",
+        "price": 0,
         "brand": "jaguar",
         "model": "xkr+silverstone",
         "year": "2000 ",
@@ -36668,6 +37071,7 @@
     },
     {
         "docno": "d3708",
+        "price": 0,
         "brand": "aston+martin",
         "model": "db9",
         "year": "2009 ",
@@ -36677,6 +37081,7 @@
     },
     {
         "docno": "d3709",
+        "price": 0,
         "brand": "land+rover",
         "model": "range+rover",
         "year": "2000 ",
@@ -36696,6 +37101,7 @@
     },
     {
         "docno": "d3711",
+        "price": 0,
         "brand": "mercedes-benz",
         "model": "slr",
         "year": "2008 ",
@@ -36705,6 +37111,7 @@
     },
     {
         "docno": "d3712",
+        "price": 0,
         "brand": "mercedes-benz",
         "model": "c+class",
         "year": "2005 ",
@@ -36714,6 +37121,7 @@
     },
     {
         "docno": "d3713",
+        "price": 0,
         "brand": "mini",
         "model": "hatchback",
         "year": "2002 ",
@@ -36723,6 +37131,7 @@
     },
     {
         "docno": "d3714",
+        "price": 0,
         "brand": "mini",
         "model": "hatchback",
         "year": "2004 ",
@@ -36732,6 +37141,7 @@
     },
     {
         "docno": "d3715",
+        "price": 0,
         "brand": "jaguar",
         "model": "xk8",
         "year": "2003 ",
@@ -36741,6 +37151,7 @@
     },
     {
         "docno": "d3716",
+        "price": 0,
         "brand": "mg",
         "model": "xpower",
         "year": "2007 ",
@@ -36950,6 +37361,7 @@
     },
     {
         "docno": "d3737",
+        "price": 0,
         "brand": "rover",
         "model": "3500",
         "year": "1974 ",
@@ -37019,6 +37431,7 @@
     },
     {
         "docno": "d3744",
+        "price": 0,
         "brand": "jensen",
         "model": "interceptor+mk3",
         "year": "1973 ",
@@ -37138,6 +37551,7 @@
     },
     {
         "docno": "d3756",
+        "price": 0,
         "brand": "volkswagen",
         "model": "transporter",
         "year": "1982 ",
@@ -37147,6 +37561,7 @@
     },
     {
         "docno": "d3757",
+        "price": 0,
         "brand": "chevrolet",
         "model": "gmc",
         "year": "1989 ",
@@ -37156,6 +37571,7 @@
     },
     {
         "docno": "d3758",
+        "price": 0,
         "brand": "ford",
         "model": "fiesta",
         "year": "1999 ",
@@ -37165,6 +37581,7 @@
     },
     {
         "docno": "d3759",
+        "price": 0,
         "brand": "ford",
         "model": "escort",
         "year": "2000 ",
@@ -37174,6 +37591,7 @@
     },
     {
         "docno": "d3760",
+        "price": 0,
         "brand": "smiths",
         "model": "milk+float",
         "year": "1984 ",
@@ -37183,6 +37601,7 @@
     },
     {
         "docno": "d3761",
+        "price": 0,
         "brand": "mercedes-benz",
         "model": "cl55",
         "year": "2002 ",
@@ -37192,6 +37611,7 @@
     },
     {
         "docno": "d3762",
+        "price": 0,
         "brand": "renault",
         "model": "laguna",
         "year": "1998 ",
@@ -37201,6 +37621,7 @@
     },
     {
         "docno": "d3763",
+        "price": 0,
         "brand": "mg",
         "model": "tf",
         "year": "2002 ",
@@ -37210,6 +37631,7 @@
     },
     {
         "docno": "d3764",
+        "price": 0,
         "brand": "mercedes",
         "model": "300+ce+auto+eo+2962cc",
         "year": "1987 ",
@@ -37219,6 +37641,7 @@
     },
     {
         "docno": "d3765",
+        "price": 0,
         "brand": "alfa+romeo",
         "model": "brera",
         "year": "2006 ",
@@ -37238,6 +37661,7 @@
     },
     {
         "docno": "d3767",
+        "price": 0,
         "brand": "lexus",
         "model": "ls",
         "year": "1999 ",
@@ -37247,6 +37671,7 @@
     },
     {
         "docno": "d3768",
+        "price": 0,
         "brand": "bmw",
         "model": "5+series",
         "year": "2006 ",
@@ -37256,6 +37681,7 @@
     },
     {
         "docno": "d3769",
+        "price": 0,
         "brand": "renault",
         "model": "clio",
         "year": "1995 ",
@@ -37425,6 +37851,7 @@
     },
     {
         "docno": "d3786",
+        "price": 0,
         "brand": "volkswagen",
         "model": "t25",
         "year": "1981 ",
@@ -37474,6 +37901,7 @@
     },
     {
         "docno": "d3791",
+        "price": 0,
         "brand": "land+rover",
         "model": "series+iii",
         "year": "1972 ",
@@ -37533,6 +37961,7 @@
     },
     {
         "docno": "d3797",
+        "price": 0,
         "brand": "ferrari",
         "model": "365+gtb-slash-4",
         "year": "1971 ",
@@ -37602,6 +38031,7 @@
     },
     {
         "docno": "d3804",
+        "price": 0,
         "brand": "jaguar",
         "model": "xk150",
         "year": "1960 ",
@@ -37941,6 +38371,7 @@
     },
     {
         "docno": "d3838",
+        "price": 0,
         "brand": "aston+martin",
         "model": "vantage",
         "year": "1987 ",
@@ -38400,6 +38831,7 @@
     },
     {
         "docno": "d3884",
+        "price": 0,
         "brand": "porsche",
         "model": "991",
         "year": "2017 ",
@@ -38409,6 +38841,7 @@
     },
     {
         "docno": "d3885",
+        "price": 0,
         "brand": "porsche",
         "model": "911",
         "year": "1972 ",
@@ -38608,6 +39041,7 @@
     },
     {
         "docno": "d3905",
+        "price": 0,
         "brand": "ferrari",
         "model": "456",
         "year": "2001 ",
@@ -38647,6 +39081,7 @@
     },
     {
         "docno": "d3909",
+        "price": 0,
         "brand": "daimler",
         "model": "conquest",
         "year": "1957 ",
@@ -38866,6 +39301,7 @@
     },
     {
         "docno": "d3931",
+        "price": 0,
         "brand": "austin",
         "model": "healey",
         "year": "2000 ",
@@ -39425,6 +39861,7 @@
     },
     {
         "docno": "d3987",
+        "price": 0,
         "brand": "alfa+romeo",
         "model": "gt",
         "year": "1972 ",
@@ -39574,6 +40011,7 @@
     },
     {
         "docno": "d4002",
+        "price": 0,
         "brand": "ac",
         "model": "427",
         "year": "1966 ",
@@ -39593,6 +40031,7 @@
     },
     {
         "docno": "d4004",
+        "price": 0,
         "brand": "bmw",
         "model": "alpina",
         "year": "2001 ",
@@ -39602,6 +40041,7 @@
     },
     {
         "docno": "d4005",
+        "price": 0,
         "brand": "nissan",
         "model": "figaro",
         "year": "1991 ",
@@ -39611,6 +40051,7 @@
     },
     {
         "docno": "d4006",
+        "price": 0,
         "brand": "triumph",
         "model": "acclaim",
         "year": "1983 ",
@@ -39640,6 +40081,7 @@
     },
     {
         "docno": "d4009",
+        "price": 0,
         "brand": "aston+martin",
         "model": "db7",
         "year": "1999 ",
@@ -39649,6 +40091,7 @@
     },
     {
         "docno": "d4010",
+        "price": 0,
         "brand": "aston+martin",
         "model": "v8",
         "year": "1979 ",
@@ -39658,6 +40101,7 @@
     },
     {
         "docno": "d4011",
+        "price": 0,
         "brand": "aston+martin",
         "model": "v8",
         "year": "1979 ",
@@ -39697,6 +40141,7 @@
     },
     {
         "docno": "d4015",
+        "price": 0,
         "brand": "ford",
         "model": "model+a",
         "year": "1930 ",
@@ -39756,6 +40201,7 @@
     },
     {
         "docno": "d4021",
+        "price": 0,
         "brand": "aston+martin",
         "model": "db4",
         "year": "1961 ",
@@ -39775,6 +40221,7 @@
     },
     {
         "docno": "d4023",
+        "price": 0,
         "brand": "rolls-royce",
         "model": "silver+cloud",
         "year": "1965 ",
@@ -39934,6 +40381,7 @@
     },
     {
         "docno": "d4039",
+        "price": 0,
         "brand": "ford",
         "model": "transit",
         "year": "2004 ",
@@ -40513,6 +40961,7 @@
     },
     {
         "docno": "d4097",
+        "price": 0,
         "brand": "porsche",
         "model": "993",
         "year": "1996 ",
@@ -40692,6 +41141,7 @@
     },
     {
         "docno": "d4115",
+        "price": 0,
         "brand": "nissan",
         "model": "s",
         "year": "1990 ",
@@ -40701,6 +41151,7 @@
     },
     {
         "docno": "d4116",
+        "price": 0,
         "brand": "alfa",
         "model": "romeo+2000",
         "year": "1978 ",
@@ -40800,6 +41251,7 @@
     },
     {
         "docno": "d4126",
+        "price": 0,
         "brand": "mercedes+benz",
         "model": "300sl",
         "year": "1987 ",
@@ -41129,6 +41581,7 @@
     },
     {
         "docno": "d4159",
+        "price": 0,
         "brand": "ferrari",
         "model": "365",
         "year": "1970 ",
@@ -42028,6 +42481,7 @@
     },
     {
         "docno": "d4249",
+        "price": 0,
         "brand": "porsche",
         "model": "911",
         "year": "1996 ",
@@ -42207,6 +42661,7 @@
     },
     {
         "docno": "d4267",
+        "price": 0,
         "brand": "mg",
         "model": "bgt",
         "year": "1977 ",
@@ -42456,6 +42911,7 @@
     },
     {
         "docno": "d4292",
+        "price": 0,
         "brand": "bmw",
         "model": "z3",
         "year": "1999 ",
@@ -42525,6 +42981,7 @@
     },
     {
         "docno": "d4299",
+        "price": 0,
         "brand": "mg",
         "model": "bgt",
         "year": "1972 ",
@@ -42704,6 +43161,7 @@
     },
     {
         "docno": "d4317",
+        "price": 0,
         "brand": "aston+martin",
         "model": "v8+volante",
         "year": "1987 ",
@@ -43323,6 +43781,7 @@
     },
     {
         "docno": "d4379",
+        "price": 0,
         "brand": "mercedes-benz",
         "model": "sl+series",
         "year": "1989 ",
@@ -43332,6 +43791,7 @@
     },
     {
         "docno": "d4380",
+        "price": 0,
         "brand": "jaguar",
         "model": "e+type",
         "year": "1978 ",
@@ -43361,6 +43821,7 @@
     },
     {
         "docno": "d4383",
+        "price": 0,
         "brand": "mercedes-benz",
         "model": "450",
         "year": "1978 ",
@@ -43400,6 +43861,7 @@
     },
     {
         "docno": "d4387",
+        "price": 0,
         "brand": "mercedes-benz",
         "model": "sl+series",
         "year": "1986 ",
@@ -44219,6 +44681,7 @@
     },
     {
         "docno": "d4469",
+        "price": 0,
         "brand": "bmw",
         "model": "2000",
         "year": "1968 ",
@@ -44508,6 +44971,7 @@
     },
     {
         "docno": "d4498",
+        "price": 0,
         "brand": "jaguar",
         "model": "xk120",
         "year": "1952 ",
@@ -44787,6 +45251,7 @@
     },
     {
         "docno": "d4526",
+        "price": 0,
         "brand": "mercedes-benz",
         "model": "560sl+roadster",
         "year": "1988 ",
@@ -44856,6 +45321,7 @@
     },
     {
         "docno": "d4533",
+        "price": 0,
         "brand": "alvis",
         "model": "ta21",
         "year": "1959 ",
@@ -44935,6 +45401,7 @@
     },
     {
         "docno": "d4541",
+        "price": 0,
         "brand": "jensen",
         "model": "healey",
         "year": "1975 ",
@@ -45164,6 +45631,7 @@
     },
     {
         "docno": "d4564",
+        "price": 0,
         "brand": "toyota",
         "model": "yaris",
         "year": "2003 ",
@@ -45173,6 +45641,7 @@
     },
     {
         "docno": "d4565",
+        "price": 0,
         "brand": "jaguar",
         "model": "e+type+v12+coupe",
         "year": "1972 ",
@@ -45692,6 +46161,7 @@
     },
     {
         "docno": "d4617",
+        "price": 0,
         "brand": "aston+martin",
         "model": "v8",
         "year": "2012 ",
@@ -46311,6 +46781,7 @@
     },
     {
         "docno": "d4679",
+        "price": 0,
         "brand": "nissan",
         "model": "sunny",
         "year": "1991 ",
@@ -46660,6 +47131,7 @@
     },
     {
         "docno": "d4714",
+        "price": 0,
         "brand": "mercedes",
         "model": "280sl",
         "year": "1971 ",
@@ -47349,6 +47821,7 @@
     },
     {
         "docno": "d4783",
+        "price": 0,
         "brand": "jaguar",
         "model": "s-type",
         "year": "1959 ",
@@ -47628,6 +48101,7 @@
     },
     {
         "docno": "d4811",
+        "price": 0,
         "brand": "jaguar",
         "model": "s-type",
         "year": "2002 ",
@@ -47837,6 +48311,7 @@
     },
     {
         "docno": "d4832",
+        "price": 0,
         "brand": "mg",
         "model": "b",
         "year": "1956 ",
@@ -47946,6 +48421,7 @@
     },
     {
         "docno": "d4843",
+        "price": 0,
         "brand": "vauxhall",
         "model": "viva",
         "year": "1973 ",
@@ -48605,6 +49081,7 @@
     },
     {
         "docno": "d4909",
+        "price": 0,
         "brand": "morris",
         "model": "oxford",
         "year": "1956 ",
@@ -48664,6 +49141,7 @@
     },
     {
         "docno": "d4915",
+        "price": 0,
         "brand": "volkswagen",
         "model": "type+2+day+van",
         "year": "1973 ",
@@ -48733,6 +49211,7 @@
     },
     {
         "docno": "d4922",
+        "price": 0,
         "brand": "land+rover",
         "model": "80",
         "year": "1953 ",
@@ -48802,6 +49281,7 @@
     },
     {
         "docno": "d4929",
+        "price": 0,
         "brand": "rolls-royce",
         "model": "silver+cloud",
         "year": "1965 ",
@@ -48891,6 +49371,7 @@
     },
     {
         "docno": "d4938",
+        "price": 0,
         "brand": "jaguar",
         "model": "e-type",
         "year": "1973 ",
@@ -48900,6 +49381,7 @@
     },
     {
         "docno": "d4939",
+        "price": 0,
         "brand": "porsche",
         "model": "911",
         "year": "2012 ",
@@ -49609,6 +50091,7 @@
     },
     {
         "docno": "d5010",
+        "price": 0,
         "brand": "aston+martin",
         "model": "v8+vantage",
         "year": "1988 ",
@@ -49958,6 +50441,7 @@
     },
     {
         "docno": "d5045",
+        "price": 0,
         "brand": "fleur+de+lys",
         "model": "landaulet",
         "year": "1985 ",
@@ -50207,6 +50691,7 @@
     },
     {
         "docno": "d5070",
+        "price": 0,
         "brand": "vauxhall",
         "model": "viva",
         "year": "1973 ",
@@ -50386,6 +50871,7 @@
     },
     {
         "docno": "d5088",
+        "price": 0,
         "brand": "land+rover",
         "model": "defender",
         "year": "2005 ",
@@ -50405,6 +50891,7 @@
     },
     {
         "docno": "d5090",
+        "price": 0,
         "brand": "mercedes-benz",
         "model": "600",
         "year": "1971 ",
@@ -50894,6 +51381,7 @@
     },
     {
         "docno": "d5139",
+        "price": 0,
         "brand": "jaguar",
         "model": "sovereign",
         "year": "1993 ",
@@ -50923,6 +51411,7 @@
     },
     {
         "docno": "d5142",
+        "price": 0,
         "brand": "saab",
         "model": "900",
         "year": "1996 ",
@@ -51092,6 +51581,7 @@
     },
     {
         "docno": "d5159",
+        "price": 0,
         "brand": "volvo",
         "model": "v70",
         "year": "1999 ",
@@ -51401,6 +51891,7 @@
     },
     {
         "docno": "d5190",
+        "price": 0,
         "brand": "porsche",
         "model": "993",
         "year": "1997 ",
@@ -51830,6 +52321,7 @@
     },
     {
         "docno": "d5233",
+        "price": 0,
         "brand": "bae",
         "model": "vantare",
         "year": "2005 ",
@@ -51839,6 +52331,7 @@
     },
     {
         "docno": "d5234",
+        "price": 0,
         "brand": "citroen",
         "model": "ds",
         "year": "1969 ",
@@ -52328,6 +52821,7 @@
     },
     {
         "docno": "d5283",
+        "price": 0,
         "brand": "porsche",
         "model": "993",
         "year": "1996 ",
@@ -52557,6 +53051,7 @@
     },
     {
         "docno": "d5306",
+        "price": 0,
         "brand": "mercedes-benz",
         "model": "190",
         "year": "1993 ",
@@ -52886,6 +53381,7 @@
     },
     {
         "docno": "d5339",
+        "price": 0,
         "brand": "mg",
         "model": "b",
         "year": "1973 ",
@@ -53095,6 +53591,7 @@
     },
     {
         "docno": "d5360",
+        "price": 0,
         "brand": "porsche",
         "model": "991",
         "year": "2013 ",
@@ -53244,6 +53741,7 @@
     },
     {
         "docno": "d5375",
+        "price": 0,
         "brand": "alfa+romeo",
         "model": "giulia",
         "year": "1968 ",
@@ -53253,6 +53751,7 @@
     },
     {
         "docno": "d5376",
+        "price": 0,
         "brand": "bentley",
         "model": "t+series",
         "year": "1979 ",
@@ -53262,6 +53761,7 @@
     },
     {
         "docno": "d5377",
+        "price": 0,
         "brand": "citroen",
         "model": "ds",
         "year": "1965 ",
@@ -53381,6 +53881,7 @@
     },
     {
         "docno": "d5389",
+        "price": 0,
         "brand": "jaguar",
         "model": "x-type",
         "year": "2006 ",
@@ -54000,6 +54501,7 @@
     },
     {
         "docno": "d5451",
+        "price": 0,
         "brand": "porsche",
         "model": "997",
         "year": "2007 ",
@@ -54519,6 +55021,7 @@
     },
     {
         "docno": "d5503",
+        "price": 0,
         "brand": "mercedes-benz",
         "model": "sl+series",
         "year": "1986 ",
@@ -54528,6 +55031,7 @@
     },
     {
         "docno": "d5504",
+        "price": 0,
         "brand": "mercedes-benz",
         "model": "sl+series",
         "year": "1987 ",
@@ -54537,6 +55041,7 @@
     },
     {
         "docno": "d5505",
+        "price": 0,
         "brand": "mercedes-benz",
         "model": "300",
         "year": "1991 ",
@@ -54596,6 +55101,7 @@
     },
     {
         "docno": "d5511",
+        "price": 0,
         "brand": "ford",
         "model": "capri",
         "year": "1961 ",
@@ -54605,6 +55111,7 @@
     },
     {
         "docno": "d5512",
+        "price": 0,
         "brand": "rover",
         "model": "metro",
         "year": "1993 ",
@@ -55794,6 +56301,7 @@
     },
     {
         "docno": "d5631",
+        "price": 0,
         "brand": "peugeot",
         "model": "504",
         "year": "1973 ",
@@ -56433,6 +56941,7 @@
     },
     {
         "docno": "d5695",
+        "price": 0,
         "brand": "porsche",
         "model": "911",
         "year": "1988 ",
@@ -57542,6 +58051,7 @@
     },
     {
         "docno": "d5806",
+        "price": 0,
         "brand": "mercedes-benz",
         "model": "280",
         "year": "1971 ",
@@ -57551,6 +58061,7 @@
     },
     {
         "docno": "d5807",
+        "price": 0,
         "brand": "aston+martin",
         "model": "vanquish",
         "year": "2002 ",
@@ -57560,6 +58071,7 @@
     },
     {
         "docno": "d5808",
+        "price": 0,
         "brand": "aston+martin",
         "model": "v8",
         "year": "1980 ",
@@ -57929,6 +58441,7 @@
     },
     {
         "docno": "d5845",
+        "price": 0,
         "brand": "rover",
         "model": "metro",
         "year": "1993 ",
@@ -58058,6 +58571,7 @@
     },
     {
         "docno": "d5858",
+        "price": 0,
         "brand": "talbot",
         "model": "horizon",
         "year": "1983 ",
@@ -58127,6 +58641,7 @@
     },
     {
         "docno": "d5865",
+        "price": 0,
         "brand": "aston+martin",
         "model": "vanquish+s",
         "year": "2005 ",
@@ -58206,6 +58721,7 @@
     },
     {
         "docno": "d5873",
+        "price": 0,
         "brand": "morris",
         "model": "minor",
         "year": "1963 ",
@@ -59845,6 +60361,7 @@
     },
     {
         "docno": "d6037",
+        "price": 0,
         "brand": "peugeot",
         "model": "106",
         "year": "2001 ",
@@ -59894,6 +60411,7 @@
     },
     {
         "docno": "d6042",
+        "price": 0,
         "brand": "aston+martin",
         "model": "vanquish",
         "year": "2004 ",
@@ -59913,6 +60431,7 @@
     },
     {
         "docno": "d6044",
+        "price": 0,
         "brand": "vauxhall",
         "model": "nova",
         "year": "1987 ",
@@ -60072,6 +60591,7 @@
     },
     {
         "docno": "d6060",
+        "price": 0,
         "brand": "mazda",
         "model": "mx-5",
         "year": "1999 ",
@@ -60471,6 +60991,7 @@
     },
     {
         "docno": "d6100",
+        "price": 0,
         "brand": "jaguar",
         "model": "e+type",
         "year": "1972 ",
@@ -60910,6 +61431,7 @@
     },
     {
         "docno": "d6144",
+        "price": 0,
         "brand": "mival",
         "model": "mival+125cc",
         "year": "2009 ",
@@ -60919,6 +61441,7 @@
     },
     {
         "docno": "d6145",
+        "price": 0,
         "brand": "capriolo",
         "model": "125+cc+motor",
         "year": "2017 ",
@@ -60938,6 +61461,7 @@
     },
     {
         "docno": "d6147",
+        "price": 0,
         "brand": "maserati",
         "model": "125cc.+5167",
         "year": "2009 ",
@@ -61167,6 +61691,7 @@
     },
     {
         "docno": "d6170",
+        "price": 0,
         "brand": "volkswagen",
         "model": "campervan",
         "year": "1965 ",
@@ -61346,6 +61871,7 @@
     },
     {
         "docno": "d6188",
+        "price": 0,
         "brand": "vauxhall",
         "model": "nova",
         "year": "1987 ",
@@ -61375,6 +61901,7 @@
     },
     {
         "docno": "d6191",
+        "price": 0,
         "brand": "porsche",
         "model": "997",
         "year": "2006 ",
@@ -61394,6 +61921,7 @@
     },
     {
         "docno": "d6193",
+        "price": 0,
         "brand": "vauxhall",
         "model": "tigra",
         "year": "1995 ",
@@ -61533,6 +62061,7 @@
     },
     {
         "docno": "d6207",
+        "price": 0,
         "brand": "triumph",
         "model": "tr4",
         "year": "1964 ",
@@ -61562,6 +62091,7 @@
     },
     {
         "docno": "d6210",
+        "price": 0,
         "brand": "mercedes-benz",
         "model": "e-class",
         "year": "2002 ",
@@ -61651,6 +62181,7 @@
     },
     {
         "docno": "d6219",
+        "price": 0,
         "brand": "bentley",
         "model": "azure",
         "year": "2001 ",
@@ -61720,6 +62251,7 @@
     },
     {
         "docno": "d6226",
+        "price": 0,
         "brand": "jeep",
         "model": "grand+cherokee",
         "year": "1995 ",
@@ -62639,6 +63171,7 @@
     },
     {
         "docno": "d6318",
+        "price": 0,
         "brand": "porsche",
         "model": "993",
         "year": "1997 ",
@@ -62648,6 +63181,7 @@
     },
     {
         "docno": "d6319",
+        "price": 0,
         "brand": "ferrari",
         "model": "f430",
         "year": "2009 ",
@@ -62657,6 +63191,7 @@
     },
     {
         "docno": "d6320",
+        "price": 0,
         "brand": "porsche",
         "model": "930",
         "year": "1980 ",
@@ -62666,6 +63201,7 @@
     },
     {
         "docno": "d6321",
+        "price": 0,
         "brand": "porsche",
         "model": "997",
         "year": "2008 ",
@@ -62685,6 +63221,7 @@
     },
     {
         "docno": "d6323",
+        "price": 0,
         "brand": "porsche",
         "model": "911",
         "year": "1982 ",
@@ -62694,6 +63231,7 @@
     },
     {
         "docno": "d6324",
+        "price": 0,
         "brand": "ferrari",
         "model": "f355",
         "year": "1996 ",
@@ -62703,6 +63241,7 @@
     },
     {
         "docno": "d6325",
+        "price": 0,
         "brand": "porsche",
         "model": "991",
         "year": "2014 ",
@@ -62712,6 +63251,7 @@
     },
     {
         "docno": "d6326",
+        "price": 0,
         "brand": "porsche",
         "model": "964",
         "year": "1991 ",
@@ -62721,6 +63261,7 @@
     },
     {
         "docno": "d6327",
+        "price": 0,
         "brand": "porsche",
         "model": "993",
         "year": "1996 ",
@@ -62730,6 +63271,7 @@
     },
     {
         "docno": "d6328",
+        "price": 0,
         "brand": "porsche",
         "model": "911",
         "year": "2011 ",
@@ -62739,6 +63281,7 @@
     },
     {
         "docno": "d6329",
+        "price": 0,
         "brand": "porsche",
         "model": "911",
         "year": "1998 ",
@@ -62748,6 +63291,7 @@
     },
     {
         "docno": "d6330",
+        "price": 0,
         "brand": "ferrari",
         "model": "360+spider",
         "year": "2001 ",
@@ -62757,6 +63301,7 @@
     },
     {
         "docno": "d6331",
+        "price": 0,
         "brand": "austin",
         "model": "a40",
         "year": "1960 ",
@@ -63356,6 +63901,7 @@
     },
     {
         "docno": "d6391",
+        "price": 0,
         "brand": "aston+martin",
         "model": "v8",
         "year": "1988 ",
@@ -63365,6 +63911,7 @@
     },
     {
         "docno": "d6392",
+        "price": 0,
         "brand": "aston+martin",
         "model": "virage",
         "year": "1991 ",
@@ -63374,6 +63921,7 @@
     },
     {
         "docno": "d6393",
+        "price": 0,
         "brand": "aston+martin",
         "model": "v8",
         "year": "1994 ",
@@ -63383,6 +63931,7 @@
     },
     {
         "docno": "d6394",
+        "price": 0,
         "brand": "aston+martin",
         "model": "v8",
         "year": "1979 ",
@@ -63392,6 +63941,7 @@
     },
     {
         "docno": "d6395",
+        "price": 0,
         "brand": "ford",
         "model": "fiesta",
         "year": "1978 ",
@@ -63401,6 +63951,7 @@
     },
     {
         "docno": "d6396",
+        "price": 0,
         "brand": "aston+martin",
         "model": "lagonda",
         "year": "1989 ",
@@ -63520,6 +64071,7 @@
     },
     {
         "docno": "d6408",
+        "price": 0,
         "brand": "aston+martin",
         "model": "v8",
         "year": "1987 ",
@@ -63529,6 +64081,7 @@
     },
     {
         "docno": "d6409",
+        "price": 0,
         "brand": "aston+martin",
         "model": "db7",
         "year": "2001 ",
@@ -63538,6 +64091,7 @@
     },
     {
         "docno": "d6410",
+        "price": 0,
         "brand": "aston+martin",
         "model": "vanquish",
         "year": "2007 ",
@@ -63547,6 +64101,7 @@
     },
     {
         "docno": "d6411",
+        "price": 0,
         "brand": "aston+martin",
         "model": "virage",
         "year": "1990 ",
@@ -63556,6 +64111,7 @@
     },
     {
         "docno": "d6412",
+        "price": 0,
         "brand": "rolls-royce",
         "model": "corniche",
         "year": "1978 ",
@@ -63585,6 +64141,7 @@
     },
     {
         "docno": "d6415",
+        "price": 0,
         "brand": "aston+martin",
         "model": "v600",
         "year": "2000 ",
@@ -63804,6 +64361,7 @@
     },
     {
         "docno": "d6437",
+        "price": 0,
         "brand": "aston+martin",
         "model": "virage",
         "year": "1991 ",
@@ -63813,6 +64371,7 @@
     },
     {
         "docno": "d6438",
+        "price": 0,
         "brand": "aston+martin",
         "model": "v8",
         "year": "1987 ",
@@ -63822,6 +64381,7 @@
     },
     {
         "docno": "d6439",
+        "price": 0,
         "brand": "aston+martin",
         "model": "v8",
         "year": "1998 ",
@@ -63831,6 +64391,7 @@
     },
     {
         "docno": "d6440",
+        "price": 0,
         "brand": "bricklin",
         "model": "sv-1",
         "year": "1975 ",
@@ -63840,6 +64401,7 @@
     },
     {
         "docno": "d6441",
+        "price": 0,
         "brand": "aston+martin",
         "model": "db7",
         "year": "1999 ",
@@ -63849,6 +64411,7 @@
     },
     {
         "docno": "d6442",
+        "price": 0,
         "brand": "aston+martin",
         "model": "virage",
         "year": "1995 ",
@@ -63858,6 +64421,7 @@
     },
     {
         "docno": "d6443",
+        "price": 0,
         "brand": "aston+martin",
         "model": "vantage",
         "year": "1999 ",
@@ -63867,6 +64431,7 @@
     },
     {
         "docno": "d6444",
+        "price": 0,
         "brand": "rolls-royce",
         "model": "silver+shadow",
         "year": "1977 ",
@@ -63876,6 +64441,7 @@
     },
     {
         "docno": "d6445",
+        "price": 0,
         "brand": "aston+martin",
         "model": "v8",
         "year": "1982 ",
@@ -64305,6 +64871,7 @@
     },
     {
         "docno": "d6488",
+        "price": 0,
         "brand": "fiat",
         "model": "500",
         "year": "1972 ",
@@ -64344,6 +64911,7 @@
     },
     {
         "docno": "d6492",
+        "price": 0,
         "brand": "volkswagen",
         "model": "golf+gti",
         "year": "2001 ",
@@ -64403,6 +64971,7 @@
     },
     {
         "docno": "d6498",
+        "price": 0,
         "brand": "ferrari",
         "model": "f355+gts",
         "year": "1998 ",
@@ -64512,6 +65081,7 @@
     },
     {
         "docno": "d6509",
+        "price": 0,
         "brand": "aston+martin",
         "model": "virage",
         "year": "1990 ",
@@ -64531,6 +65101,7 @@
     },
     {
         "docno": "d6511",
+        "price": 0,
         "brand": "land+rover",
         "model": "range+rover",
         "year": "1971 ",
@@ -64590,6 +65161,7 @@
     },
     {
         "docno": "d6517",
+        "price": 0,
         "brand": "aston+martin",
         "model": "v8",
         "year": "1981 ",
@@ -64619,6 +65191,7 @@
     },
     {
         "docno": "d6520",
+        "price": 0,
         "brand": "aston+martin",
         "model": "virage",
         "year": "1990 ",
@@ -64638,6 +65211,7 @@
     },
     {
         "docno": "d6522",
+        "price": 0,
         "brand": "mercedes-benz",
         "model": "280",
         "year": "1971 ",

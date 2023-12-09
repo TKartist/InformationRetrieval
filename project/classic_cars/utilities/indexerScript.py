@@ -38,6 +38,8 @@ def generateTargetFile():
                     numPrice = valPrice.replace(",", "")
                     if numPrice.isdigit():
                         newObj["price"] = int(numPrice)
+                    else:
+                        newObj["price"] = 0
                 else:
                     newObj["price"] = 0
                 newObj["brand"] = obj["make"]
