@@ -2,21 +2,14 @@ import json
 import re
 import pandas as pd
 import pyterrier as pt
+
+# Contains the file paths in case of running through the JSONS
 from file_paths import DBPATH, json_files
 
-# Create an empty list to store the Python objects.
 
-
-def jsonReader(path):
-    db_objs = []
-    with open(path, "r") as f:
-        objects = json.load(f)
-    for obj in objects:
-        db_objs.append(obj)
-    return db_objs
-
-
+# Generates text columns of DF
 def convJSON2Str(jsonObj):
+    # Personalized
     make = jsonObj["make"].replace("+", " ")
     text = make
     text += " " + jsonObj["model"]
@@ -39,6 +32,7 @@ def convJSON2Str(jsonObj):
     return text
 
 
+# Alters original scrapped object into a format we need
 def alterObject(obj, docno):
     newObj = {}
     newObj["docno"] = "d" + str(docno)
@@ -62,6 +56,7 @@ def alterObject(obj, docno):
     return newObj
 
 
+# Creates jsonDB file filled with all the scrapped and altered info
 def generateTargetFile():
     db_objects = []
     docno = 1
@@ -88,19 +83,7 @@ def generateIndex(preIndexTable):
     return index
 
 
-# print(index.getCollectionStatistics().toString())
-
-# for kv in index.getLexicon():
-#     print(kv.getKey())
-#     print(index.getLexicon()[kv.getKey()].toString())
-#     print("******************************************")
-
-# word_ = "x1"
-# pointer = index.getLexicon()[word_]
-# for posting in index.getInvertedIndex().getPostings(pointer):
-#     print(posting.toString() + "doclen=%d" % posting.getDocumentLength())
-
-
+# Creates a simplified ver. of objects for clustering and display
 def retrieve_car_info(cdf, db_objects):
     car_make = []
     car_model = []

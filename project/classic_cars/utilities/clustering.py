@@ -1,29 +1,28 @@
 # Matlab and Pandas libs
 import pandas as pd
-import numpy as np
 import matplotlib.pyplot as plt
 
 plt.style.use("ggplot")
-import re
 import sklearn
 from sklearn.manifold import TSNE
-from sklearn.cluster import KMeans, DBSCAN
+from sklearn.cluster import KMeans
 from sklearn.manifold import TSNE
-from sklearn.feature_extraction.text import CountVectorizer, TfidfVectorizer
-
-# Personal lib
-from file_paths import INDEXPATH
+from sklearn.feature_extraction.text import TfidfVectorizer
 
 # Stemming Lib
 import nltk
 from nltk.stem import PorterStemmer
 from nltk.tokenize import word_tokenize
 
+# Pre-build
 nltk.download("punkt")
+vectorizer = TfidfVectorizer(
+    stop_words="english", max_df=0.9, min_df=0.01, max_features=1000
+)
 
 
 # In case we want to visualize the clustered data
-def clustering_visualization(X, clustering_labels, n_clusters):
+def clustering_visualization(X, n_clusters):
     tsne = TSNE(random_state=0)
     X_reduced = tsne.fit_transform(X.toarray())
     kmeans = KMeans(n_clusters=n_clusters, random_state=0).fit(
@@ -33,6 +32,7 @@ def clustering_visualization(X, clustering_labels, n_clusters):
     clustering_labels = kmeans.labels_
 
     plt.scatter(X_reduced[:, 0], X_reduced[:, 1], c=clustering_labels)
+    plt.show()
 
 
 #############################################################################
@@ -43,19 +43,7 @@ def clustering_visualization(X, clustering_labels, n_clusters):
 #############################################################################
 
 
-# Reading Data
-# car_parse_array = jsonReader(INDEXPATH)
-# x = pd.DataFrame(car_parse_array)
-# data = pd.read_json(INDEXPATH)
-# texts = data["text"].str.lower()
-
-# stemming
-
-vectorizer = TfidfVectorizer(
-    stop_words="english", max_df=0.9, min_df=0.01, max_features=1000
-)
-
-
+# Stemming
 def apply_stem(text, stemmer):
     words = word_tokenize(text)
     stemmed_text = " ".join([stemmer.stem(word) for word in words])
@@ -69,19 +57,25 @@ def perform_clustering(data):
     stemmed_text = [apply_stem(str(text), stemmer) for text in texts]
     X = vectorizer.fit_transform(stemmed_text)
     n_clusters = len(data["brand"].unique())
+
+    # Please uncomment the line below and run "python trial.py" command in utilities directory
+    # to view the scatter graph of clustering
+    # clustering_visualization(X, n_clusters)
+
     # K-Means
     kmeans = KMeans(n_clusters=n_clusters, random_state=0, n_init=10).fit(X)
-    # dbscan = DBSCAN().fit(X) # for DBSCAN method
     data["clusters"] = kmeans.labels_  # clustering labels
-    # Assign the mean score of the cluster group the row belongs to
-    data["mean_score"] = data.groupby("clusters")["score"].transform("mean")
 
-    # Sort according to that new mean_score, realistically, group with higher mean is likely to have more favorable result
-    output = data.sort_values(["mean_score", "score"], ascending=[False, False])
-    output = output.drop(columns=["mean_score"])
+    # In case indexing is not done
+    if data["score"]:
+        # Assign the mean score of the cluster group the row belongs to
+        data["mean_score"] = data.groupby("clusters")["score"].transform("mean")
+
+        # Sort according to that new mean_score, realistically
+        # group with higher mean is likely to have more favorable result
+        output = data.sort_values(["mean_score", "score"], ascending=[False, False])
+        output = output.drop(columns=["mean_score"])
+    else:
+        output = data.groupby("clusters").apply(lambda x: x)
+
     return output
-
-
-# For viewing the DF form of the cluster
-# k = pd.DataFrame(X.toarray(), columns=vectorizer.get_feature_names_out())
-# clustering_visualization(X, clustering_labels)
