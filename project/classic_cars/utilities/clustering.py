@@ -23,7 +23,7 @@ nltk.download("punkt")
 
 
 # In case we want to visualize the clustered data
-def clustering_visualization(X, clustering_labels):
+def clustering_visualization(X, clustering_labels, n_clusters):
     tsne = TSNE(random_state=0)
     X_reduced = tsne.fit_transform(X.toarray())
     kmeans = KMeans(n_clusters=n_clusters, random_state=0).fit(
@@ -54,7 +54,6 @@ def clustering_visualization(X, clustering_labels):
 vectorizer = TfidfVectorizer(
     stop_words="english", max_df=0.9, min_df=0.01, max_features=1000
 )
-n_clusters = 10
 
 
 def apply_stem(text, stemmer):
@@ -69,11 +68,18 @@ def perform_clustering(data):
     texts = data["text"].str.lower()
     stemmed_text = [apply_stem(str(text), stemmer) for text in texts]
     X = vectorizer.fit_transform(stemmed_text)
+    n_clusters = len(data["brand"].unique())
     # K-Means
     kmeans = KMeans(n_clusters=n_clusters, random_state=0, n_init=10).fit(X)
-
     # dbscan = DBSCAN().fit(X) # for DBSCAN method
-    clustering_labels = kmeans.labels_  # clustering labels
+    data["clusters"] = kmeans.labels_  # clustering labels
+    # Assign the mean score of the cluster group the row belongs to
+    data["mean_score"] = data.groupby("clusters")["score"].transform("mean")
+
+    # Sort according to that new mean_score, realistically, group with higher mean is likely to have more favorable result
+    output = data.sort_values(["mean_score", "score"], ascending=[False, False])
+    output = output.drop(columns=["mean_score"])
+    return output
 
 
 # For viewing the DF form of the cluster

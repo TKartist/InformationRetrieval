@@ -1,4 +1,5 @@
 from indexerScript import generateIndex, getQueryResult, generateTargetFile
+from clustering import perform_clustering
 import json
 import pandas as pd
 from file_paths import DBPATH
@@ -13,12 +14,12 @@ with open(DBPATH, "r") as f:
 
 preIndexTable = pd.read_json(DBPATH)
 index = generateIndex(preIndexTable)
-query = [["q1", "mercedes x1"], ["q2", "bmw luxury car auction"]]
-x = getQueryResult(index, query, db_objs)
-x.to_csv("clustered.csv", index=False, encoding="utf-8")
 
-query1 = [["q1", "mercedes"], ["q2", "mercedes luxury car auction"]]
+query1 = [["q1", "mercedes bmw x1"]]
 x = getQueryResult(index, query1, db_objs)
-x.to_csv("clustered2.csv")
+# print(x)
+z = perform_clustering(x)
+z.to_csv("clustered.csv")
+
 
 # generateTargetFile()

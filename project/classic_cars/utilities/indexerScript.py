@@ -104,13 +104,16 @@ def generateIndex(preIndexTable):
 def retrieve_car_info(cdf, db_objects):
     car_make = []
     car_model = []
+    texts = []
     for i in range(cdf.shape[0]):
         docId = cdf.loc[i, "docno"]
         docNo = int(docId[1:]) - 1
         car_make.append(db_objects[docNo]["brand"])
         car_model.append(db_objects[docNo]["model"])
+        texts.append(db_objects[docNo]["text"])
     cdf["brand"] = car_make
     cdf["model"] = car_model
+    cdf["text"] = texts
     return cdf
 
 
