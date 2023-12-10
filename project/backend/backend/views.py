@@ -48,13 +48,27 @@ class VehicleListView(ListAPIView):
 
 
         if search_query:
+            jsonList = []
+            queryList = []
+            for vehicle in queryset:
+                jsonItem = {
+                    "docno": vehicle.docno,
+                    "brand": vehicle.brand,
+                    "model": vehicle.model,
+                    "year": vehicle.year,
+                    "price": vehicle.price,
+                    "text": vehicle.text,
+                    "image_url": vehicle.image_url,
+                    "detail_url": vehicle.detail_url,
+                }
+                jsonList.append(jsonItem)
             q2s = [["q1", search_query]]  # q2s : Query To Send
-            if not index:
-                index = generateIndex(queryset)
-            indexedResult = getQueryResult(index, q2s, queryset)
-            queryset = perform_clustering(indexedResult)
-
-        paginator = Paginator(queryset, items_per_page)
-        x = paginator.get_page(page)
-        print(x)
-        return x
+            index = generateIndex(jsonList)
+            indexedResult = getQueryResult(index, q2s, jsonList)
+            queryIndex = perform_clustering(indexedResult)
+            for i in queryIndex:
+                queryList.append(queryset[int(i)])
+            paginator = Paginator(queryList, items_per_page)
+        else:
+            paginator = Paginator(queryset, items_per_page)
+        return paginator.get_page(page).object_list
