@@ -50,8 +50,27 @@ def apply_stem(text, stemmer):
     return stemmed_text
 
 
+def convertPd2JList(inp):
+    out = []
+    for x in inp:
+        out.append(
+            {
+                "docno": x["docno"],
+                "price": x["price"],
+                "brand": x["brand"],
+                "model": x["model"],
+                "year": x["year"],
+                "text": x["text"],
+                "image_url": x["image_url"],
+                "detail_url": x["detail_url"],
+            }
+        )
+    return out
+
+
 # Assuming data is a DF structure with docNo, brand, model, year, price, text etc.
 def perform_clustering(data):
+    print("...Starting the clustering using K-Mean Method...")
     stemmer = PorterStemmer()
     texts = data["text"].str.lower()
     stemmed_text = [apply_stem(str(text), stemmer) for text in texts]
@@ -65,6 +84,7 @@ def perform_clustering(data):
     # K-Means
     kmeans = KMeans(n_clusters=n_clusters, random_state=0, n_init=10).fit(X)
     data["clusters"] = kmeans.labels_  # clustering labels
+    print("...Labeling Done...")
 
     # In case indexing is not done
     if data["score"]:
@@ -75,7 +95,9 @@ def perform_clustering(data):
         # group with higher mean is likely to have more favorable result
         output = data.sort_values(["mean_score", "score"], ascending=[False, False])
         output = output.drop(columns=["mean_score"])
-    else:
-        output = data.groupby("clusters").apply(lambda x: x)
-
-    return output
+        output.to_csv(
+            "cache_cluster_result.csv"
+        )  # stores the most recent clustered query result in cache_cluster_result.csv file
+        out = convertPd2JList(output)
+    print("Clustering Done...")
+    return out

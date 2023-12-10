@@ -88,19 +88,32 @@ def retrieve_car_info(cdf, db_objects):
     car_make = []
     car_model = []
     texts = []
+    years = []
+    prices = []
+    image_urls = []
+    detail_urls = []
     for i in range(cdf.shape[0]):
         docId = cdf.loc[i, "docno"]
         docNo = int(docId[1:]) - 1
         car_make.append(db_objects[docNo]["brand"])
         car_model.append(db_objects[docNo]["model"])
         texts.append(db_objects[docNo]["text"])
+        years.append(db_objects[docNo]["year"])
+        prices.append(db_objects[docNo]["price"])
+        image_urls.append(db_objects[docNo]["image_url"])
+        detail_urls.append(db_objects[docNo]["detail_url"])
     cdf["brand"] = car_make
     cdf["model"] = car_model
     cdf["text"] = texts
+    cdf["year"] = years
+    cdf["price"] = prices
+    cdf["image_url"] = image_urls
+    cdf["detail_url"] = detail_urls
     return cdf
 
 
 def getQueryResult(index, query, db_objs):
+    print("...Starting the Querying...")
     bm25 = pt.BatchRetrieve(index, num_results=len(db_objs), wmodel="BM25")
 
     queries = pd.DataFrame(
@@ -110,4 +123,5 @@ def getQueryResult(index, query, db_objs):
     results = bm25.transform(queries)
     formatedResult = retrieve_car_info(results, db_objs)
     # print(formatedResult)  # For now just printing the query result
+    print("...Received Query Results...")
     return formatedResult

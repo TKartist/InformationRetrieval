@@ -4,10 +4,17 @@ from rest_framework.generics import ListAPIView
 from django.core.paginator import Paginator
 from .models import Vehicle
 from .serializers import VehicleSerializer
+import sys
+
+sys.path.append("../../classic_cars/utilities")
+
+from indexerScript import getQueryResult, generateIndex
+from clustering import perform_clustering
 
 
 class VehicleListView(ListAPIView):
     serializer_class = VehicleSerializer
+    global index
 
     def get_queryset(self):
         queryset = Vehicle.objects.all()
@@ -23,9 +30,6 @@ class VehicleListView(ListAPIView):
         items_per_page = self.request.query_params.get("itemsPerPage", 20)
 
         # Apply filters if parameters are present
-        if search_query:
-            queryset = queryset.filter(text__icontains=search_query)
-
         if model:
             queryset = queryset.filter(model__icontains=model)
 
@@ -37,6 +41,13 @@ class VehicleListView(ListAPIView):
             queryset = queryset.filter(price__gte=min_price)
         if max_price is not None:
             queryset = queryset.filter(price__lte=max_price)
+
+        if search_query:
+            q2s = [["q1", "search_query"]]  # q2s : Query To Send
+            if not index:
+                index = generateIndex(queryset)
+            indexedResult = getQueryResult(index, q2s, queryset)
+            queryset = perform_clustering(indexedResult)
 
         paginator = Paginator(queryset, items_per_page)
         return paginator.get_page(page).object_list
