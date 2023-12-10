@@ -72,6 +72,7 @@ def generateTargetFile():
 
 
 def generateIndex(preIndexTable):
+    print(preIndexTable)
     if not pt.started():
         pt.init()
 

@@ -377,7 +377,7 @@
       <AssetKind>All</AssetKind>
       <AssetMode>All</AssetMode>
       <AssetRole>Alternative</AssetRole>
-      <RelatedAsset>/Users/batyrgeo/Documents/GitHub/InformationRetrieval/project/classic_cars/Classic_Cars_Project/Classic_Cars_Project/bin/Debug/net7.0/wwwroot/_framework/blazor.webassembly.js</RelatedAsset>
+      <RelatedAsset>/home/hun/Documents/InformationRetrieval/project/classic_cars/Classic_Cars_Project/Classic_Cars_Project/bin/Debug/net7.0/wwwroot/_framework/blazor.webassembly.js</RelatedAsset>
       <AssetTraitName>Content-Encoding</AssetTraitName>
       <AssetTraitValue>gzip</AssetTraitValue>
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>

@@ -5,8 +5,9 @@ from django.core.paginator import Paginator
 from .models import Vehicle
 from .serializers import VehicleSerializer
 import sys
+import pandas as pd
 
-sys.path.append("../../classic_cars/utilities")
+sys.path.append("../classic_cars/utilities")
 
 from indexerScript import getQueryResult, generateIndex
 from clustering import perform_clustering
@@ -43,10 +44,14 @@ class VehicleListView(ListAPIView):
             queryset = queryset.filter(price__lte=max_price)
 
         if search_query:
+            textList = []
+            docList = []
             jsonList = []
             queryList = []
             for vehicle in queryset:
-                jsonItem = {
+                textList.append(vehicle.text)
+                docList.append(vehicle.docno)
+                json = {
                     "docno": vehicle.docno,
                     "brand": vehicle.brand,
                     "model": vehicle.model,
@@ -56,9 +61,12 @@ class VehicleListView(ListAPIView):
                     "image_url": vehicle.image_url,
                     "detail_url": vehicle.detail_url,
                 }
-                jsonList.append(jsonItem)
+                jsonList.append(json)
+            preIndex = pd.DataFrame()
+            preIndex["docno"] = docList
+            preIndex["text"] = textList
             q2s = [["q1", search_query]]  # q2s : Query To Send
-            index = generateIndex(jsonList)
+            index = generateIndex(preIndex)
             indexedResult = getQueryResult(index, q2s, jsonList)
             queryIndex = perform_clustering(indexedResult)
             for i in queryIndex:

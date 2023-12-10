@@ -9,25 +9,25 @@ build_property.EnforceExtendedAnalyzerRules =
 build_property._SupportedPlatformList = browser
 build_property.RootNamespace = Classic_Cars_Project
 build_property.RootNamespace = Classic_Cars_Project
-build_property.ProjectDir = /Users/batyrgeo/Documents/GitHub/InformationRetrieval/project/classic_cars/Classic_Cars_Project/Classic_Cars_Project/
+build_property.ProjectDir = /home/hun/Documents/InformationRetrieval/project/classic_cars/Classic_Cars_Project/Classic_Cars_Project/
 build_property.RazorLangVersion = 7.0
 build_property.SupportLocalizedComponentNames = 
 build_property.GenerateRazorMetadataSourceChecksumAttributes = 
-build_property.MSBuildProjectDirectory = /Users/batyrgeo/Documents/GitHub/InformationRetrieval/project/classic_cars/Classic_Cars_Project/Classic_Cars_Project
+build_property.MSBuildProjectDirectory = /home/hun/Documents/InformationRetrieval/project/classic_cars/Classic_Cars_Project/Classic_Cars_Project
 build_property._RazorSourceGeneratorDebug = 
 
-[/Users/batyrgeo/Documents/GitHub/InformationRetrieval/project/classic_cars/Classic_Cars_Project/Classic_Cars_Project/App.razor]
+[/home/hun/Documents/InformationRetrieval/project/classic_cars/Classic_Cars_Project/Classic_Cars_Project/App.razor]
 build_metadata.AdditionalFiles.TargetPath = QXBwLnJhem9y
 build_metadata.AdditionalFiles.CssScope = 
 
-[/Users/batyrgeo/Documents/GitHub/InformationRetrieval/project/classic_cars/Classic_Cars_Project/Classic_Cars_Project/Pages/Index.razor]
+[/home/hun/Documents/InformationRetrieval/project/classic_cars/Classic_Cars_Project/Classic_Cars_Project/Pages/Index.razor]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXMvSW5kZXgucmF6b3I=
 build_metadata.AdditionalFiles.CssScope = 
 
-[/Users/batyrgeo/Documents/GitHub/InformationRetrieval/project/classic_cars/Classic_Cars_Project/Classic_Cars_Project/_Imports.razor]
+[/home/hun/Documents/InformationRetrieval/project/classic_cars/Classic_Cars_Project/Classic_Cars_Project/_Imports.razor]
 build_metadata.AdditionalFiles.TargetPath = X0ltcG9ydHMucmF6b3I=
 build_metadata.AdditionalFiles.CssScope = 
 
-[/Users/batyrgeo/Documents/GitHub/InformationRetrieval/project/classic_cars/Classic_Cars_Project/Classic_Cars_Project/Shared/MainLayout.razor]
+[/home/hun/Documents/InformationRetrieval/project/classic_cars/Classic_Cars_Project/Classic_Cars_Project/Shared/MainLayout.razor]
 build_metadata.AdditionalFiles.TargetPath = U2hhcmVkL01haW5MYXlvdXQucmF6b3I=
 build_metadata.AdditionalFiles.CssScope = b-rp5qgylxb0

@@ -69,17 +69,15 @@ def perform_clustering(data):
     print("...Labeling Done...")
     out = []
     # In case indexing is not done
-    if data["score"]:
-        # Assign the mean score of the cluster group the row belongs to
-        data["mean_score"] = data.groupby("clusters")["score"].transform("mean")
+    # Assign the mean score of the cluster group the row belongs to
+    data["mean_score"] = data.groupby("clusters")["score"].transform("mean")
 
-        # Sort according to that new mean_score, realistically
-        # group with higher mean is likely to have more favorable result
-        output = data.sort_values(["mean_score", "score"], ascending=[False, False])
-        output = output.drop(columns=["mean_score"])
-        output.to_csv(
-            "cache_cluster_result.csv"
-        )  # stores the most recent clustered query result in cache_cluster_result.csv file
-        out = output["docid"].tolist()
+    # Sort according to that new mean_score, realistically
+    # group with higher mean is likely to have more favorable result
+    output = data.sort_values(["mean_score", "score"], ascending=[False, False])
+    output = output.drop(columns=["mean_score"])
+    output.to_csv("cache_cluster_result.csv")
+    # out = output["docid"].tolist()
+    out = output["docid"].tolist()
     print("Clustering Done...")
     return out

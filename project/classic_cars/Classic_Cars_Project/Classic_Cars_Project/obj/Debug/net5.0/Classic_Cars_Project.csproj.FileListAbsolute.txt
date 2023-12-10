@@ -1,0 +1,12 @@
+/home/hun/Documents/InformationRetrieval/project/classic_cars/Classic_Cars_Project/Classic_Cars_Project/obj/Debug/net5.0/Classic_Cars_Project.csproj.AssemblyReference.cache
+/home/hun/Documents/InformationRetrieval/project/classic_cars/Classic_Cars_Project/Classic_Cars_Project/obj/Debug/net5.0/Classic_Cars_Project.GeneratedMSBuildEditorConfig.editorconfig
+/home/hun/Documents/InformationRetrieval/project/classic_cars/Classic_Cars_Project/Classic_Cars_Project/obj/Debug/net5.0/Classic_Cars_Project.AssemblyInfoInputs.cache
+/home/hun/Documents/InformationRetrieval/project/classic_cars/Classic_Cars_Project/Classic_Cars_Project/obj/Debug/net5.0/Classic_Cars_Project.AssemblyInfo.cs
+/home/hun/Documents/InformationRetrieval/project/classic_cars/Classic_Cars_Project/Classic_Cars_Project/obj/Debug/net5.0/Classic_Cars_Project.csproj.CoreCompileInputs.cache
+/home/hun/Documents/InformationRetrieval/project/classic_cars/Classic_Cars_Project/Classic_Cars_Project/obj/Debug/net5.0/Classic_Cars_Project.MvcApplicationPartsAssemblyInfo.cache
+/home/hun/Documents/InformationRetrieval/project/classic_cars/Classic_Cars_Project/Classic_Cars_Project/obj/Debug/net5.0/Classic_Cars_Project.RazorComponent.input.cache
+/home/hun/Documents/InformationRetrieval/project/classic_cars/Classic_Cars_Project/Classic_Cars_Project/obj/Debug/net5.0/RazorDeclaration/App.razor.g.cs
+/home/hun/Documents/InformationRetrieval/project/classic_cars/Classic_Cars_Project/Classic_Cars_Project/obj/Debug/net5.0/RazorDeclaration/Pages/Index.razor.g.cs
+/home/hun/Documents/InformationRetrieval/project/classic_cars/Classic_Cars_Project/Classic_Cars_Project/obj/Debug/net5.0/RazorDeclaration/_Imports.razor.g.cs
+/home/hun/Documents/InformationRetrieval/project/classic_cars/Classic_Cars_Project/Classic_Cars_Project/obj/Debug/net5.0/RazorDeclaration/Shared/MainLayout.razor.g.cs
+/home/hun/Documents/InformationRetrieval/project/classic_cars/Classic_Cars_Project/Classic_Cars_Project/obj/Debug/net5.0/Classic_Cars_Project.RazorComponent.output.cache

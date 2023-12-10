@@ -18,6 +18,7 @@ index = generateIndex(preIndexTable)
 # Example Query through indexing
 query1 = [["q1", "mercedes bmw x1"]]
 x = getQueryResult(index, query1, db_objs)
+print(x)
 # print(x)
 
 # Cluster the results and save the query in 'clustered.csv' file in the current folder

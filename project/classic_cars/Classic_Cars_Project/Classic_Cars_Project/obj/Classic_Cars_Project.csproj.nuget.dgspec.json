@@ -1,26 +1,25 @@
 {
   "format": 1,
   "restore": {
-    "/Users/batyrgeo/Documents/GitHub/InformationRetrieval/project/classic_cars/Classic_Cars_Project/Classic_Cars_Project/Classic_Cars_Project.csproj": {}
+    "/home/hun/Documents/InformationRetrieval/project/classic_cars/Classic_Cars_Project/Classic_Cars_Project/Classic_Cars_Project.csproj": {}
   },
   "projects": {
-    "/Users/batyrgeo/Documents/GitHub/InformationRetrieval/project/classic_cars/Classic_Cars_Project/Classic_Cars_Project/Classic_Cars_Project.csproj": {
+    "/home/hun/Documents/InformationRetrieval/project/classic_cars/Classic_Cars_Project/Classic_Cars_Project/Classic_Cars_Project.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "/Users/batyrgeo/Documents/GitHub/InformationRetrieval/project/classic_cars/Classic_Cars_Project/Classic_Cars_Project/Classic_Cars_Project.csproj",
+        "projectUniqueName": "/home/hun/Documents/InformationRetrieval/project/classic_cars/Classic_Cars_Project/Classic_Cars_Project/Classic_Cars_Project.csproj",
         "projectName": "Classic_Cars_Project",
-        "projectPath": "/Users/batyrgeo/Documents/GitHub/InformationRetrieval/project/classic_cars/Classic_Cars_Project/Classic_Cars_Project/Classic_Cars_Project.csproj",
-        "packagesPath": "/Users/batyrgeo/.nuget/packages/",
-        "outputPath": "/Users/batyrgeo/Documents/GitHub/InformationRetrieval/project/classic_cars/Classic_Cars_Project/Classic_Cars_Project/obj/",
+        "projectPath": "/home/hun/Documents/InformationRetrieval/project/classic_cars/Classic_Cars_Project/Classic_Cars_Project/Classic_Cars_Project.csproj",
+        "packagesPath": "/home/hun/.nuget/packages/",
+        "outputPath": "/home/hun/Documents/InformationRetrieval/project/classic_cars/Classic_Cars_Project/Classic_Cars_Project/obj/",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "/Users/batyrgeo/.nuget/NuGet/NuGet.Config"
+          "/home/hun/.nuget/NuGet/NuGet.Config"
         ],
         "originalTargetFrameworks": [
           "net7.0"
         ],
         "sources": {
-          "/usr/local/share/dotnet/library-packs": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
@@ -41,12 +40,12 @@
           "dependencies": {
             "Microsoft.AspNetCore.Components.WebAssembly": {
               "target": "Package",
-              "version": "[7.0.11, )"
+              "version": "[7.0.9, )"
             },
             "Microsoft.AspNetCore.Components.WebAssembly.DevServer": {
               "suppressParent": "All",
               "target": "Package",
-              "version": "[7.0.11, )"
+              "version": "[7.0.9, )"
             }
           },
           "imports": [
@@ -60,12 +59,18 @@
           ],
           "assetTargetFallback": true,
           "warn": true,
+          "downloadDependencies": [
+            {
+              "name": "Microsoft.NETCore.App.Runtime.Mono.browser-wasm",
+              "version": "[7.0.9, 7.0.9]"
+            }
+          ],
           "frameworkReferences": {
             "Microsoft.NETCore.App": {
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "/usr/local/share/dotnet/sdk/7.0.308/RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "/usr/share/dotnet/sdk/7.0.306/RuntimeIdentifierGraph.json"
         }
       },
       "runtimes": {
