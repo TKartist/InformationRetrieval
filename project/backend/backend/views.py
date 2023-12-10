@@ -23,7 +23,7 @@ class VehicleListView(ListAPIView):
 
         # Apply filters if parameters are present
         if search_query:
-            queryset = queryset.filter(description__icontains=search_query )
+            queryset = queryset.filter(text__icontains=search_query )
         
         if model:
             queryset = queryset.filter(model__icontains=model)

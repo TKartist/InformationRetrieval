@@ -83,7 +83,7 @@
         <button class="page-button" @onclick="() => ChangePage(currentPage - 1)">Previous</button>
     }
     <span>Page @currentPage</span>
-    @if (searchResults.Count == itemsPerPage) // Assuming full page of results means there could be a next page
+    @if (searchResults.Count == itemsPerPage) 
     {
         <button class="page-button" @onclick="() => ChangePage(currentPage + 1)">Next</button>
     }
@@ -92,6 +92,8 @@
 
 
 @code {
+
+    #region Varables
     private string searchQuery = "";
     private string selectedBrand = "";
     private string selectedYear = "";
@@ -103,7 +105,7 @@
     private const int itemsPerPage = 20;
 
     private List<Vehicle> searchResults = new List<Vehicle>();
-
+    private List<string> years = new List<string>();
     private List<string> brands = new List<string> {
   "Abarth",
   "Alfa Romeo",
@@ -170,7 +172,7 @@
   "Toyota",
   "Volkswagen",
   "Volvo" };
-    private List<string> years = new List<string>();
+    #endregion
 
     protected override async Task OnInitializedAsync()
     {
@@ -186,20 +188,24 @@
         await ApplyFilters();
     }
 
+
+
+    #region Page manipulations
+
     private async Task BrandChanged(ChangeEventArgs e)
     {
         selectedBrand = e.Value.ToString();
         await ApplyFilters();
     }
-    private string FormatPrice(decimal price)
-    {
-        return price == 0 ? "N/A" : $"${price:N0}";
-    }
+
+
+
     private async Task YearChanged(ChangeEventArgs e)
     {
         selectedYear = e.Value.ToString();
         await ApplyFilters();
     }
+
 
     private async Task ChangePage(int page)
     {
@@ -207,11 +213,26 @@
         await ApplyFilters();
     }
 
+
+    private void SelectCard(Vehicle vehicle)
+    {
+        VehicleSelection.SelectVehicle(vehicle);
+    }
+
+
+    private string FormatPrice(decimal price)
+    {
+        return price == 0 ? "N/A" : $"${price:N0}";
+    }
+
+    #endregion
+
+    #region Send Query
     private async Task ApplyFilters()
     {
         var queryParameters = new List<string>();
 
-        // Add query parameters based on user input
+
         if (!string.IsNullOrWhiteSpace(searchQuery))
             queryParameters.Add($"search={Uri.EscapeDataString(searchQuery)}");
         if (!string.IsNullOrWhiteSpace(selectedBrand))
@@ -223,30 +244,27 @@
         if (maxPrice < 1000000)
             queryParameters.Add($"maxPrice={maxPrice}");
 
-        // Pagination parameters
+
         queryParameters.Add($"currentPage={currentPage}");
         queryParameters.Add($"itemsPerPage={itemsPerPage}");
 
-        // Construct the full URL for the API call
+
         string query = string.Join("&", queryParameters);
         string apiUrl = "http://localhost:8000/api/vehicles/";
         string fullUrl = $"{apiUrl}?{query}";
 
-        // Make the API call and update the search results
+
         try
         {
             searchResults = await Http.GetFromJsonAsync<List<Vehicle>>(fullUrl);
-            // TODO: Update totalPages based on the response if needed
+
         }
         catch (HttpRequestException e)
         {
             Console.WriteLine($"Request exception: {e.Message}");
-            // TODO: Add error handling logic
+
         }
     }
+    #endregion
 
-    private void SelectCard(Vehicle vehicle)
-    {
-        VehicleSelection.SelectVehicle(vehicle);
-    }
 }

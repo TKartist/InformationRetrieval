@@ -5,7 +5,7 @@ class Vehicle(models.Model):
     year = models.CharField(max_length=4)
     price = models.IntegerField()
     model = models.CharField(max_length=4)
-    description = models.TextField()
+    text = models.TextField()
     image_url = models.URLField(max_length=200)
     detail_url = models.URLField(max_length=200)
     docno = models.CharField(max_length=4)
