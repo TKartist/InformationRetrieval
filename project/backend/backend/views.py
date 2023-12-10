@@ -6,7 +6,7 @@ from .models import Vehicle
 from .serializers import VehicleSerializer
 import sys
 
-sys.path.append("../../classic_cars/utilities")
+sys.path.append("../classic_cars/utilities")
 
 from indexerScript import getQueryResult, generateIndex
 from clustering import perform_clustering
@@ -14,10 +14,10 @@ from clustering import perform_clustering
 
 class VehicleListView(ListAPIView):
     serializer_class = VehicleSerializer
-    global index
 
     def get_queryset(self):
         queryset = Vehicle.objects.all()
+        
 
         # Retrieve query parameters
         search_query = self.request.query_params.get("search", None)
@@ -41,13 +41,20 @@ class VehicleListView(ListAPIView):
             queryset = queryset.filter(price__gte=min_price)
         if max_price is not None:
             queryset = queryset.filter(price__lte=max_price)
+        
+        print("XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX")
+        print(len(queryset))
+        print("XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX")
+
 
         if search_query:
-            q2s = [["q1", "search_query"]]  # q2s : Query To Send
+            q2s = [["q1", search_query]]  # q2s : Query To Send
             if not index:
                 index = generateIndex(queryset)
             indexedResult = getQueryResult(index, q2s, queryset)
             queryset = perform_clustering(indexedResult)
 
         paginator = Paginator(queryset, items_per_page)
-        return paginator.get_page(page).object_list
+        x = paginator.get_page(page)
+        print(x)
+        return x
