@@ -178,13 +178,11 @@
     {
         base.OnInitialized();
 
-        // Populate years dynamically
         for (int year = DateTime.Now.Year; year >= 1887; year--)
         {
             years.Add(year.ToString());
         }
 
-        // Load initial data
         await ApplyFilters();
     }
 
