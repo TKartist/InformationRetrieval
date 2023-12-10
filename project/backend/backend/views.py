@@ -15,7 +15,6 @@ from clustering import perform_clustering
 
 class VehicleListView(ListAPIView):
     serializer_class = VehicleSerializer
-    global index
 
     def get_queryset(self):
         queryset = Vehicle.objects.all()
