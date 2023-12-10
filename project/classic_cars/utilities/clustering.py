@@ -50,24 +50,6 @@ def apply_stem(text, stemmer):
     return stemmed_text
 
 
-def convertPd2JList(inp):
-    out = []
-    for x in inp:
-        out.append(
-            {
-                "docno": x["docno"],
-                "price": x["price"],
-                "brand": x["brand"],
-                "model": x["model"],
-                "year": x["year"],
-                "text": x["text"],
-                "image_url": x["image_url"],
-                "detail_url": x["detail_url"],
-            }
-        )
-    return out
-
-
 # Assuming data is a DF structure with docNo, brand, model, year, price, text etc.
 def perform_clustering(data):
     print("...Starting the clustering using K-Mean Method...")
@@ -85,7 +67,7 @@ def perform_clustering(data):
     kmeans = KMeans(n_clusters=n_clusters, random_state=0, n_init=10).fit(X)
     data["clusters"] = kmeans.labels_  # clustering labels
     print("...Labeling Done...")
-
+    out = []
     # In case indexing is not done
     if data["score"]:
         # Assign the mean score of the cluster group the row belongs to
@@ -98,6 +80,6 @@ def perform_clustering(data):
         output.to_csv(
             "cache_cluster_result.csv"
         )  # stores the most recent clustered query result in cache_cluster_result.csv file
-        out = convertPd2JList(output)
+        out = output["docid"].tolist()
     print("Clustering Done...")
     return out
