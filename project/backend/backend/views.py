@@ -16,14 +16,19 @@ from clustering import perform_clustering
 
 class VehicleListView(ListAPIView):
     serializer_class = VehicleSerializer
+    index = None
+    jsons = None
+
+    def __init__(self, *args, **kwargs):
+        self.index = kwargs.pop("index", None)
+        self.jsons = kwargs.pop("jsons", None)
+        super().__init__(*args, **kwargs)
 
     def get_queryset(self):
         queryset = Vehicle.objects.all()
-
         # Retrieve query parameters
         search_query = self.request.query_params.get("search", None)
         brand = self.request.query_params.get("brand", None)
-        model = self.request.query_params.get("model", None)
         year = self.request.query_params.get("year", None)
         min_price = self.request.query_params.get("minPrice", None)
         max_price = self.request.query_params.get("maxPrice", None)
@@ -32,46 +37,26 @@ class VehicleListView(ListAPIView):
 
         if search_query and search_query != "":
             queryList = []
-            textList = []
-            docList = []
-            jsons = []
-            preIndex = pd.DataFrame()
-            for vehicle in queryset:
-                json = {
-                    "docno": vehicle.docno,
-                    "brand": vehicle.brand,
-                    "model": vehicle.model,
-                    "year": vehicle.year,
-                    "price": vehicle.price,
-                    "text": vehicle.text,
-                    "image_url": vehicle.image_url,
-                    "detail_url": vehicle.detail_url,
-                }
-                jsons.append(json)
-                textList.append(vehicle.text)
-                docList.append(vehicle.docno)
-            preIndex["docno"] = docList
-            preIndex["text"] = textList
-            print(search_query)
-            print(len(search_query))
-            index = generateIndex(preIndex)
-            indexedResult = getQueryResult(index, search_query, jsons)
-            queryIndex = perform_clustering(indexedResult)
-            for i in queryIndex:
-                queryList.append(queryset[int(i)])
+            indexedResult = getQueryResult(self.index, search_query, self.jsons)
+            if len(indexedResult.index) != 0:
+                queryIndex = perform_clustering(indexedResult)
+                for i in queryIndex:
+                    queryList.append(queryset[int(i)])
             queryset = queryList[:]
+        else:
+            queryset = list(queryset)
         # Apply filters if parameters are present
-        if model:
-            queryset = queryset.filter(model__icontains=model)
-
         if brand:
-            queryset = queryset.filter(brand__iexact=brand)
+            queryset = list(filter(lambda x: x.brand == brand, queryset))
+            print(queryset)
+
         if year:
-            queryset = queryset.filter(year=year)
+            queryset = list(filter(lambda x: x.year == year, queryset))
+
         if min_price is not None:
-            queryset = queryset.filter(price__gte=min_price)
+            queryset = list(filter(lambda x: x.price >= min_price, queryset))
         if max_price is not None:
-            queryset = queryset.filter(price__lte=max_price)
+            queryset = list(filter(lambda x: x.price <= max_price, queryset))
 
         paginator = Paginator(queryset, items_per_page)
         return paginator.get_page(1).object_list
