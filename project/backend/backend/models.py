@@ -13,3 +13,6 @@ class Vehicle(models.Model):
 
     def __str__(self):
         return f"{self.brand} {self.year}"
+
+    class Meta:
+        db_table = "backend_vehicle"

@@ -59,4 +59,4 @@ class VehicleListView(ListAPIView):
             queryset = list(filter(lambda x: x.price <= max_price, queryset))
 
         paginator = Paginator(queryset, items_per_page)
-        return paginator.get_page(1).object_list
+        return paginator.get_page(page).object_list

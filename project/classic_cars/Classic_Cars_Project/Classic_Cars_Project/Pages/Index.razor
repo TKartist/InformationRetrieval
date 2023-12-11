@@ -11,7 +11,7 @@
         <h2>Search in <span class="vehicle-count-main">7,000+</span> vehicles</h2>
     </div>
     <div class="search-bar-main">
-        <input type="text" placeholder="Search..." @bind="searchQuery" @oninput="ApplyFilters" />
+        <input type="text" placeholder="Search..." @bind="searchQuery" />
         <button class="search_button" @onclick="ApplyFilters">Search</button>
     </div>
     <div class="filter-dropdown-main">
@@ -49,7 +49,7 @@
 @if (searchResults.Any())
 {
     <div class="search-results-grid">
-        @foreach (var vehicle in searchResults)
+    @foreach (var vehicle in searchResults)
         {
             <div class="card">
                 @if (vehicle.Price == 0)
@@ -83,7 +83,7 @@
         <button class="page-button" @onclick="() => ChangePage(currentPage - 1)">Previous</button>
     }
     <span>Page @currentPage</span>
-    @if (searchResults.Count == itemsPerPage) 
+    @if (searchResults.Count == itemsPerPage)
     {
         <button class="page-button" @onclick="() => ChangePage(currentPage + 1)">Next</button>
     }
@@ -107,71 +107,71 @@
     private List<Vehicle> searchResults = new List<Vehicle>();
     private List<string> years = new List<string>();
     private List<string> brands = new List<string> {
-  "Abarth",
-  "Alfa Romeo",
-  "Aston Martin",
-  "Audi",
-  "Bentley",
-  "BMW",
-  "Bugatti",
-  "Cadillac",
-  "Chevrolet",
-  "Chrysler",
-  "Citroën",
-  "Dacia",
-  "Daewoo",
-  "Daihatsu",
-  "Dodge",
-  "Donkervoort",
-  "DS",
-  "Ferrari",
-  "Fiat",
-  "Fisker",
-  "Ford",
-  "Honda",
-  "Hummer",
-  "Hyundai",
-  "Infiniti",
-  "Iveco",
-  "Jaguar",
-  "Jeep",
-  "Kia",
-  "KTM",
-  "Lada",
-  "Lamborghini",
-  "Lancia",
-  "Land Rover",
-  "Landwind",
-  "Lexus",
-  "Lotus",
-  "Maserati",
-  "Maybach",
-  "Mazda",
-  "McLaren",
-  "Mercedes-Benz",
-  "MG",
-  "Mini",
-  "Mitsubishi",
-  "Morgan",
-  "Nissan",
-  "Opel",
-  "Peugeot",
-  "Porsche",
-  "Renault",
-  "Rolls-Royce",
-  "Rolls",
-  "Rover",
-  "Saab",
-  "Seat",
-  "Skoda",
-  "Smart",
-  "SsangYong",
-  "Subaru",
-  "Suzuki",
-  "Tesla",
-  "Toyota",
-  "Volkswagen",
-  "Volvo" };
+"Abarth",
+"Alfa Romeo",
+"Aston Martin",
+"Audi",
+"Bentley",
+"BMW",
+"Bugatti",
+"Cadillac",
+"Chevrolet",
+"Chrysler",
+"Citroën",
+"Dacia",
+"Daewoo",
+"Daihatsu",
+"Dodge",
+"Donkervoort",
+"DS",
+"Ferrari",
+"Fiat",
+"Fisker",
+"Ford",
+"Honda",
+"Hummer",
+"Hyundai",
+"Infiniti",
+"Iveco",
+"Jaguar",
+"Jeep",
+"Kia",
+"KTM",
+"Lada",
+"Lamborghini",
+"Lancia",
+"Land Rover",
+"Landwind",
+"Lexus",
+"Lotus",
+"Maserati",
+"Maybach",
+"Mazda",
+"McLaren",
+"Mercedes-Benz",
+"MG",
+"Mini",
+"Mitsubishi",
+"Morgan",
+"Nissan",
+"Opel",
+"Peugeot",
+"Porsche",
+"Renault",
+"Rolls-Royce",
+"Rolls",
+"Rover",
+"Saab",
+"Seat",
+"Skoda",
+"Smart",
+"SsangYong",
+"Subaru",
+"Suzuki",
+"Tesla",
+"Toyota",
+"Volkswagen",
+"Volvo" };
     #endregion
 
     protected override async Task OnInitializedAsync()
