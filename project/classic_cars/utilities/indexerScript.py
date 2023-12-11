@@ -80,8 +80,8 @@ def generateIndex(preIndexTable):
     index_ref = indexer.index(preIndexTable["text"], preIndexTable["docno"])
     index_ref.toString()
     index = pt.IndexFactory.of(index_ref)
-    print(index)
-    return index
+    bm25 = pt.BatchRetrieve(index, num_results=20, wmodel="BM25")
+    return bm25
 
 
 # Creates a simplified ver. of objects for clustering and display
@@ -101,9 +101,9 @@ def retrieve_car_info(cdf, db_objects):
     return cdf
 
 
-def getQueryResult(index, query, db_objs):
+def getQueryResult(bm25, query, db_objs):
+    print(bm25)
     print("...Starting the Querying...")
-    bm25 = pt.BatchRetrieve(index, num_results=20, wmodel="BM25")
     q = []
     q.append(query)
     qid = []
