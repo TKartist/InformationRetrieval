@@ -16,32 +16,6 @@ from clustering import perform_clustering
 
 class VehicleListView(ListAPIView):
     serializer_class = VehicleSerializer
-    copyDB = []
-    preIndex = pd.DataFrame()
-    index = None
-    prevSearch = ""
-
-    def __init__(self):
-        querySet = Vehicle.objects.all()
-        textList = []
-        docList = []
-        for vehicle in querySet:
-            json = {
-                "docno": vehicle.docno,
-                "brand": vehicle.brand,
-                "model": vehicle.model,
-                "year": vehicle.year,
-                "price": vehicle.price,
-                "text": vehicle.text,
-                "image_url": vehicle.image_url,
-                "detail_url": vehicle.detail_url,
-            }
-            self.copyDB.append(json)
-            textList.append(vehicle.text)
-            docList.append(vehicle.docno)
-        self.preIndex["docno"] = docList
-        self.preIndex["text"] = textList
-        self.index = generateIndex(self.copyDB)
 
     def get_queryset(self):
         queryset = Vehicle.objects.all()
@@ -56,14 +30,36 @@ class VehicleListView(ListAPIView):
         page = self.request.query_params.get("currentPage", 1)
         items_per_page = self.request.query_params.get("itemsPerPage", 20)
 
-        if search_query and search_query != self.prevSearch:
+        if search_query and search_query != "":
             queryList = []
-            q2s = [["q1", search_query]]  # q2s : Query To Send
-            indexedResult = getQueryResult(self.index, q2s, self.copyDB)
+            textList = []
+            docList = []
+            jsons = []
+            preIndex = pd.DataFrame()
+            for vehicle in queryset:
+                json = {
+                    "docno": vehicle.docno,
+                    "brand": vehicle.brand,
+                    "model": vehicle.model,
+                    "year": vehicle.year,
+                    "price": vehicle.price,
+                    "text": vehicle.text,
+                    "image_url": vehicle.image_url,
+                    "detail_url": vehicle.detail_url,
+                }
+                jsons.append(json)
+                textList.append(vehicle.text)
+                docList.append(vehicle.docno)
+            preIndex["docno"] = docList
+            preIndex["text"] = textList
+            print(search_query)
+            print(len(search_query))
+            index = generateIndex(preIndex)
+            indexedResult = getQueryResult(index, search_query, jsons)
             queryIndex = perform_clustering(indexedResult)
             for i in queryIndex:
                 queryList.append(queryset[int(i)])
-
+            queryset = queryList[:]
         # Apply filters if parameters are present
         if model:
             queryset = queryset.filter(model__icontains=model)
@@ -78,4 +74,4 @@ class VehicleListView(ListAPIView):
             queryset = queryset.filter(price__lte=max_price)
 
         paginator = Paginator(queryset, items_per_page)
-        return paginator.get_page(page).object_list
+        return paginator.get_page(1).object_list

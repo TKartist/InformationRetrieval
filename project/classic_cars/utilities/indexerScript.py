@@ -72,7 +72,6 @@ def generateTargetFile():
 
 
 def generateIndex(preIndexTable):
-    print(preIndexTable)
     if not pt.started():
         pt.init()
 
@@ -81,6 +80,7 @@ def generateIndex(preIndexTable):
     index_ref = indexer.index(preIndexTable["text"], preIndexTable["docno"])
     index_ref.toString()
     index = pt.IndexFactory.of(index_ref)
+    print(index)
     return index
 
 
@@ -90,9 +90,11 @@ def retrieve_car_info(cdf, db_objects):
     car_model = []
     texts = []
     for i in range(cdf.shape[0]):
-        car_make.append(db_objects[i]["brand"])
-        car_model.append(db_objects[i]["model"])
-        texts.append(db_objects[i]["text"])
+        docId = cdf.loc[i, "docno"]
+        docNo = int(docId[1:]) - 1
+        car_make.append(db_objects[docNo]["brand"])
+        car_model.append(db_objects[docNo]["model"])
+        texts.append(db_objects[docNo]["text"])
     cdf["brand"] = car_make
     cdf["model"] = car_model
     cdf["text"] = texts
@@ -101,12 +103,15 @@ def retrieve_car_info(cdf, db_objects):
 
 def getQueryResult(index, query, db_objs):
     print("...Starting the Querying...")
-    bm25 = pt.BatchRetrieve(index, num_results=len(db_objs), wmodel="BM25")
-
-    queries = pd.DataFrame(
-        query,
-        columns=["qid", "query"],
-    )
+    bm25 = pt.BatchRetrieve(index, num_results=20, wmodel="BM25")
+    q = []
+    q.append(query)
+    qid = []
+    qid.append("q1")
+    queries = pd.DataFrame()
+    queries["qid"] = qid
+    queries["query"] = q
+    print(queries)
     results = bm25.transform(queries)
     formatedResult = retrieve_car_info(results, db_objs)
     # print(formatedResult)  # For now just printing the query result
