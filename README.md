@@ -10,7 +10,7 @@ Project Aim:
 Constructing a search engine for classic vintage cars market in the UK.
 
 Project Name:
-911 Club
+SearchEngineClassicCars
 
 Backend: Django (Python)
 Frontend: Blazor (C#)
